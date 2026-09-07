@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "metric_name": "Journal Impact Factor",
+  "retrieved_at": "2026-09-03",
+  "journals": [
+    {
+      "canonical_name": "Gut Microbes",
+      "aliases": [
+        "Gut microbes"
+      ],
+      "impact_factor": 15.3,
+      "metric_year": 2025,
+      "source_name": "Taylor & Francis",
+      "source_url": "https://www.tandfonline.com/journals/kgmi20/about-this-journal"
+    },
+    {
+      "canonical_name": "Food Research International",
+      "aliases": [
+        "Food research international (Ottawa, Ont.)"
+      ],
+      "impact_factor": 8.8,
+      "metric_year": null,
+      "source_name": "Elsevier ScienceDirect",
+      "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=food-science"
+    },
+    {
+      "canonical_name": "Nutrients",
+      "aliases": [
+        "Nutrients"
+      ],
+      "impact_factor": 5.8,
+      "metric_year": 2025,
+      "source_name": "MDPI",
+      "source_url": "https://www.mdpi.com/journal/nutrients/imprint"
+    },
+    {
+      "canonical_name": "Biotechnology Journal",
+      "aliases": [
+        "Biotechnology journal"
+      ],
+      "impact_factor": 3.7,
+      "metric_year": null,
+      "source_name": "Wiley Online Library",
+      "source_url": "https://analyticalsciencejournals.onlinelibrary.wiley.com/journal/18607314"
+    }
+  ]
+}

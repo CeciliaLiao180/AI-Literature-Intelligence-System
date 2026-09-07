@@ -1,0 +1,156 @@
+{
+  "result_package_version": "1.0",
+  "generated_at": "2026-09-02T07:01:29Z",
+  "execution_mode": "codex_manual",
+  "source_task_package": {
+    "path": "D:/AAA gpt files/AI-Literature-Intelligence-System/data/codex_tasks/b031d6db-5d87-4506-96c6-5364ad63606a_gut_health.json",
+    "sha256": "d21341881146dadeed45d619078215c284f0187868e3f817dc011f5072d3d17e",
+    "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a"
+  },
+  "prompt": {
+    "key": "paper_relevance",
+    "version": "1.0.0",
+    "output_schema_version": "1.0",
+    "prompt_spec_path": "D:/AAA gpt files/AI-Literature-Intelligence-System/config/prompts.v1.yaml",
+    "prompt_spec_sha256": "4c33ebb446335e6d39ef721e15127b40fe0b68166afca09b0b650e8312067a77"
+  },
+  "summary": {
+    "total": 7,
+    "relevant": 4,
+    "irrelevant": 2,
+    "uncertain": 1,
+    "needs_human_review": 1
+  },
+  "results": [
+    {
+      "paper_id": 1,
+      "paper_task_id": "5df86dcc-15e4-4a4d-9b0b-e4d928909f27",
+      "pmid": "42668206",
+      "input_sha256": "9bcc5bf1ea0440b0fead9422ca4d71ef9f136b2b51446dd72143bc540297e330",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "irrelevant",
+        "relevance_score": 0.03,
+        "matched_domain_codes": [],
+        "reason": "研究聚焦益生菌发酵天麻过程中的微生物演替、代谢物变化和风味形成，结论用于调控产品风味；摘要未报告胃肠功能、肠道菌群、肠屏障、排便、胃肠症状或宿主健康结果。",
+        "confidence": 0.99,
+        "warnings": [],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 2,
+      "paper_task_id": "986aeedb-0a27-4acd-aa63-8f9411b059b8",
+      "pmid": "42668201",
+      "input_sha256": "d93f48983ab7689fc110a6b5b601ab889bc59dc049dde4140861032266ee8fe1",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "irrelevant",
+        "relevance_score": 0.08,
+        "matched_domain_codes": [],
+        "reason": "研究评价双益生菌与燕麦β-葡聚糖对褐色酸奶风味、理化性质、感官质量和代谢物形成的影响，未报告肠道或宿主健康终点，因此属于食品配方与发酵质量研究。",
+        "confidence": 0.98,
+        "warnings": [
+          "摘要使用了“beneficial metabolites”和“functional properties”等表述，但没有提供肠道或宿主健康结果。"
+        ],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 3,
+      "paper_task_id": "1142bbd4-6f3c-4991-8c5f-0414648cd78f",
+      "pmid": "42520140",
+      "input_sha256": "0e2898303c6ef72184a58165140184cb23597938a4d3dccf7832167486202e2c",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "uncertain",
+        "relevance_score": 0.48,
+        "matched_domain_codes": [
+          "gut_health"
+        ],
+        "reason": "研究在人群中评价益生菌补充对疫苗后体液免疫和感染相关指标的影响，但摘要没有报告胃肠道、肠道菌群或肠屏障终点。益生菌介导的宿主免疫效应是否纳入当前肠道健康领域边界不够明确，需人工确认。",
+        "confidence": 0.82,
+        "warnings": [
+          "主要终点是疫苗抗体反应而非肠道健康终点；不得仅因使用益生菌而判为直接相关。"
+        ],
+        "needs_human_review": true
+      }
+    },
+    {
+      "paper_id": 4,
+      "paper_task_id": "aa9e8164-2034-4353-8926-c3cb389662d6",
+      "pmid": "41424360",
+      "input_sha256": "3e1bdab6cb48651153fb159c1ff673da1f42ed011365a3c0de0c2adf311d6487",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": [
+          "gut_health"
+        ],
+        "reason": "研究直接考察Akkermansia muciniphila及其外膜蛋白对肠道稳态、杯状细胞分化、肠屏障和小鼠结肠炎的影响，属于肠屏障及肠道疾病相关机制研究。",
+        "confidence": 0.99,
+        "warnings": [
+          "研究证据来自小鼠及机制实验，相关性明确，但后续不得表述为人体功效。"
+        ],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 5,
+      "paper_task_id": "57ffb1ba-8850-48ea-a5cd-b1a98d84434c",
+      "pmid": "42409547",
+      "input_sha256": "c952406c6434c458c4f7682ba3186e19c897e80ac35b860edf543ae03638517e",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": [
+          "gut_health"
+        ],
+        "reason": "研究直接评价乳杆菌共发酵代谢物对肠道菌群组成、肠道炎症、紧密连接和屏障通透性的影响，使用体外发酵、细胞共培养和小鼠结肠炎模型，符合肠道健康定义。",
+        "confidence": 0.99,
+        "warnings": [
+          "证据来自体外与动物模型，后续不得外推为人体临床效果。"
+        ],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 6,
+      "paper_task_id": "00467fb7-237b-49de-bc0b-e62493a7908b",
+      "pmid": "42588089",
+      "input_sha256": "21b334ade6f227439bcd040e0fc629760ffe553b30c2aed2c2f8252ccaa73b85",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": [
+          "gut_health"
+        ],
+        "reason": "随机双盲安慰剂对照试验直接研究功能性肠病成人的腹胀、排便后不适、肠道活动、生活质量、粪便菌群及代谢组，具有明确胃肠症状和肠道菌群终点。",
+        "confidence": 0.99,
+        "warnings": [],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 7,
+      "paper_task_id": "3b7f7f4b-9758-411b-ab7c-d3615c3c35a4",
+      "pmid": "42226670",
+      "input_sha256": "aba92c39480974a452eb6bf2ef3527c48537b8267017cd0662b6a27ee3a4011d",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": [
+          "gut_health"
+        ],
+        "reason": "随机双盲对照试验直接评价慢性便秘人群的每周排便次数、粪便性状、便秘评分、生活质量和肠道菌群变化，符合排便功能、胃肠道症状及肠道菌群研究范围。",
+        "confidence": 0.99,
+        "warnings": [],
+        "needs_human_review": false
+      }
+    }
+  ]
+}

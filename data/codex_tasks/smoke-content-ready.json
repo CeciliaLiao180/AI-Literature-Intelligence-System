@@ -1,0 +1,191 @@
+{
+  "package_version": "1.0",
+  "generated_at": "2026-09-01T08:32:01.257414Z",
+  "selection": {
+    "required_state": "CONTENT_READY",
+    "pipeline_run_id": null,
+    "limit": null
+  },
+  "prompt_spec": {
+    "path": "D:/AAA gpt files/AI-Literature-Intelligence-System/config/prompts.v1.yaml",
+    "sha256": "4c33ebb446335e6d39ef721e15127b40fe0b68166afca09b0b650e8312067a77",
+    "input_contract_version": "1.0",
+    "workflow": [
+      "paper_relevance",
+      "paper_analysis",
+      "paper_classification",
+      "report_composition",
+      "report_quality_gate"
+    ]
+  },
+  "execution_mode": "codex_manual",
+  "state_policy": {
+    "database_is_read_only_for_export": true,
+    "export_does_not_advance_task_state": true,
+    "formal_publish_requires_human_confirmation": true
+  },
+  "task_count": 1,
+  "tasks": [
+    {
+      "paper_task_id": "c69e2aa3-22f8-4d54-9887-21781ddbafce",
+      "pipeline_run_id": "661c7a09-6cc2-44ac-9177-6a602e337f7d",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "317d65130bd60974a50175c07a1a37b145cc9f4df60e738c77c5ca8f489f96ce",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 1,
+          "title": "Synergistic effects of binary probiotics and oat β-glucan on brown yogurt quality: Physicochemical, flavor, sensory, and metabolomic evaluation.",
+          "abstract": "In this study, synbiotic brown yogurt was developed using Lactiplantibacillus plantarum S58, Lacticaseibacillus rhamnosus T53, and oat β-glucan. Compared to the CON group, the synbiotic groups exhibited significantly elevated levels of key flavor compounds, including 2-decanone, benzoic acid, and octanoic acid. Sensory evaluation indicated that synbiotic incorporation did not adversely affect overall sensory quality. Metabolomic analysis revealed a significant accumulation of beneficial metabolites, such as benzoic acid, arginine, and trans-cinnamic acid, which may contribute to the improvement of both flavor characteristics and functional properties. Notably, the synbiotic system comprising binary probiotics and oat β-glucan produced the most pronounced improvement in the quality of brown yogurt. Overall, the synergistic fermentation of binary probiotics with oat β-glucan enhanced the flavor profile of brown yogurt and promoted the formation of beneficial metabolites, providing a scientific basis for developing high-quality functional yogurts.",
+          "journal": "Food microbiology",
+          "publication_date": "2027-01-01",
+          "identifiers": {
+            "pmid": "42668201",
+            "doi": "10.1016/j.fm.2026.105264"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Zihan Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Xu Zhou",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Chen Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Hongwei Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China; Chinese-Hungarian Cooperative Research Centre for Food Science, Chongqing, 400715, China."
+              },
+              {
+                "name": "Zsolt Zalán",
+                "orcid": null,
+                "affiliation": "Food Science and Technology Institute, Hungarian University of Agriculture and Life Sciences, Buda Campus, Herman Ottó str. 15, Budapest, 1022, Hungary."
+              },
+              {
+                "name": "Huayi Suo",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China; Chinese-Hungarian Cooperative Research Centre for Food Science, Chongqing, 400715, China. Electronic address: birget@swu.edu.cn."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "5389f2d1-dc72-4f67-9c19-62bddf2b72f0",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-01T07:25:16.840224Z",
+          "content_sha256": "4a10f9818d54bbb1570b28c0c9dc3f4f57a892cb0f6b6f1a18aa323bd97e70db",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "In this study, synbiotic brown yogurt was developed using Lactiplantibacillus plantarum S58, Lacticaseibacillus rhamnosus T53, and oat β-glucan. Compared to the CON group, the synbiotic groups exhibited significantly elevated levels of key flavor compounds, including 2-decanone, benzoic acid, and octanoic acid. Sensory evaluation indicated that synbiotic incorporation did not adversely affect overall sensory quality. Metabolomic analysis revealed a significant accumulation of beneficial metabolites, such as benzoic acid, arginine, and trans-cinnamic acid, which may contribute to the improvement of both flavor characteristics and functional properties. Notably, the synbiotic system comprising binary probiotics and oat β-glucan produced the most pronounced improvement in the quality of brown yogurt. Overall, the synergistic fermentation of binary probiotics with oat β-glucan enhanced the flavor profile of brown yogurt and promoted the formation of beneficial metabolites, providing a scientific basis for developing high-quality functional yogurts."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": null
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+          "https://doi.org/10.1016/j.fm.2026.105264"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42668201",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "checked_at": "2026-09-01T07:25:20.364186Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1016/j.fm.2026.105264",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1016/j.fm.2026.105264",
+            "checked_at": "2026-09-01T07:25:20.364186Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "checked_at": "2026-09-01T07:25:20.364186Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    }
+  ]
+}

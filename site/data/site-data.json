@@ -1,0 +1,1392 @@
+{
+  "schema_version": "2.0",
+  "generated_at": "2026-09-07T07:09:47.642987Z",
+  "publication_status": "preview",
+  "data_mode": "cumulative_database",
+  "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+  "latest_edition_date": "2026-09-07",
+  "site": {
+    "title": "科研文献速递",
+    "subtitle": "面向保健食品、生物科技与生命科学研发人员的文献情报预览",
+    "config_version": "2.0",
+    "output_directory": "site",
+    "home_latest_per_domain": 3,
+    "archive": {
+      "directory": "archive",
+      "date_format": "%Y-%m-%d"
+    }
+  },
+  "summary": {
+    "retrieved": 7,
+    "included": 4,
+    "excluded": 2,
+    "manual_review": 1,
+    "quality_pass": 4,
+    "quality_review": 0,
+    "quality_reject": 0
+  },
+  "domains": [
+    {
+      "code": "gut_health",
+      "slug": "gut-health",
+      "aliases": [],
+      "name": "肠道/胃肠健康",
+      "short_name": "肠道健康",
+      "description": "关注胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能及胃肠道症状相关研究。",
+      "status": "active",
+      "paper_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_count": 4
+    },
+    {
+      "code": "immune_modulation",
+      "slug": "immune",
+      "aliases": [
+        "immune-modulation"
+      ],
+      "name": "免疫调节",
+      "short_name": "免疫调节",
+      "description": "预留免疫功能、免疫应答及免疫相关研发文献分类。",
+      "status": "reserved",
+      "paper_ids": [],
+      "paper_count": 0
+    },
+    {
+      "code": "healthy_aging",
+      "slug": "anti-aging",
+      "aliases": [
+        "healthy-aging"
+      ],
+      "name": "延缓衰老/抗衰老",
+      "short_name": "健康衰老",
+      "description": "预留健康寿命、衰老机制及相关干预研究文献分类。",
+      "status": "reserved",
+      "paper_ids": [],
+      "paper_count": 0
+    },
+    {
+      "code": "musculoskeletal_health",
+      "slug": "musculoskeletal",
+      "aliases": [
+        "musculoskeletal-health"
+      ],
+      "name": "肌骨/筋骨关节健康",
+      "short_name": "肌骨健康",
+      "description": "预留肌肉、骨骼、关节及运动功能相关研究文献分类。",
+      "status": "reserved",
+      "paper_ids": [],
+      "paper_count": 0
+    }
+  ],
+  "papers": [
+    {
+      "paper_id": 4,
+      "paper_task_id": "aa9e8164-2034-4353-8926-c3cb389662d6",
+      "title": "Akkermansia muciniphila outer membrane protein Amuc_0904 modulates intestinal homeostasis by promoting goblet cell differentiation.",
+      "ai_title": "Akkermansia外膜蛋白调节小鼠肠屏障的机制线索",
+      "authors": [
+        {
+          "name": "Liu Yang",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Jianming Yang",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Xueting Kong",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Qiang Tang",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Ruofan Song",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Kaichen Zhou",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Xiao-Jing Quan",
+          "orcid": null,
+          "affiliation": "State Key Laboratory of Medicinal Chemical Biology and College of Pharmacy, Tianjin Key Laboratory of Molecular Drug Research, Nankai University, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Qiang Zhang",
+          "orcid": null,
+          "affiliation": "Department of General Surgery, Tianjin Beichen Hospital, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Yajie Zhang",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Chunze Zhang",
+          "orcid": null,
+          "affiliation": "Department of Colorectal Surgery, Tianjin Union Medical Center, Tianjin Institute of Coloproctology, Tianjin, China."
+        },
+        {
+          "name": "Geng Pei",
+          "orcid": null,
+          "affiliation": "Department of Pathology, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center of Cancer, Key Laboratory of Cancer Prevention and Therapy, Tianjin, Tianjin's Clinical Research Center of Cancer, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Chunhui Miao",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Kaiyuan Yu",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Zhi-Song Zhang",
+          "orcid": null,
+          "affiliation": "State Key Laboratory of Medicinal Chemical Biology and College of Pharmacy, Tianjin Key Laboratory of Molecular Drug Research, Nankai University, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Zhi Yao",
+          "orcid": null,
+          "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+        },
+        {
+          "name": "Quan Wang",
+          "orcid": "0000-0003-4997-7173",
+          "affiliation": "Institute of Medicinal Biotechnology, Chinese Academy of Medical Sciences and Peking Union Medical College, State Key Laboratory of Experimental Hematology, Beijing, People's Republic of China."
+        }
+      ],
+      "journal": "Gut microbes",
+      "journal_metric": {
+        "canonical_name": "Gut Microbes",
+        "aliases": [
+          "Gut microbes"
+        ],
+        "impact_factor": 15.3,
+        "metric_year": 2025,
+        "source_name": "Taylor & Francis",
+        "source_url": "https://www.tandfonline.com/journals/kgmi20/about-this-journal"
+      },
+      "publication_date": "2026-12-31",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-12-31",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Dec",
+          "day": 31,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2025",
+            "month": "12",
+            "day": "22"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "medline",
+            "year": "2025",
+            "month": "12",
+            "day": "22",
+            "hour": "12",
+            "minute": "56"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2025",
+            "month": "12",
+            "day": "22",
+            "hour": "6",
+            "minute": "29"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2025",
+            "month": "12",
+            "day": "22",
+            "hour": "5",
+            "minute": "52"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2025",
+            "month": "12",
+            "day": "22",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": true,
+        "warnings": [
+          {
+            "code": "FUTURE_PUBLICATION_DATE",
+            "message": "归一化日期晚于站点生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+          }
+        ]
+      },
+      "identifiers": {
+        "pmid": "41424360",
+        "doi": "10.1080/19490976.2025.2587405",
+        "pmcid": "PMC12810044"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+        "https://doi.org/10.1080/19490976.2025.2587405"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "animal",
+        "evidence_level": "animal",
+        "background": "Akkermansia muciniphila被视为潜在益生菌，但其调节肠道稳态的具体分子机制仍需研究。",
+        "objective": "研究A. muciniphila及其外膜蛋白Amuc_0904对杯状细胞分化、肠屏障、肠道稳态及小鼠结肠炎相关表型的影响和机制。",
+        "methods": {
+          "design": "小鼠疾病模型结合上皮细胞分子机制研究，评价菌体定植、外膜蛋白Amuc_0904及表达该蛋白的工程益生菌。",
+          "intervention": "A. muciniphila定植、Amuc_0904蛋白以及表达Amuc_0904的工程化Escherichia coli Nissle 1917。",
+          "comparator": null,
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "结肠炎恢复、小鼠结肠炎及结肠炎相关结直肠癌模型；摘要未报告具体品系和数量。",
+          "species": "小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "A. muciniphila在结肠炎恢复期增加，其定植增加小鼠杯状细胞并保护肠屏障。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Here, we discovered that A. muciniphila was dramatically increased during colitis recovery, and its colonization greatly increased goblet cells to protect the intestinal barrier in mice.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "外膜蛋白Amuc_0904被识别为可诱导杯状细胞分化的活性成分。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Amuc_0904, a previously uncharacterized A. muciniphila outer membrane protein, was identified to induce goblet cell differentiation.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "Amuc_0904与MET相互作用并降低其磷酸化，同时伴随Wnt/β-catenin信号降低及氧化磷酸化和线粒体功能增强。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Mechanistically, Amuc_0904 directly interacted with MET and decreased its phosphorylation in epithelia, leading to decreased Wnt/β-catenin signaling and enhanced oxidative phosphorylation and mitochondrial function.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "Amuc_0904及表达该蛋白的工程益生菌在小鼠中表现出对结肠炎和结肠炎相关结直肠癌的保护作用。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Furthermore, Amuc_0904 and engineered probiotic Escherichia coli Nissle 1917 expressing Amuc_0904 were demonstrated to protect mice from colitis and colitis-associated colorectal cancer.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "研究为小鼠和机制实验，不能据此判断人体安全性或功效。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未报告动物数量、品系、干预剂量、对照设置和实验周期。",
+            "basis": "inferred"
+          },
+          {
+            "text": "当前输入仅为摘要，无法评价完整方法、重复实验和效应大小。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "Amuc_0904可作为肠屏障和杯状细胞方向的候选后生元或工程菌功能模块开展进一步验证。",
+            "evidence_boundary": "候选价值仅来自小鼠及机制结果，尚无人体证据。"
+          },
+          {
+            "text": "后续开发应分别验证蛋白本体、天然菌和工程菌的剂量反应、安全性及可重复性。",
+            "evidence_boundary": "摘要未提供剂量、安全性和人体转化数据。"
+          }
+        ],
+        "confidence": 0.95,
+        "warnings": [
+          "全部功效证据属于动物或机制研究。",
+          "摘要未报告动物数量、剂量和周期。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "Akkermansia外膜蛋白调节小鼠肠屏障的机制线索",
+        "research_background": "Akkermansia muciniphila被视为潜在益生菌，但其影响肠道稳态和屏障的具体活性分子仍需识别。",
+        "research_objective": "评价A. muciniphila外膜蛋白Amuc_0904对杯状细胞分化、肠屏障及小鼠结肠炎相关表型的影响，并探索相关信号机制。",
+        "study_design": "动物与机制研究。研究涉及A. muciniphila定植、Amuc_0904蛋白以及表达Amuc_0904的工程化Escherichia coli Nissle 1917；摘要未报告动物数量、剂量、对照和周期。",
+        "core_results": [
+          "A. muciniphila在结肠炎恢复期增加，其定植增加小鼠杯状细胞并保护肠屏障。",
+          "Amuc_0904被识别为可诱导杯状细胞分化的外膜蛋白。",
+          "摘要报告Amuc_0904与MET相互作用并影响Wnt/β-catenin、氧化磷酸化和线粒体功能相关信号。",
+          "Amuc_0904及表达该蛋白的工程益生菌在小鼠结肠炎和结肠炎相关结直肠癌模型中表现出保护作用。"
+        ],
+        "limitations": [
+          "结果来自小鼠及机制实验，不能外推为人体功效。",
+          "摘要未报告动物数量、品系、剂量、对照和周期。",
+          "仅依据摘要无法评价完整方法和效应大小。"
+        ],
+        "rd_implications": [
+          "Amuc_0904可作为肠屏障和杯状细胞方向的候选后生元或工程菌功能模块进行验证。",
+          "进一步研发需补充剂量反应、安全性、重复性和人体转化研究。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+          "https://doi.org/10.1080/19490976.2025.2587405"
+        ],
+        "confidence": 0.95,
+        "warnings": [
+          "本研究为动物及机制证据，不代表人体功效。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "报告已明确标注动物证据边界，未作人体功效表述。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b031d6db-5d87-4506-96c6-5364ad63606a"
+      ],
+      "latest_edition_date": "2026-09-07"
+    },
+    {
+      "paper_id": 5,
+      "paper_task_id": "57ffb1ba-8850-48ea-a5cd-b1a98d84434c",
+      "title": "Anti-inflammatory and barrier-protective effects of metabolites from Lactobacillus co-fermentation with linoleic acid and human fecal microbiota.",
+      "ai_title": "乳杆菌共发酵代谢物的肠屏障临床前信号",
+      "authors": [
+        {
+          "name": "Chunxue Jin",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Xiaoxi Gao",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Fan Zhang",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Yanli Liu",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Jiang Yu",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Guangqing Mu",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+        },
+        {
+          "name": "Yanfeng Tuo",
+          "orcid": null,
+          "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China. Electronic address: tuoyf@dlpu.edu.cn."
+        }
+      ],
+      "journal": "Food research international (Ottawa, Ont.)",
+      "journal_metric": {
+        "canonical_name": "Food Research International",
+        "aliases": [
+          "Food research international (Ottawa, Ont.)"
+        ],
+        "impact_factor": 8.8,
+        "metric_year": null,
+        "source_name": "Elsevier ScienceDirect",
+        "source_url": "https://www.sciencedirect.com/browse/calls-for-papers?subject=food-science"
+      },
+      "publication_date": "2026-09-30",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-09-30",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Sep",
+          "day": 30,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "06",
+            "day": "06"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "2",
+            "day": "9",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "5",
+            "day": "28",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "6",
+            "day": "1",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "7",
+            "day": "7",
+            "hour": "18",
+            "minute": "55"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "7",
+            "day": "7",
+            "hour": "0",
+            "minute": "39"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "7",
+            "day": "6",
+            "hour": "20",
+            "minute": "56"
+          }
+        ],
+        "is_future_date": true,
+        "warnings": [
+          {
+            "code": "FUTURE_PUBLICATION_DATE",
+            "message": "归一化日期晚于站点生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+          }
+        ]
+      },
+      "identifiers": {
+        "pmid": "42409547",
+        "doi": "10.1016/j.foodres.2026.119607"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+        "https://doi.org/10.1016/j.foodres.2026.119607"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "乳杆菌与亚油酸和人粪菌群共发酵可产生富含共轭亚油酸的代谢物，但这些复合代谢物对肠道炎症和屏障的功能影响尚不清楚。",
+        "objective": "评价乳杆菌、亚油酸与人粪菌群共发酵代谢物对菌群组成、肠道炎症和屏障功能的影响，并观察富含共轭亚油酸代谢物的相关作用。",
+        "methods": {
+          "design": "整合健康人粪菌群体外发酵、LPS诱导的RAW264.7/Caco-2共培养模型，以及抗生素处理后的DSS诱导小鼠结肠炎模型。",
+          "intervention": "亚油酸与Limosilactobacillus reuteri M94或Lactiplantibacillus plantarum DPUL-77及人粪菌群共发酵产生的代谢物。",
+          "comparator": null,
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "健康人来源粪菌群、RAW264.7/Caco-2细胞共培养体系和DSS诱导结肠炎小鼠。",
+          "species": "人源菌群、细胞系和小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "与两种乳杆菌之一和亚油酸共发酵可恢复粪菌发酵体系的微生物组成，并使共轭亚油酸产量提高6–7倍。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "we found that co-fermentation with LA and either Limosilactobacillus reuteri M94 or Lactiplantibacillus plantarum DPUL-77 significantly recovered microbial composition and markedly enhanced CLA production (6-7-fold, p < 0.0001) in the fecal fermentation systems.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "在体外和体内模型中，共发酵代谢物降低促炎细胞因子表达60–80%，并使IL-10水平提高3–4倍。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Both in vitro and in vivo, co-fermentation metabolites reduced pro-inflammatory cytokine expression by 60-80% (p < 0.001) and increased interleukin-10 (IL-10) levels by 3-4-fold (p < 0.01).",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "共发酵代谢物在两类模型中改善了紧密连接蛋白表达、上皮完整性和通透性相关的肠屏障指标。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Moreover, these metabolites improved intestinal barrier function, as evidenced by enhanced tight junction protein expression, restored epithelial integrity and reduced permeability in both models (p < 0.05-0.001), with greater effects observed in the Lactobacillus + LA groups.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "富含共轭亚油酸的代谢物表现出更强活性，但摘要明确指出无法确定共轭亚油酸的独立贡献。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Notably, CLA-enriched metabolites exhibited enhanced biological efficacy; however, the specific contribution of CLA to these effects cannot be conclusively determined.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "无法从复合代谢物效应中确定共轭亚油酸的独立贡献。",
+            "basis": "reported"
+          },
+          {
+            "text": "证据来自体外发酵、细胞和小鼠模型，不能解释为人体功效。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未报告样本数量、对照细节和实验周期。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "共发酵代谢物可作为肠道炎症和屏障方向的候选后生元组合继续开展成分拆分和活性验证。",
+            "evidence_boundary": "活性来自复合代谢物及临床前模型，尚不能归因于共轭亚油酸或外推至人体。"
+          },
+          {
+            "text": "后续研究应设置单菌株、亚油酸、共轭亚油酸和完整共发酵代谢物对照，以识别关键贡献成分。",
+            "evidence_boundary": "摘要明确指出共轭亚油酸的特异贡献尚不能确定。"
+          }
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "研究包含体外和动物模型，没有人体干预证据。",
+          "摘要未报告样本数量和实验周期。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "乳杆菌共发酵代谢物的肠屏障临床前信号",
+        "research_background": "乳杆菌与亚油酸和人粪菌群共发酵可产生复合代谢物，但其对肠道炎症和屏障功能的影响及关键贡献成分仍需研究。",
+        "research_objective": "评价两种乳杆菌参与的共发酵代谢物对菌群组成、炎症和肠屏障指标的影响。",
+        "study_design": "临床前混合研究，包括健康人粪菌群体外发酵、RAW264.7/Caco-2共培养模型和DSS诱导小鼠结肠炎模型。摘要未报告样本数量、对照细节和周期。",
+        "core_results": [
+          "乳杆菌与亚油酸共发酵恢复了粪菌发酵体系的微生物组成，并使共轭亚油酸产量提高6–7倍。",
+          "在体外和体内模型中，共发酵代谢物使促炎细胞因子表达降低60–80%，IL-10水平提高3–4倍。",
+          "代谢物改善了紧密连接蛋白表达、上皮完整性和通透性相关指标。",
+          "富含共轭亚油酸的代谢物表现出更强活性，但无法确定共轭亚油酸的独立贡献。"
+        ],
+        "limitations": [
+          "复合代谢物中共轭亚油酸的独立贡献尚不明确。",
+          "结果来自体外和动物模型，不能外推为人体功效。",
+          "摘要未报告样本数量、完整对照设置和实验周期。"
+        ],
+        "rd_implications": [
+          "共发酵代谢物可作为肠道屏障方向的候选后生元组合开展后续拆分和验证。",
+          "后续应通过成分和对照矩阵识别真正贡献活性的代谢物，并补充人体研究。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+          "https://doi.org/10.1016/j.foodres.2026.119607"
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "所有结果均为体外或动物证据，不代表人体功效。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "报告已明确临床前证据边界及共轭亚油酸归因限制。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b031d6db-5d87-4506-96c6-5364ad63606a"
+      ],
+      "latest_edition_date": "2026-09-07"
+    },
+    {
+      "paper_id": 6,
+      "paper_task_id": "00467fb7-237b-49de-bc0b-e62493a7908b",
+      "title": "Heyndrickxia coagulans IDCC 1201 Alters Gut Microbiome and Metabolome in Patients with Functional Bowel Disorders.",
+      "ai_title": "凝结芽孢杆菌干预功能性肠病的多组学观察",
+      "authors": [
+        {
+          "name": "Hyeon Ji Jeon",
+          "orcid": null,
+          "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+        },
+        {
+          "name": "Jin Seok Moon",
+          "orcid": "0000-0003-0375-7175",
+          "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+        },
+        {
+          "name": "Hye Min Jeong",
+          "orcid": null,
+          "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+        },
+        {
+          "name": "Won Yeong Bang",
+          "orcid": "0000-0002-2788-1157",
+          "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+        },
+        {
+          "name": "Hayoung Kim",
+          "orcid": null,
+          "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+        },
+        {
+          "name": "Donggyu Kim",
+          "orcid": null,
+          "affiliation": "Department of Microbiology, College of Medicine, Inha University, Incheon 22212, Republic of Korea."
+        },
+        {
+          "name": "Minhye Shin",
+          "orcid": null,
+          "affiliation": "Department of Microbiology, College of Medicine, Inha University, Incheon 22212, Republic of Korea."
+        },
+        {
+          "name": "Jungwoo Yang",
+          "orcid": "0000-0003-3836-729X",
+          "affiliation": "Department of Microbiology, College of Medicine, Dongguk University, 123 Dongdae-ro, Gyeongju 38066, Republic of Korea."
+        },
+        {
+          "name": "Jongbeom Shin",
+          "orcid": null,
+          "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Inha University Hospital, Inha University School of Medicine, Incheon 22212, Republic of Korea."
+        },
+        {
+          "name": "Young Hoon Jung",
+          "orcid": "0000-0002-0781-3608",
+          "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+        }
+      ],
+      "journal": "Nutrients",
+      "journal_metric": {
+        "canonical_name": "Nutrients",
+        "aliases": [
+          "Nutrients"
+        ],
+        "impact_factor": 5.8,
+        "metric_year": 2025,
+        "source_name": "MDPI",
+        "source_url": "https://www.mdpi.com/journal/nutrients/imprint"
+      },
+      "publication_date": "2026-07-29",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-07-29",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Jul",
+          "day": 29,
+          "medline_date": null
+        },
+        "publication_model": "Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "07",
+            "day": "29"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "5",
+            "day": "28",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "7",
+            "day": "22",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "7",
+            "day": "24",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "8",
+            "day": "13",
+            "hour": "5",
+            "minute": "36"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "8",
+            "day": "13",
+            "hour": "5",
+            "minute": "35"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "8",
+            "day": "13",
+            "hour": "1",
+            "minute": "2"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "7",
+            "day": "29",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42588089",
+        "doi": "10.3390/nu18152466",
+        "pmcid": "PMC13467927"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+        "https://doi.org/10.3390/nu18152466"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "randomized_controlled_trial",
+        "evidence_level": "human_interventional",
+        "background": "功能性肠病是会影响生活质量的慢性胃肠道疾病，益生菌可能通过调节肠道菌群和代谢物影响相关症状。",
+        "objective": "评价Heyndrickxia coagulans IDCC 1201对功能性肠病成人胃肠症状、生活质量、排便活动、粪便菌群和代谢组的影响。",
+        "methods": {
+          "design": "随机、双盲、安慰剂对照试验；通过IBS症状严重程度、生活质量、排便活动、16S rRNA基因测序和气相色谱-质谱代谢组学进行评价。",
+          "intervention": "Heyndrickxia coagulans IDCC 1201（COA 1201）。",
+          "comparator": "安慰剂。",
+          "duration": "8周。"
+        },
+        "sample": {
+          "size": null,
+          "population": "患有功能性肠病的成年人。",
+          "species": "人类。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "两组症状均较基线改善，但COA 1201组在腹胀、排便后不适和IBS生活质量身体形象维度表现出更大的改善。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Both groups showed improvement from baseline, but COA 1201 produced greater symptom relief, particularly in abdominal bloating, post-defecation discomfort, and the body image domain of IBS-QOL.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "COA 1201组富集了与糖分解和短链脂肪酸产生相关的部分菌群，而安慰剂组的Clostridium leptum增加。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Fecal microbiome profiling revealed modest changes in global diversity, yet taxa linked to saccharolytic activity and short-chain fatty acid production-including Ruminococcus bromii, Agathobacter rectalis, and Bifidobacterium-were enriched in participants receiving COA 1201, whereas Clostridium leptum increased in those receiving a placebo.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "两组呈现不同的非靶向代谢组特征，丙氨酸和脯氨酸表现出时间相关变化，色氨酸、乳酸和植物鞘氨醇与COA 1201处理相关。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Untargeted metabolomics demonstrated distinct metabolic signatures between groups, confirmed by supervised partial least squares discriminant analysis.",
+                "support_level": "direct"
+              },
+              {
+                "section_id": "abstract",
+                "quote": "Alanine and proline emerged as time-dependent metabolites, while tryptophan, lactic acid, and phytosphingosine were specifically associated with COA 1201 treatment.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "摘要未报告随机分组样本量，无法从当前输入判断统计效能或失访情况。",
+            "basis": "inferred"
+          },
+          {
+            "text": "两组均较基线改善，且摘要将菌群整体多样性变化描述为有限。",
+            "basis": "reported"
+          },
+          {
+            "text": "代谢物结果为探索性筛选，当前输入不足以确认其与症状变化之间的因果关系。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "该菌株可作为功能性肠病方向的候选研发对象，后续项目可同时设置症状、排便、菌群和代谢物终点。",
+            "evidence_boundary": "仅反映该摘要报告的8周人体试验结果，尚不能推及其他菌株、剂量或人群。"
+          },
+          {
+            "text": "菌群和代谢组信号可用于提出作用路径假设，但应在独立试验中预先设定并验证。",
+            "evidence_boundary": "当前摘要报告的是组间关联及探索性代谢物，不足以建立介导机制。"
+          }
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "摘要未报告样本量。",
+          "分析仅基于PubMed摘要，未核对全文。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "凝结芽孢杆菌干预功能性肠病的多组学观察",
+        "research_background": "功能性肠病常伴随腹胀、排便不适和生活质量下降。该研究关注一种凝结芽孢杆菌干预能否同步影响症状、肠道菌群和代谢物。",
+        "research_objective": "评价COA 1201对功能性肠病成人胃肠症状、生活质量、排便活动以及粪便菌群和代谢组的影响。",
+        "study_design": "随机、双盲、安慰剂对照人体试验。参与者接受COA 1201或安慰剂8周，并通过症状量表、生活质量、排便指标、16S rRNA基因测序和代谢组学进行评价；摘要未报告样本量。",
+        "core_results": [
+          "两组均较基线改善，但COA 1201组在腹胀、排便后不适和生活质量身体形象维度显示更大的症状改善。",
+          "COA 1201组富集了部分与糖分解和短链脂肪酸产生相关的菌群；摘要同时指出整体多样性变化有限。",
+          "非靶向代谢组显示组间特征差异，若干氨基酸及相关代谢物与时间或COA 1201处理相关。"
+        ],
+        "limitations": [
+          "摘要未报告样本量、失访和统计效能信息。",
+          "两组均有基线后改善，菌群整体多样性变化有限。",
+          "代谢物结果为探索性关联，不能据此确认症状改善机制。"
+        ],
+        "rd_implications": [
+          "可将该菌株视为功能性肠病候选研发对象，并考虑同步布局症状、排便、菌群和代谢组终点。",
+          "菌群与代谢物信号更适合用于提出后续验证假设，不宜直接作为已确定的作用机制。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+          "https://doi.org/10.3390/nu18152466"
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "当前内容仅依据PubMed摘要。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.97,
+        "issues": [],
+        "confidence": 0.97,
+        "warnings": [
+          "样本量未在摘要中报告，预览已明确标注。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b031d6db-5d87-4506-96c6-5364ad63606a"
+      ],
+      "latest_edition_date": "2026-09-07"
+    },
+    {
+      "paper_id": 7,
+      "paper_task_id": "3b7f7f4b-9758-411b-ab7c-d3615c3c35a4",
+      "title": "Synbiotic Supplementation With Heyndrickxia coagulans TBC169 Improves Chronic Constipation in Middle-Aged and Elderly.",
+      "ai_title": "合生元改善中老年慢性便秘的随机对照证据",
+      "authors": [
+        {
+          "name": "Xiaoni Zhou",
+          "orcid": null,
+          "affiliation": "Department of Obstetrics & Gynecology, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+        },
+        {
+          "name": "Canhui Guo",
+          "orcid": null,
+          "affiliation": "Department of Geriatrics, the Second Affiliated Hospital of Nanchang University, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Gang Hu",
+          "orcid": null,
+          "affiliation": "School of Life Sciences, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Leiping Ding",
+          "orcid": null,
+          "affiliation": "Nanchang University Queen Mary School, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Tingting Zou",
+          "orcid": null,
+          "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Mei Wang",
+          "orcid": null,
+          "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Wenjie Xiong",
+          "orcid": null,
+          "affiliation": "National Engineering Research Center for Bioengineering Drugs and the Technologies, Jiangxi Province Key Laboratory of Bioengineering Drugs, Institute of Translational Medicine, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Wen Deng",
+          "orcid": null,
+          "affiliation": "Clinical Laboratory, Key Laboratory of Jingdezhen for Cellular and Molecular Medicine, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+        },
+        {
+          "name": "Jing Wei",
+          "orcid": null,
+          "affiliation": "National Engineering Research Center for Bioengineering Drugs and the Technologies, Jiangxi Province Key Laboratory of Bioengineering Drugs, Institute of Translational Medicine, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Jiangqing Yu",
+          "orcid": null,
+          "affiliation": "Department of Respiratory Medicine, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+        },
+        {
+          "name": "Chunbo Zhang",
+          "orcid": "0000-0001-9618-9415",
+          "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Huaijun Tu",
+          "orcid": null,
+          "affiliation": "Department of Geriatrics, the Second Affiliated Hospital of Nanchang University, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+        },
+        {
+          "name": "Tingtao Chen",
+          "orcid": "0000-0002-0506-8536",
+          "affiliation": "Department of Obstetrics & Gynecology, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+        }
+      ],
+      "journal": "Biotechnology journal",
+      "journal_metric": {
+        "canonical_name": "Biotechnology Journal",
+        "aliases": [
+          "Biotechnology journal"
+        ],
+        "impact_factor": 3.7,
+        "metric_year": null,
+        "source_name": "Wiley Online Library",
+        "source_url": "https://analyticalsciencejournals.onlinelibrary.wiley.com/journal/18607314"
+      },
+      "publication_date": "2026-06-01",
+      "publication_date_precision": "month",
+      "publication_date_metadata": {
+        "normalized_date": "2026-06-01",
+        "precision": "month",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Jun",
+          "day": null,
+          "medline_date": null
+        },
+        "publication_model": "Print",
+        "citation_status": "MEDLINE",
+        "article_dates": [],
+        "history_dates": [
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "4",
+            "day": "30",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "2",
+            "day": "2",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "5",
+            "day": "15",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "6",
+            "day": "4",
+            "hour": "12",
+            "minute": "43"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "6",
+            "day": "2",
+            "hour": "6",
+            "minute": "36"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "6",
+            "day": "2",
+            "hour": "3",
+            "minute": "33"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "7",
+            "day": "20",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42226670",
+        "doi": "10.1002/biot.70250",
+        "pmcid": "PMC13383594"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+        "https://doi.org/10.1002/biot.70250"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "randomized_controlled_trial",
+        "evidence_level": "human_interventional",
+        "background": "慢性便秘在中老年人群中常见，并可能影响生活质量；该人群需要兼顾耐受性的干预选择。",
+        "objective": "评价含Heyndrickxia coagulans TBC169和膳食纤维的合生元作为辅助干预，对中老年慢性便秘结局、肠道菌群和耐受性的影响。",
+        "methods": {
+          "design": "随机、双盲、对照临床试验；评估排便次数、Bristol粪便性状、Wexner评分、便秘生活质量和干预后肠道菌群。",
+          "intervention": "含Heyndrickxia coagulans TBC169及膳食纤维的合生元。",
+          "comparator": "单独膳食纤维。",
+          "duration": null
+        },
+        "sample": {
+          "size": 140,
+          "population": "年龄不低于45岁的慢性便秘参与者。",
+          "species": "人类。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "与单独膳食纤维相比，合生元改善了每周排便次数、Bristol粪便评分、Wexner评分及便秘相关生活质量。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Compared with dietary fiber alone, the TBC169-based synbiotic significantly improved constipation outcomes, including increased weekly bowel movements (WBMs), higher Bristol stool scale (BSS) scores, and reduced Wexner and Patient Assessment of Constipation Quality of Life (PAC-QOL) scores.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "干预后合生元组的菌群多样性指标更高、群落组成不同，并观察到若干菌属的相对丰度差异。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Post-intervention gut microbiota profiling showed higher Shannon and Faith_PD diversity indices and distinct community composition in the synbiotic group compared with the dietary-fiber control group, along with higher relative abundance of Blautia, Akkermansia, Faecalibacterium, and Bacillus and lower relative abundance of Collinsella.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "由于缺少基线粪便样本，菌群差异只能作为探索性组间关联解释。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Because baseline faecal samples were not collected, these microbiota findings should be interpreted as exploratory between-group associations.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "该合生元总体耐受良好，报告的不良事件为轻度和短暂事件。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "The intervention was well-tolerated, with only mild, transient adverse events.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "未采集基线粪便样本，菌群结果只能解释为探索性组间关联。",
+            "basis": "reported"
+          },
+          {
+            "text": "产品同时含益生菌和纤维，观察结果不能归因于TBC169单一成分。",
+            "basis": "reported"
+          },
+          {
+            "text": "摘要未报告干预周期。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "合生元组合可作为中老年慢性便秘方向的候选方案，临床终点可优先覆盖排便频率、粪便性状、症状和生活质量。",
+            "evidence_boundary": "现有结果针对组合产品，不能拆分为单菌株TBC169的独立效果。"
+          },
+          {
+            "text": "后续菌群研究应设置基线采样并预先定义关键菌群终点，以支持纵向变化判断。",
+            "evidence_boundary": "当前菌群结果缺少基线，只能作为探索性组间信号。"
+          }
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "干预周期未在摘要中报告。",
+          "菌群分析缺少基线粪便样本。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "合生元改善中老年慢性便秘的随机对照证据",
+        "research_background": "慢性便秘会影响中老年人群的生活质量。该研究考察益生菌与膳食纤维组成的合生元能否在单独膳食纤维基础上改善便秘结局。",
+        "research_objective": "评价含TBC169和膳食纤维的合生元对慢性便秘临床指标、肠道菌群及耐受性的影响。",
+        "study_design": "随机、双盲、对照人体试验，共纳入140名年龄不低于45岁的慢性便秘参与者；合生元组与单独膳食纤维组比较。摘要未报告干预周期。",
+        "core_results": [
+          "与单独膳食纤维相比，合生元组的每周排便次数、Bristol粪便性状、Wexner评分和便秘相关生活质量均得到改善。",
+          "干预后合生元组表现出更高的部分菌群多样性指标和不同的群落组成，但由于缺少基线粪便样本，这些结果属于探索性组间关联。",
+          "干预总体耐受良好，摘要报告的不良事件为轻度和短暂事件。"
+        ],
+        "limitations": [
+          "缺少基线粪便样本，不能判断个体菌群的纵向变化。",
+          "合生元同时包含益生菌和纤维，不能将效果单独归因于TBC169。",
+          "摘要未报告干预周期。"
+        ],
+        "rd_implications": [
+          "该组合为中老年便秘方向提供了候选产品信号，可在后续研究中继续关注排便频率、粪便性状、症状和生活质量。",
+          "若希望建立菌群与临床改善的联系，后续试验应增加基线采样并预先设定菌群终点。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+          "https://doi.org/10.1002/biot.70250"
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "组合产品结果不能解释为单一菌株效果。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "预览已保留缺少基线菌群样本和组合归因限制。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b031d6db-5d87-4506-96c6-5364ad63606a"
+      ],
+      "latest_edition_date": "2026-09-07"
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "edition_date": "2026-09-07",
+      "edition_type": "weekly",
+      "title": "科研文献速递 2026-09-07",
+      "status": "draft",
+      "paper_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_count": 4
+    }
+  ],
+  "archives": [
+    {
+      "edition_date": "2026-09-07",
+      "slug": "2026-09-07",
+      "title": "科研文献速递 2026-09-07",
+      "batch_ids": [
+        "b031d6db-5d87-4506-96c6-5364ad63606a"
+      ],
+      "batch_statuses": [
+        "draft"
+      ],
+      "paper_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "paper_count": 4,
+      "domain_counts": {
+        "gut_health": 4,
+        "immune_modulation": 0,
+        "healthy_aging": 0,
+        "musculoskeletal_health": 0
+      }
+    }
+  ],
+  "screening_audit": {
+    "excluded": [
+      {
+        "paper_id": 2,
+        "paper_task_id": "986aeedb-0a27-4acd-aa63-8f9411b059b8",
+        "pmid": "42668201",
+        "decision": "irrelevant",
+        "relevance_score": 0.08,
+        "reason": "研究评价双益生菌与燕麦β-葡聚糖对褐色酸奶风味、理化性质、感官质量和代谢物形成的影响，未报告肠道或宿主健康终点，因此属于食品配方与发酵质量研究。"
+      },
+      {
+        "paper_id": 1,
+        "paper_task_id": "5df86dcc-15e4-4a4d-9b0b-e4d928909f27",
+        "pmid": "42668206",
+        "decision": "irrelevant",
+        "relevance_score": 0.03,
+        "reason": "研究聚焦益生菌发酵天麻过程中的微生物演替、代谢物变化和风味形成，结论用于调控产品风味；摘要未报告胃肠功能、肠道菌群、肠屏障、排便、胃肠症状或宿主健康结果。"
+      }
+    ],
+    "manual_review": [
+      {
+        "paper_id": 3,
+        "paper_task_id": "1142bbd4-6f3c-4991-8c5f-0414648cd78f",
+        "pmid": "42520140",
+        "decision": "uncertain",
+        "relevance_score": 0.48,
+        "reason": "研究在人群中评价益生菌补充对疫苗后体液免疫和感染相关指标的影响，但摘要没有报告胃肠道、肠道菌群或肠屏障终点。益生菌介导的宿主免疫效应是否纳入当前肠道健康领域边界不够明确，需人工确认。"
+      }
+    ]
+  },
+  "sources": {
+    "database_mode": "cumulative",
+    "publication_batch_count": 1,
+    "journal_metrics": {
+      "version": "1.0",
+      "metric_name": "Journal Impact Factor",
+      "retrieved_at": "2026-09-03",
+      "sha256": "83533f0e353a23e2d55ef51f4f7fe733d4dc6e26cdef3dd7c3fe3106d01c5772"
+    }
+  }
+}

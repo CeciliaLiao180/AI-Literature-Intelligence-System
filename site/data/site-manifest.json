@@ -1,0 +1,68 @@
+{
+  "alias_domain_pages": [
+    "domains/healthy-aging.html",
+    "domains/immune-modulation.html",
+    "domains/musculoskeletal-health.html"
+  ],
+  "archive_pages": [
+    "archive/2026-09-07/index.html"
+  ],
+  "batch_ids": [
+    "b031d6db-5d87-4506-96c6-5364ad63606a"
+  ],
+  "canonical_domain_pages": [
+    "domains/gut-health.html",
+    "domains/immune.html",
+    "domains/anti-aging.html",
+    "domains/musculoskeletal.html"
+  ],
+  "counts": {
+    "archives": 1,
+    "batches": 1,
+    "domains": 4,
+    "papers": 4
+  },
+  "data_mode": "cumulative_database",
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive/2026-09-07/index.html": "efb2ea4bd8fe761f44d6c5c393f14364daa49673605425cfec07def11489cd42",
+    "archive/index.html": "70613cfb832b468b13ddddd52762da2d12d75834e462d3de12b1586f496c444e",
+    "assets/favicon.svg": "abff76c2721de52cb130314ff8aa446788d0e8a30eb932db60630a9ccc09484d",
+    "assets/site.css": "eb4e47dc6cdb935b8b2214b43ab5e811ef867e35021448ed4f19a444ce323014",
+    "assets/site.js": "0943732e64e82f9370cda09093772c16b6c30667da52328f2f09a9b30be4bfe1",
+    "data/site-data.json": "6acead01ad98bbe527df79aa1a47f4ae5dc0230d74caff6aa60e56f70fc8e169",
+    "domains/anti-aging.html": "a9916021d073db4da4630192f0fec5c801924ee91a701306b35ffef8319a7ba5",
+    "domains/gut-health.html": "ad44a2efac19520d99a5f1d98465e516ed1c9ec0eaaeaa20313dc65e93e6cacc",
+    "domains/healthy-aging.html": "c0deaa05bbd0c9be330c98e8239627e3015c44d308e4f9567eef975d1e5f3652",
+    "domains/immune-modulation.html": "de3ea69c1e6057df2280bcfc37d91c0fabb25766130b9b59167a33fa44cd3c27",
+    "domains/immune.html": "464d16446d6b53ff574741a415670408c2b8f96a01a815d89778b063dbcc3208",
+    "domains/musculoskeletal-health.html": "b6e2fcd6b346ef0e030e3a3dc3cc3380f6a6da69590354020396846bc9400ade",
+    "domains/musculoskeletal.html": "39c0d4f2cce6a5982a1e84cb3f26fa967f396df6c7a8e3382d950f8726b46d8b",
+    "index.html": "70c45b7d401a6c59e26d5651345d7a07ff86e4c028d0d3f4061b7f50a0f19525",
+    "papers/4.html": "0a22df275f13ca18cd274174b02945910d2f84ef7206b80cd03e2e62a6ea7e8d",
+    "papers/5.html": "6aa3107dfc4739727c955829515307ddbd154fb3554c2bf395d13419d6f2af77",
+    "papers/6.html": "41250e8ee86a80c43a442bebe7958a72e7c9f9b238bdb2606457cf5f8fff2556",
+    "papers/7.html": "13875ed06d24db4e2f18de150e1f84c5189d416d1a9ec60ad0e51732a12b214e"
+  },
+  "generated_at": "2026-09-07T07:09:47.642987Z",
+  "latest_batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+  "latest_edition_date": "2026-09-07",
+  "paper_ids": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "publication_status": "preview",
+  "schema_version": "1.0",
+  "sources": {
+    "database_mode": "cumulative",
+    "journal_metrics": {
+      "metric_name": "Journal Impact Factor",
+      "retrieved_at": "2026-09-03",
+      "sha256": "83533f0e353a23e2d55ef51f4f7fe733d4dc6e26cdef3dd7c3fe3106d01c5772",
+      "version": "1.0"
+    },
+    "publication_batch_count": 1
+  }
+}

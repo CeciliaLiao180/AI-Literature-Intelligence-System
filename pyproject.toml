@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-literature-intelligence-system"
+version = "0.1.0"
+description = "MVP pipeline for verified scientific-literature intelligence."
+requires-python = ">=3.11"
+dependencies = [
+  "SQLAlchemy>=2.0,<3.0",
+]
+
+[project.scripts]
+literature-db-init = "literature_intelligence.db.init_db:main"
+literature-ingest = "literature_intelligence.pipeline.ingestion:main"
+literature-content-ready = "literature_intelligence.pipeline.content_readiness:main"
+literature-export-codex-tasks = "literature_intelligence.pipeline.codex_task_export:main"
+literature-sync-domains = "literature_intelligence.db.sync_domains:main"
+literature-validate-codex-screening = "literature_intelligence.pipeline.codex_screening:main"
+literature-render-codex-preview = "literature_intelligence.pipeline.codex_mvp_preview:main"
+literature-import-codex-results = "literature_intelligence.pipeline.codex_results_import:main"
+literature-generate-static-site = "literature_intelligence.pipeline.static_site:main"
+literature-validate-site = "literature_intelligence.pipeline.site_artifact:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

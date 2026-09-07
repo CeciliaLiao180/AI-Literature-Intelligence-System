@@ -1,0 +1,1865 @@
+{
+  "package_version": "1.0",
+  "generated_at": "2026-09-02T06:19:04.921814Z",
+  "batch": {
+    "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+    "source": "pubmed",
+    "required_state": "CONTENT_READY",
+    "pipeline_run_ids": [
+      "b031d6db-5d87-4506-96c6-5364ad63606a"
+    ],
+    "task_count": 7,
+    "generated_at": "2026-09-02T06:19:04.921814Z"
+  },
+  "domain": {
+    "code": "gut_health",
+    "name_zh": "肠道健康",
+    "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+  },
+  "selection": {
+    "required_state": "CONTENT_READY",
+    "domain_code": "gut_health",
+    "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+    "limit": null
+  },
+  "prompt_spec": {
+    "path": "D:/AAA gpt files/AI-Literature-Intelligence-System/config/prompts.v1.yaml",
+    "sha256": "4c33ebb446335e6d39ef721e15127b40fe0b68166afca09b0b650e8312067a77",
+    "input_contract_version": "1.0",
+    "workflow": [
+      "paper_relevance",
+      "paper_analysis",
+      "paper_classification",
+      "report_composition",
+      "report_quality_gate"
+    ]
+  },
+  "execution_mode": "codex_manual",
+  "state_policy": {
+    "database_is_read_only_for_export": true,
+    "export_does_not_advance_task_state": true,
+    "formal_publish_requires_human_confirmation": true
+  },
+  "task_count": 7,
+  "tasks": [
+    {
+      "paper_task_id": "5df86dcc-15e4-4a4d-9b0b-e4d928909f27",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "9bcc5bf1ea0440b0fead9422ca4d71ef9f136b2b51446dd72143bc540297e330",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 1,
+          "title": "Multi-omics integration deciphered microbial and metabolite dynamics during flavor development of probiotic-fermented Gastrodia elata Blume.",
+          "abstract": "This study examined the succession of metabolites and microorganisms during the fermentation of Gastrodia elata Blume (GE) and their interrelationships. A total of 739 volatile compounds (VCs) were identified, with four recognized as key VCs: dimethyl disulfide, dimethyl trisulfide, 2-nonenal, and damascenone. The dominant bacteria in the prime fermentation liquid (PFL) and secondary fermentation liquid (SFL) stages exhibited dynamic changes influenced by total acid, total polyphenols, total flavonoids, and pH, with Limosilactobacillus and Acetobacter emerging as the predominant bacteria, respectively, in these stages compared to the GE water extract (WGE) stage. Metabolomics analysis revealed that 16 metabolites were associated with chemical structure transformation maps pathways (nucleotide metabolism, biosynthesis of plant secondary metabolites) and metabolism of cofactors and vitamins (folate biosynthesis). This research provides a theoretical foundation for regulating specific flavors in GE.",
+          "journal": "Food microbiology",
+          "publication_date": "2027-01-01",
+          "identifiers": {
+            "pmid": "42668206",
+            "doi": "10.1016/j.fm.2026.105269"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Chaoqi Zhang",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China."
+              },
+              {
+                "name": "Wenhao Liu",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China."
+              },
+              {
+                "name": "Xiaocui Meng",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China."
+              },
+              {
+                "name": "Kai Chen",
+                "orcid": null,
+                "affiliation": "School of Biological Science and Engineering, Shaanxi University of Technology, Hanzhong, Shaanxi, 723000, China."
+              },
+              {
+                "name": "Jingao Yu",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China."
+              },
+              {
+                "name": "Cunli Zhang",
+                "orcid": null,
+                "affiliation": "Shaanxi Key Laboratory of Natural Products & Chemical Biology, College of Chemistry & Pharmacy, Northwest A&F University, Yangling, 712100, China."
+              },
+              {
+                "name": "Hongbo Xu",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China. Electronic address: xhb2005@sntcm.edu.cn."
+              },
+              {
+                "name": "Yanru Liu",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China. Electronic address: yanzi_2203@aliyun.com."
+              },
+              {
+                "name": "Xinbo Shi",
+                "orcid": null,
+                "affiliation": "Co-construction Collaborative Innovation Center for Chinese Medicine Resources Industrialization by Shaanxi & Education Ministry, State Key Laboratory of Research, & Development of Characteristic Qin Medicine Resources (Cultivation), Shaanxi Innovative Drug Research Center, Shaanxi University of Chinese Medicine, Xianyang, Shaanxi, 712083, China. Electronic address: 18700084177@163.com."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2027-01-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2027,
+                "month": "Jan",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "08",
+                  "day": "14"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "3",
+                  "day": "31",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "20",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "13",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "23",
+                  "minute": "36"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "23",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "20",
+                  "minute": "55"
+                }
+              ],
+              "is_future_date": true,
+              "warnings": [
+                {
+                  "code": "FUTURE_PUBLICATION_DATE",
+                  "message": "归一化日期晚于任务包生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+                }
+              ]
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "468d7b91-c8c0-499f-8644-f8728de11397",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42668206/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:17:54.744673Z",
+          "content_sha256": "a60c08309872e69a8637619065a1a2b0c82644e8498270518941aad1cc56962a",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "This study examined the succession of metabolites and microorganisms during the fermentation of Gastrodia elata Blume (GE) and their interrelationships. A total of 739 volatile compounds (VCs) were identified, with four recognized as key VCs: dimethyl disulfide, dimethyl trisulfide, 2-nonenal, and damascenone. The dominant bacteria in the prime fermentation liquid (PFL) and secondary fermentation liquid (SFL) stages exhibited dynamic changes influenced by total acid, total polyphenols, total flavonoids, and pH, with Limosilactobacillus and Acetobacter emerging as the predominant bacteria, respectively, in these stages compared to the GE water extract (WGE) stage. Metabolomics analysis revealed that 16 metabolites were associated with chemical structure transformation maps pathways (nucleotide metabolism, biosynthesis of plant secondary metabolites) and metabolism of cofactors and vitamins (folate biosynthesis). This research provides a theoretical foundation for regulating specific flavors in GE."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42668206/",
+          "https://doi.org/10.1016/j.fm.2026.105269"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42668206",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668206/",
+            "checked_at": "2026-09-02T06:17:59.501249Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1016/j.fm.2026.105269",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1016/j.fm.2026.105269",
+            "checked_at": "2026-09-02T06:17:59.501249Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42668206/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668206/",
+            "checked_at": "2026-09-02T06:17:59.501249Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "986aeedb-0a27-4acd-aa63-8f9411b059b8",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "d93f48983ab7689fc110a6b5b601ab889bc59dc049dde4140861032266ee8fe1",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 2,
+          "title": "Synergistic effects of binary probiotics and oat β-glucan on brown yogurt quality: Physicochemical, flavor, sensory, and metabolomic evaluation.",
+          "abstract": "In this study, synbiotic brown yogurt was developed using Lactiplantibacillus plantarum S58, Lacticaseibacillus rhamnosus T53, and oat β-glucan. Compared to the CON group, the synbiotic groups exhibited significantly elevated levels of key flavor compounds, including 2-decanone, benzoic acid, and octanoic acid. Sensory evaluation indicated that synbiotic incorporation did not adversely affect overall sensory quality. Metabolomic analysis revealed a significant accumulation of beneficial metabolites, such as benzoic acid, arginine, and trans-cinnamic acid, which may contribute to the improvement of both flavor characteristics and functional properties. Notably, the synbiotic system comprising binary probiotics and oat β-glucan produced the most pronounced improvement in the quality of brown yogurt. Overall, the synergistic fermentation of binary probiotics with oat β-glucan enhanced the flavor profile of brown yogurt and promoted the formation of beneficial metabolites, providing a scientific basis for developing high-quality functional yogurts.",
+          "journal": "Food microbiology",
+          "publication_date": "2027-01-01",
+          "identifiers": {
+            "pmid": "42668201",
+            "doi": "10.1016/j.fm.2026.105264"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Zihan Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Xu Zhou",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Chen Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China."
+              },
+              {
+                "name": "Hongwei Wang",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China; Chinese-Hungarian Cooperative Research Centre for Food Science, Chongqing, 400715, China."
+              },
+              {
+                "name": "Zsolt Zalán",
+                "orcid": null,
+                "affiliation": "Food Science and Technology Institute, Hungarian University of Agriculture and Life Sciences, Buda Campus, Herman Ottó str. 15, Budapest, 1022, Hungary."
+              },
+              {
+                "name": "Huayi Suo",
+                "orcid": null,
+                "affiliation": "College of Food Science, Southwest University, Chongqing, 400715, China; Chinese-Hungarian Cooperative Research Centre for Food Science, Chongqing, 400715, China. Electronic address: birget@swu.edu.cn."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2027-01-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2027,
+                "month": "Jan",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "08",
+                  "day": "13"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "5",
+                  "day": "23",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "19",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "10",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "23",
+                  "minute": "36"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "23",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "29",
+                  "hour": "20",
+                  "minute": "55"
+                }
+              ],
+              "is_future_date": true,
+              "warnings": [
+                {
+                  "code": "FUTURE_PUBLICATION_DATE",
+                  "message": "归一化日期晚于任务包生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+                }
+              ]
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "17db9063-6e95-49cf-b88d-1d5a6f3053eb",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:17:59.545066Z",
+          "content_sha256": "4a10f9818d54bbb1570b28c0c9dc3f4f57a892cb0f6b6f1a18aa323bd97e70db",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "In this study, synbiotic brown yogurt was developed using Lactiplantibacillus plantarum S58, Lacticaseibacillus rhamnosus T53, and oat β-glucan. Compared to the CON group, the synbiotic groups exhibited significantly elevated levels of key flavor compounds, including 2-decanone, benzoic acid, and octanoic acid. Sensory evaluation indicated that synbiotic incorporation did not adversely affect overall sensory quality. Metabolomic analysis revealed a significant accumulation of beneficial metabolites, such as benzoic acid, arginine, and trans-cinnamic acid, which may contribute to the improvement of both flavor characteristics and functional properties. Notably, the synbiotic system comprising binary probiotics and oat β-glucan produced the most pronounced improvement in the quality of brown yogurt. Overall, the synergistic fermentation of binary probiotics with oat β-glucan enhanced the flavor profile of brown yogurt and promoted the formation of beneficial metabolites, providing a scientific basis for developing high-quality functional yogurts."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+          "https://doi.org/10.1016/j.fm.2026.105264"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42668201",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "checked_at": "2026-09-02T06:18:08.413475Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1016/j.fm.2026.105264",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1016/j.fm.2026.105264",
+            "checked_at": "2026-09-02T06:18:08.413475Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42668201/",
+            "checked_at": "2026-09-02T06:18:08.413475Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "1142bbd4-6f3c-4991-8c5f-0414648cd78f",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "0e2898303c6ef72184a58165140184cb23597938a4d3dccf7832167486202e2c",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 3,
+          "title": "Effect of probiotics on humoral responses to COVID-19 vaccination in older adults: a randomized, placebo-controlled trial (PIRATES-COV study).",
+          "abstract": "BACKGROUND: Although COVID-19 vaccination has reduced morbidity and mortality, adults aged 65 y old and older are at high risk of complications from COVID-19. The evidence suggests that probiotics may enhance immune responses when co-administered with influenza vaccination. However, few studies have evaluated the potential benefit of probiotic supplementation in this context in this high-risk population. MATERIAL: This study was a randomized controlled trial recruiting adults between 65 and 89 y of age living in Quebec, Canada, who received an mRNA booster (Pfizer-BioNTech or Moderna). Probiotic supplementation (Lacticaseibacillus rhamnosus Rosell®-11 and Lacticaseibacillus paracasei Rosell®-215, 1x 6 x 109CFU per capsule) versus placebo was administered from 15 d pre- to 15 d post-vaccination. Participants provided dried blood spot samples at baseline, at 3- and 6-month post-vaccination. The primary outcome was the proportion of participants without detectable anti-S1-receptor binding domain (anti-S1-RBD) antibodies at 6 months post-vaccination. Secondary outcomes included longitudinal anti-S1-RBD and anti-nucleocapsid (anti-N) antibody responses across the three timepoints. RESULTS: 592 adults were enrolled. At 6 months post-vaccination, anti-S1-RBD antibodies were comparable between groups, and the percentage of participants with undetectable antibody response in the placebo and probiotic groups (1.2% vs 1.6%) was comparable. Anti-N seropositivity was lower in the probiotic group at 6 months (OR 0.6, 95% CI 0.4-0.9; p = 0.02) and marginally lower at 3 months after adjustment. Self-reported COVID-19 infection incidence was 16.5% overall (19.1% placebo vs 13.9% probiotic; p = 0.134). CONCLUSION: Probiotic supplementation administered around COVID-19 vaccination did not change the proportion of seronegative participants for anti-S1-RBD antibodies at 6 months. However, in the probiotic group, anti-N antibody levels were lower, while self-reported COVID-19 infections also tended to be reduced, although this difference was not statistically significant. They may be consistent with earlier control of infection and reduced exposure to the nucleocapsid antigen, but this interpretation remains speculative. TRIAL REGISTRATION NUMBER: #NCT05195151.",
+          "journal": "Gut microbes",
+          "publication_date": "2026-12-31",
+          "identifiers": {
+            "pmid": "42520140",
+            "doi": "10.1080/19490976.2026.2699456",
+            "pmcid": "PMC13418469"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Jean-Charles Pasquier",
+                "orcid": "0009-0007-6182-5902",
+                "affiliation": "Centre de recherche du Centre hospitalier de l'Université de Montréal, Montreal, Quebec, Canada."
+              },
+              {
+                "name": "Nils Chaillet",
+                "orcid": null,
+                "affiliation": "Université Laval, Quebec City, Quebec, Canada."
+              },
+              {
+                "name": "Mélanie Plourde",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Guy Boivin",
+                "orcid": null,
+                "affiliation": "Université Laval, Quebec City, Quebec, Canada."
+              },
+              {
+                "name": "Marie-Ève Hamelin",
+                "orcid": null,
+                "affiliation": "Université Laval, Quebec City, Quebec, Canada."
+              },
+              {
+                "name": "Hugues Allard-Chamard",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Alain Piché",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Geneviève Baron",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Isabelle Laforest-Lapointe",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Mélissa Généreux",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Benoît Mâsse",
+                "orcid": null,
+                "affiliation": "Centre hospitalier universitaire Sainte-Justine (CHU Sainte-Justine), Montreal, Quebec, Canada."
+              },
+              {
+                "name": "Julie Robitaille",
+                "orcid": null,
+                "affiliation": "Université Laval, Quebec City, Quebec, Canada."
+              },
+              {
+                "name": "Jean-François Beaulieu",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Tamas Fülöp",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              },
+              {
+                "name": "Sarah Bilodeau",
+                "orcid": null,
+                "affiliation": "Centre de recherche du Centre hospitalier de l'Université de Montréal, Montreal, Quebec, Canada."
+              },
+              {
+                "name": "Sheela Ramanathan",
+                "orcid": null,
+                "affiliation": "Université de Sherbrooke, Sherbrooke, Quebec, Canada."
+              }
+            ],
+            "article_type": "randomized_controlled_trial",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-12-31",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Dec",
+                "day": 31,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "07",
+                  "day": "28"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "29",
+                  "hour": "18",
+                  "minute": "38"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "28",
+                  "hour": "18",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "28",
+                  "hour": "14",
+                  "minute": "13"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "28",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": true,
+              "warnings": [
+                {
+                  "code": "FUTURE_PUBLICATION_DATE",
+                  "message": "归一化日期晚于任务包生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+                }
+              ]
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "2e1740d7-f62a-4184-ad0c-72ffe657c8fa",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42520140/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:18:08.460229Z",
+          "content_sha256": "6013d09b674b8fedd446af630a575827f347294ea9adaa2b8bf995ac3f2c3131",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "BACKGROUND: Although COVID-19 vaccination has reduced morbidity and mortality, adults aged 65 y old and older are at high risk of complications from COVID-19. The evidence suggests that probiotics may enhance immune responses when co-administered with influenza vaccination. However, few studies have evaluated the potential benefit of probiotic supplementation in this context in this high-risk population. MATERIAL: This study was a randomized controlled trial recruiting adults between 65 and 89 y of age living in Quebec, Canada, who received an mRNA booster (Pfizer-BioNTech or Moderna). Probiotic supplementation (Lacticaseibacillus rhamnosus Rosell®-11 and Lacticaseibacillus paracasei Rosell®-215, 1x 6 x 109CFU per capsule) versus placebo was administered from 15 d pre- to 15 d post-vaccination. Participants provided dried blood spot samples at baseline, at 3- and 6-month post-vaccination. The primary outcome was the proportion of participants without detectable anti-S1-receptor binding domain (anti-S1-RBD) antibodies at 6 months post-vaccination. Secondary outcomes included longitudinal anti-S1-RBD and anti-nucleocapsid (anti-N) antibody responses across the three timepoints. RESULTS: 592 adults were enrolled. At 6 months post-vaccination, anti-S1-RBD antibodies were comparable between groups, and the percentage of participants with undetectable antibody response in the placebo and probiotic groups (1.2% vs 1.6%) was comparable. Anti-N seropositivity was lower in the probiotic group at 6 months (OR 0.6, 95% CI 0.4-0.9; p = 0.02) and marginally lower at 3 months after adjustment. Self-reported COVID-19 infection incidence was 16.5% overall (19.1% placebo vs 13.9% probiotic; p = 0.134). CONCLUSION: Probiotic supplementation administered around COVID-19 vaccination did not change the proportion of seronegative participants for anti-S1-RBD antibodies at 6 months. However, in the probiotic group, anti-N antibody levels were lower, while self-reported COVID-19 infections also tended to be reduced, although this difference was not statistically significant. They may be consistent with earlier control of infection and reduced exposure to the nucleocapsid antigen, but this interpretation remains speculative. TRIAL REGISTRATION NUMBER: #NCT05195151."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42520140/",
+          "https://doi.org/10.1080/19490976.2026.2699456"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42520140",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42520140/",
+            "checked_at": "2026-09-02T06:18:12.117491Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1080/19490976.2026.2699456",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1080/19490976.2026.2699456",
+            "checked_at": "2026-09-02T06:18:12.117491Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42520140/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42520140/",
+            "checked_at": "2026-09-02T06:18:12.117491Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "aa9e8164-2034-4353-8926-c3cb389662d6",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "3e1bdab6cb48651153fb159c1ff673da1f42ed011365a3c0de0c2adf311d6487",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 4,
+          "title": "Akkermansia muciniphila outer membrane protein Amuc_0904 modulates intestinal homeostasis by promoting goblet cell differentiation.",
+          "abstract": "Akkermansia muciniphila is recognized as a promising probiotic that improves the symptoms of a variety of diseases. However, the role and mechanism of A. muciniphila in regulating intestinal homeostasis remain to be explored. Here, we discovered that A. muciniphila was dramatically increased during colitis recovery, and its colonization greatly increased goblet cells to protect the intestinal barrier in mice. Amuc_0904, a previously uncharacterized A. muciniphila outer membrane protein, was identified to induce goblet cell differentiation. Mechanistically, Amuc_0904 directly interacted with MET and decreased its phosphorylation in epithelia, leading to decreased Wnt/β-catenin signaling and enhanced oxidative phosphorylation and mitochondrial function. Furthermore, Amuc_0904 and engineered probiotic Escherichia coli Nissle 1917 expressing Amuc_0904 were demonstrated to protect mice from colitis and colitis-associated colorectal cancer. The study reveals a previously unknown mechanism of A. muciniphila-mediated intestinal homeostasis recovery and provides a bioactive molecule with the potential to treat intestinal disorders.",
+          "journal": "Gut microbes",
+          "publication_date": "2026-12-31",
+          "identifiers": {
+            "pmid": "41424360",
+            "doi": "10.1080/19490976.2025.2587405",
+            "pmcid": "PMC12810044"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Liu Yang",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Jianming Yang",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Xueting Kong",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Qiang Tang",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Ruofan Song",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Kaichen Zhou",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Xiao-Jing Quan",
+                "orcid": null,
+                "affiliation": "State Key Laboratory of Medicinal Chemical Biology and College of Pharmacy, Tianjin Key Laboratory of Molecular Drug Research, Nankai University, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Qiang Zhang",
+                "orcid": null,
+                "affiliation": "Department of General Surgery, Tianjin Beichen Hospital, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Yajie Zhang",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Chunze Zhang",
+                "orcid": null,
+                "affiliation": "Department of Colorectal Surgery, Tianjin Union Medical Center, Tianjin Institute of Coloproctology, Tianjin, China."
+              },
+              {
+                "name": "Geng Pei",
+                "orcid": null,
+                "affiliation": "Department of Pathology, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center of Cancer, Key Laboratory of Cancer Prevention and Therapy, Tianjin, Tianjin's Clinical Research Center of Cancer, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Chunhui Miao",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Kaiyuan Yu",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Zhi-Song Zhang",
+                "orcid": null,
+                "affiliation": "State Key Laboratory of Medicinal Chemical Biology and College of Pharmacy, Tianjin Key Laboratory of Molecular Drug Research, Nankai University, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Zhi Yao",
+                "orcid": null,
+                "affiliation": "Tianjin Institute of Immunology, Key Laboratory of Immune Microenvironment and Disease (Ministry of Education), School of Basic Medical Sciences, Tianjin Medical University, State Key Laboratory of Experimental Hematology, Chinese Academy of Medical Sciences and Peking Union Medical College, Tianjin, People's Republic of China."
+              },
+              {
+                "name": "Quan Wang",
+                "orcid": "0000-0003-4997-7173",
+                "affiliation": "Institute of Medicinal Biotechnology, Chinese Academy of Medical Sciences and Peking Union Medical College, State Key Laboratory of Experimental Hematology, Beijing, People's Republic of China."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-12-31",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Dec",
+                "day": 31,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "22"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "medline",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "22",
+                  "hour": "12",
+                  "minute": "56"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "22",
+                  "hour": "6",
+                  "minute": "29"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "22",
+                  "hour": "5",
+                  "minute": "52"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "22",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": true,
+              "warnings": [
+                {
+                  "code": "FUTURE_PUBLICATION_DATE",
+                  "message": "归一化日期晚于任务包生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+                }
+              ]
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "2ec8d177-8f30-4837-8431-3c4361e6a264",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:18:12.165814Z",
+          "content_sha256": "a8c81a1f32c53c64452cb9dfed2b8901c6831e4dee31777b6b896d48059aacf1",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Akkermansia muciniphila is recognized as a promising probiotic that improves the symptoms of a variety of diseases. However, the role and mechanism of A. muciniphila in regulating intestinal homeostasis remain to be explored. Here, we discovered that A. muciniphila was dramatically increased during colitis recovery, and its colonization greatly increased goblet cells to protect the intestinal barrier in mice. Amuc_0904, a previously uncharacterized A. muciniphila outer membrane protein, was identified to induce goblet cell differentiation. Mechanistically, Amuc_0904 directly interacted with MET and decreased its phosphorylation in epithelia, leading to decreased Wnt/β-catenin signaling and enhanced oxidative phosphorylation and mitochondrial function. Furthermore, Amuc_0904 and engineered probiotic Escherichia coli Nissle 1917 expressing Amuc_0904 were demonstrated to protect mice from colitis and colitis-associated colorectal cancer. The study reveals a previously unknown mechanism of A. muciniphila-mediated intestinal homeostasis recovery and provides a bioactive molecule with the potential to treat intestinal disorders."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+          "https://doi.org/10.1080/19490976.2025.2587405"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "41424360",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+            "checked_at": "2026-09-02T06:18:15.766716Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1080/19490976.2025.2587405",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1080/19490976.2025.2587405",
+            "checked_at": "2026-09-02T06:18:15.766716Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/41424360/",
+            "checked_at": "2026-09-02T06:18:15.766716Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "57ffb1ba-8850-48ea-a5cd-b1a98d84434c",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "c952406c6434c458c4f7682ba3186e19c897e80ac35b860edf543ae03638517e",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 5,
+          "title": "Anti-inflammatory and barrier-protective effects of metabolites from Lactobacillus co-fermentation with linoleic acid and human fecal microbiota.",
+          "abstract": "This study investigated the protective effects of metabolites generated from the co-fermentation of Lactobacillus, linoleic acid (LA) and human fecal microbiota on gut microbiota composition, intestinal inflammation and barrier function. While probiotic-derived conjugated linoleic acid (CLA) production has been reported, the functional effects of CLA-enriched metabolites derived from co-fermentation with human fecal microbiota remain unclear. Using an integrated approach including in vitro fermentation of healthy human fecal microbiota, lipopolysaccharide (LPS)-induced RAW264.7/Caco-2 co-culture models and antibiotic-depleted, dextran sulfate sodium (DSS)-induced colitis mouse model, we found that co-fermentation with LA and either Limosilactobacillus reuteri M94 or Lactiplantibacillus plantarum DPUL-77 significantly recovered microbial composition and markedly enhanced CLA production (6-7-fold, p < 0.0001) in the fecal fermentation systems. Both in vitro and in vivo, co-fermentation metabolites reduced pro-inflammatory cytokine expression by 60-80% (p < 0.001) and increased interleukin-10 (IL-10) levels by 3-4-fold (p < 0.01). Moreover, these metabolites improved intestinal barrier function, as evidenced by enhanced tight junction protein expression, restored epithelial integrity and reduced permeability in both models (p < 0.05-0.001), with greater effects observed in the Lactobacillus + LA groups. Notably, CLA-enriched metabolites exhibited enhanced biological efficacy; however, the specific contribution of CLA to these effects cannot be conclusively determined. Overall, these findings suggested that co-fermentation of Lactobacillus, LA and human fecal microbiota generates bioactive metabolites associated with reduced intestinal inflammation and improved barrier function. Further studies are required to clarify the roles of specific metabolites and the underlying mechanisms.",
+          "journal": "Food research international (Ottawa, Ont.)",
+          "publication_date": "2026-09-30",
+          "identifiers": {
+            "pmid": "42409547",
+            "doi": "10.1016/j.foodres.2026.119607"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Chunxue Jin",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Xiaoxi Gao",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Fan Zhang",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Yanli Liu",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Jiang Yu",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Guangqing Mu",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China."
+              },
+              {
+                "name": "Yanfeng Tuo",
+                "orcid": null,
+                "affiliation": "School of Food Science and Technology, Dalian Polytechnic University, Dalian 116034, PR China; Dalian Probiotics Function Research Key Laboratory, Dalian Polytechnic University, Dalian 116034, PR China. Electronic address: tuoyf@dlpu.edu.cn."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-09-30",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Sep",
+                "day": 30,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "06",
+                  "day": "06"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "2",
+                  "day": "9",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "5",
+                  "day": "28",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "6",
+                  "day": "1",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "7",
+                  "hour": "18",
+                  "minute": "55"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "7",
+                  "hour": "0",
+                  "minute": "39"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "6",
+                  "hour": "20",
+                  "minute": "56"
+                }
+              ],
+              "is_future_date": true,
+              "warnings": [
+                {
+                  "code": "FUTURE_PUBLICATION_DATE",
+                  "message": "归一化日期晚于任务包生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
+                }
+              ]
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "6a2e5671-e278-4121-96aa-c879382e15eb",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:18:15.803273Z",
+          "content_sha256": "1f52b13bdff4588f3eda78ae525ece5f423b6249b0cd184d6d57dcc7104d2b68",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "This study investigated the protective effects of metabolites generated from the co-fermentation of Lactobacillus, linoleic acid (LA) and human fecal microbiota on gut microbiota composition, intestinal inflammation and barrier function. While probiotic-derived conjugated linoleic acid (CLA) production has been reported, the functional effects of CLA-enriched metabolites derived from co-fermentation with human fecal microbiota remain unclear. Using an integrated approach including in vitro fermentation of healthy human fecal microbiota, lipopolysaccharide (LPS)-induced RAW264.7/Caco-2 co-culture models and antibiotic-depleted, dextran sulfate sodium (DSS)-induced colitis mouse model, we found that co-fermentation with LA and either Limosilactobacillus reuteri M94 or Lactiplantibacillus plantarum DPUL-77 significantly recovered microbial composition and markedly enhanced CLA production (6-7-fold, p < 0.0001) in the fecal fermentation systems. Both in vitro and in vivo, co-fermentation metabolites reduced pro-inflammatory cytokine expression by 60-80% (p < 0.001) and increased interleukin-10 (IL-10) levels by 3-4-fold (p < 0.01). Moreover, these metabolites improved intestinal barrier function, as evidenced by enhanced tight junction protein expression, restored epithelial integrity and reduced permeability in both models (p < 0.05-0.001), with greater effects observed in the Lactobacillus + LA groups. Notably, CLA-enriched metabolites exhibited enhanced biological efficacy; however, the specific contribution of CLA to these effects cannot be conclusively determined. Overall, these findings suggested that co-fermentation of Lactobacillus, LA and human fecal microbiota generates bioactive metabolites associated with reduced intestinal inflammation and improved barrier function. Further studies are required to clarify the roles of specific metabolites and the underlying mechanisms."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+          "https://doi.org/10.1016/j.foodres.2026.119607"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42409547",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+            "checked_at": "2026-09-02T06:18:21.679076Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1016/j.foodres.2026.119607",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1016/j.foodres.2026.119607",
+            "checked_at": "2026-09-02T06:18:21.679076Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42409547/",
+            "checked_at": "2026-09-02T06:18:21.679076Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "00467fb7-237b-49de-bc0b-e62493a7908b",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "21b334ade6f227439bcd040e0fc629760ffe553b30c2aed2c2f8252ccaa73b85",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 6,
+          "title": "Heyndrickxia coagulans IDCC 1201 Alters Gut Microbiome and Metabolome in Patients with Functional Bowel Disorders.",
+          "abstract": "Background/Objectives: Functional bowel disorders (FBDs) are chronic gastrointestinal conditions that substantially impair quality of life. This randomized, double-blind, placebo-controlled trial investigated the effects of Heyndrickxia coagulans IDCC 1201 (COA 1201) in adults with FBD. Methods: Participants received COA 1201 or a placebo for 8 weeks, with outcomes assessed using the irritable bowel syndrome (IBS) Symptom Severity Score (IBS-SSS), IBS Quality of Life (IBS-QOL), and bowel activity measures. And Fecal microbiome and metabolomics were measured by 16S rRNA gene sequencing gas chromatography-mass spectrometry, respectively. Results: Both groups showed improvement from baseline, but COA 1201 produced greater symptom relief, particularly in abdominal bloating, post-defecation discomfort, and the body image domain of IBS-QOL. Fecal microbiome profiling revealed modest changes in global diversity, yet taxa linked to saccharolytic activity and short-chain fatty acid production-including Ruminococcus bromii, Agathobacter rectalis, and Bifidobacterium-were enriched in participants receiving COA 1201, whereas Clostridium leptum increased in those receiving a placebo. Untargeted metabolomics demonstrated distinct metabolic signatures between groups, confirmed by supervised partial least squares discriminant analysis. Exploratory metabolites were identified using variable importance in projection scores (>1.5), statistical significance (p < 0.05), and absolute log2 fold change (>1). Alanine and proline emerged as time-dependent metabolites, while tryptophan, lactic acid, and phytosphingosine were specifically associated with COA 1201 treatment. Conclusions: Collectively, these findings suggest that COA 1201 alleviates FBD symptoms by modulating the gut microbiome and metabolome.",
+          "journal": "Nutrients",
+          "publication_date": "2026-07-29",
+          "identifiers": {
+            "pmid": "42588089",
+            "doi": "10.3390/nu18152466",
+            "pmcid": "PMC13467927"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Hyeon Ji Jeon",
+                "orcid": null,
+                "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+              },
+              {
+                "name": "Jin Seok Moon",
+                "orcid": "0000-0003-0375-7175",
+                "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+              },
+              {
+                "name": "Hye Min Jeong",
+                "orcid": null,
+                "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+              },
+              {
+                "name": "Won Yeong Bang",
+                "orcid": "0000-0002-2788-1157",
+                "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+              },
+              {
+                "name": "Hayoung Kim",
+                "orcid": null,
+                "affiliation": "ILDONG Bioscience Co., Ltd., 17 Poseunggongdan-ro, Poseung-eup, Pyeongtaek-si 17957, Republic of Korea."
+              },
+              {
+                "name": "Donggyu Kim",
+                "orcid": null,
+                "affiliation": "Department of Microbiology, College of Medicine, Inha University, Incheon 22212, Republic of Korea."
+              },
+              {
+                "name": "Minhye Shin",
+                "orcid": null,
+                "affiliation": "Department of Microbiology, College of Medicine, Inha University, Incheon 22212, Republic of Korea."
+              },
+              {
+                "name": "Jungwoo Yang",
+                "orcid": "0000-0003-3836-729X",
+                "affiliation": "Department of Microbiology, College of Medicine, Dongguk University, 123 Dongdae-ro, Gyeongju 38066, Republic of Korea."
+              },
+              {
+                "name": "Jongbeom Shin",
+                "orcid": null,
+                "affiliation": "Division of Gastroenterology, Department of Internal Medicine, Inha University Hospital, Inha University School of Medicine, Incheon 22212, Republic of Korea."
+              },
+              {
+                "name": "Young Hoon Jung",
+                "orcid": "0000-0002-0781-3608",
+                "affiliation": "School of Food Science and Biotechnology, Kyungpook National University, Daegu 41566, Republic of Korea."
+              }
+            ],
+            "article_type": "randomized_controlled_trial",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-07-29",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Jul",
+                "day": 29,
+                "medline_date": null
+              },
+              "publication_model": "Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "07",
+                  "day": "29"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "5",
+                  "day": "28",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "22",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "24",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "13",
+                  "hour": "5",
+                  "minute": "36"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "13",
+                  "hour": "5",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "13",
+                  "hour": "1",
+                  "minute": "2"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "29",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "1dd006aa-156f-4ca2-b9f8-53ac613b88de",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:18:21.730092Z",
+          "content_sha256": "de0f55358670ea7ed76b3195ec32e010074d1194a6ec011366eb237eae46bd11",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Background/Objectives: Functional bowel disorders (FBDs) are chronic gastrointestinal conditions that substantially impair quality of life. This randomized, double-blind, placebo-controlled trial investigated the effects of Heyndrickxia coagulans IDCC 1201 (COA 1201) in adults with FBD. Methods: Participants received COA 1201 or a placebo for 8 weeks, with outcomes assessed using the irritable bowel syndrome (IBS) Symptom Severity Score (IBS-SSS), IBS Quality of Life (IBS-QOL), and bowel activity measures. And Fecal microbiome and metabolomics were measured by 16S rRNA gene sequencing gas chromatography-mass spectrometry, respectively. Results: Both groups showed improvement from baseline, but COA 1201 produced greater symptom relief, particularly in abdominal bloating, post-defecation discomfort, and the body image domain of IBS-QOL. Fecal microbiome profiling revealed modest changes in global diversity, yet taxa linked to saccharolytic activity and short-chain fatty acid production-including Ruminococcus bromii, Agathobacter rectalis, and Bifidobacterium-were enriched in participants receiving COA 1201, whereas Clostridium leptum increased in those receiving a placebo. Untargeted metabolomics demonstrated distinct metabolic signatures between groups, confirmed by supervised partial least squares discriminant analysis. Exploratory metabolites were identified using variable importance in projection scores (>1.5), statistical significance (p < 0.05), and absolute log2 fold change (>1). Alanine and proline emerged as time-dependent metabolites, while tryptophan, lactic acid, and phytosphingosine were specifically associated with COA 1201 treatment. Conclusions: Collectively, these findings suggest that COA 1201 alleviates FBD symptoms by modulating the gut microbiome and metabolome."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+          "https://doi.org/10.3390/nu18152466"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42588089",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+            "checked_at": "2026-09-02T06:18:26.842092Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.3390/nu18152466",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.3390/nu18152466",
+            "checked_at": "2026-09-02T06:18:26.842092Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42588089/",
+            "checked_at": "2026-09-02T06:18:26.842092Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "3b7f7f4b-9758-411b-ab7c-d3615c3c35a4",
+      "pipeline_run_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "aba92c39480974a452eb6bf2ef3527c48537b8267017cd0662b6a27ee3a4011d",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 7,
+          "title": "Synbiotic Supplementation With Heyndrickxia coagulans TBC169 Improves Chronic Constipation in Middle-Aged and Elderly.",
+          "abstract": "BACKGROUND: Chronic constipation is prevalent in middle-aged and elderly individuals and can markedly impair quality of life and increase comorbidity risk. However, safe and effective therapies for this population remain limited because of age-related physiological changes, polypharmacy, and concerns about long-term medication use. METHODS: We conducted a randomized, double-blind, controlled clinical trial enrolling 140 participants aged ≥45 years with chronic constipation to evaluate a synbiotic containing Heyndrickxia coagulans (H. coagulans) TBC169 plus dietary fibers as an adjunct intervention. RESULTS: Compared with dietary fiber alone, the TBC169-based synbiotic significantly improved constipation outcomes, including increased weekly bowel movements (WBMs), higher Bristol stool scale (BSS) scores, and reduced Wexner and Patient Assessment of Constipation Quality of Life (PAC-QOL) scores. Post-intervention gut microbiota profiling showed higher Shannon and Faith_PD diversity indices and distinct community composition in the synbiotic group compared with the dietary-fiber control group, along with higher relative abundance of Blautia, Akkermansia, Faecalibacterium, and Bacillus and lower relative abundance of Collinsella. Because baseline faecal samples were not collected, these microbiota findings should be interpreted as exploratory between-group associations. Ecological analyses suggested enhanced microbial stability and metabolic potential, and correlations linked key taxa with clinical improvement. The intervention was well-tolerated, with only mild, transient adverse events. CONCLUSIONS: The synbiotic formulation containing H. coagulans TBC169 and dietary fiber-related components was well-tolerated and may improve constipation-related outcomes in middle-aged and elderly adults. Because the formulation contained both probiotic and fiber components, the observed effects should be attributed to the combined synbiotic product rather than to H. coagulans TBC169 alone. TRIAL REGISTRATION: Chinese Clinical Trial Registry (ChiCTR2400085844, http://www.chictr.org.cn/), registered on June 19, 2024.",
+          "journal": "Biotechnology journal",
+          "publication_date": "2026-06-01",
+          "identifiers": {
+            "pmid": "42226670",
+            "doi": "10.1002/biot.70250",
+            "pmcid": "PMC13383594"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Xiaoni Zhou",
+                "orcid": null,
+                "affiliation": "Department of Obstetrics & Gynecology, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+              },
+              {
+                "name": "Canhui Guo",
+                "orcid": null,
+                "affiliation": "Department of Geriatrics, the Second Affiliated Hospital of Nanchang University, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Gang Hu",
+                "orcid": null,
+                "affiliation": "School of Life Sciences, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Leiping Ding",
+                "orcid": null,
+                "affiliation": "Nanchang University Queen Mary School, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Tingting Zou",
+                "orcid": null,
+                "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Mei Wang",
+                "orcid": null,
+                "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Wenjie Xiong",
+                "orcid": null,
+                "affiliation": "National Engineering Research Center for Bioengineering Drugs and the Technologies, Jiangxi Province Key Laboratory of Bioengineering Drugs, Institute of Translational Medicine, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Wen Deng",
+                "orcid": null,
+                "affiliation": "Clinical Laboratory, Key Laboratory of Jingdezhen for Cellular and Molecular Medicine, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+              },
+              {
+                "name": "Jing Wei",
+                "orcid": null,
+                "affiliation": "National Engineering Research Center for Bioengineering Drugs and the Technologies, Jiangxi Province Key Laboratory of Bioengineering Drugs, Institute of Translational Medicine, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Jiangqing Yu",
+                "orcid": null,
+                "affiliation": "Department of Respiratory Medicine, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+              },
+              {
+                "name": "Chunbo Zhang",
+                "orcid": "0000-0001-9618-9415",
+                "affiliation": "Jiangxi Province Key Laboratory of Bioengineering Drugs, School of Pharmacy, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Huaijun Tu",
+                "orcid": null,
+                "affiliation": "Department of Geriatrics, the Second Affiliated Hospital of Nanchang University, Jiangxi Medical College, Nanchang University, Nanchang, Jiangxi, China."
+              },
+              {
+                "name": "Tingtao Chen",
+                "orcid": "0000-0002-0506-8536",
+                "affiliation": "Department of Obstetrics & Gynecology, the Second People's Hospital of Jingdezhen, Jingdezhen, Jiangxi, China."
+              }
+            ],
+            "article_type": "randomized_controlled_trial",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2026-06-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Jun",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print",
+              "citation_status": "MEDLINE",
+              "article_dates": [],
+              "history_dates": [
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "4",
+                  "day": "30",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "2",
+                  "day": "2",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "5",
+                  "day": "15",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "6",
+                  "day": "4",
+                  "hour": "12",
+                  "minute": "43"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "6",
+                  "day": "2",
+                  "hour": "6",
+                  "minute": "36"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "6",
+                  "day": "2",
+                  "hour": "3",
+                  "minute": "33"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "20",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "ed4ee136-c7c1-494d-b5f0-aab6468472a3",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-09-02T06:18:26.896172Z",
+          "content_sha256": "efec6420ade618c5c227c2881ccad5aa844483279429761c6bbfef666611bcfd",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "BACKGROUND: Chronic constipation is prevalent in middle-aged and elderly individuals and can markedly impair quality of life and increase comorbidity risk. However, safe and effective therapies for this population remain limited because of age-related physiological changes, polypharmacy, and concerns about long-term medication use. METHODS: We conducted a randomized, double-blind, controlled clinical trial enrolling 140 participants aged ≥45 years with chronic constipation to evaluate a synbiotic containing Heyndrickxia coagulans (H. coagulans) TBC169 plus dietary fibers as an adjunct intervention. RESULTS: Compared with dietary fiber alone, the TBC169-based synbiotic significantly improved constipation outcomes, including increased weekly bowel movements (WBMs), higher Bristol stool scale (BSS) scores, and reduced Wexner and Patient Assessment of Constipation Quality of Life (PAC-QOL) scores. Post-intervention gut microbiota profiling showed higher Shannon and Faith_PD diversity indices and distinct community composition in the synbiotic group compared with the dietary-fiber control group, along with higher relative abundance of Blautia, Akkermansia, Faecalibacterium, and Bacillus and lower relative abundance of Collinsella. Because baseline faecal samples were not collected, these microbiota findings should be interpreted as exploratory between-group associations. Ecological analyses suggested enhanced microbial stability and metabolic potential, and correlations linked key taxa with clinical improvement. The intervention was well-tolerated, with only mild, transient adverse events. CONCLUSIONS: The synbiotic formulation containing H. coagulans TBC169 and dietary fiber-related components was well-tolerated and may improve constipation-related outcomes in middle-aged and elderly adults. Because the formulation contained both probiotic and fiber components, the observed effects should be attributed to the combined synbiotic product rather than to H. coagulans TBC169 alone. TRIAL REGISTRATION: Chinese Clinical Trial Registry (ChiCTR2400085844, http://www.chictr.org.cn/), registered on June 19, 2024."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+          "https://doi.org/10.1002/biot.70250"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42226670",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+            "checked_at": "2026-09-02T06:18:31.037357Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1002/biot.70250",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1002/biot.70250",
+            "checked_at": "2026-09-02T06:18:31.037357Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42226670/",
+            "checked_at": "2026-09-02T06:18:31.037357Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    }
+  ]
+}

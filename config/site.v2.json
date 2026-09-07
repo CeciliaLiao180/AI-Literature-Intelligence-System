@@ -1,0 +1,62 @@
+{
+  "version": "2.0",
+  "site_title": "科研文献速递",
+  "site_subtitle": "面向保健食品、生物科技与生命科学研发人员的文献情报预览",
+  "output_directory": "site",
+  "home_latest_per_domain": 3,
+  "preview_batch_statuses": [
+    "draft",
+    "preview_ready",
+    "awaiting_confirmation",
+    "approved",
+    "published"
+  ],
+  "archive": {
+    "directory": "archive",
+    "date_format": "%Y-%m-%d"
+  },
+  "domains": [
+    {
+      "code": "gut_health",
+      "slug": "gut-health",
+      "aliases": [],
+      "name": "肠道/胃肠健康",
+      "short_name": "肠道健康",
+      "description": "关注胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能及胃肠道症状相关研究。",
+      "status": "active"
+    },
+    {
+      "code": "immune_modulation",
+      "slug": "immune",
+      "aliases": [
+        "immune-modulation"
+      ],
+      "name": "免疫调节",
+      "short_name": "免疫调节",
+      "description": "预留免疫功能、免疫应答及免疫相关研发文献分类。",
+      "status": "reserved"
+    },
+    {
+      "code": "healthy_aging",
+      "slug": "anti-aging",
+      "aliases": [
+        "healthy-aging"
+      ],
+      "name": "延缓衰老/抗衰老",
+      "short_name": "健康衰老",
+      "description": "预留健康寿命、衰老机制及相关干预研究文献分类。",
+      "status": "reserved"
+    },
+    {
+      "code": "musculoskeletal_health",
+      "slug": "musculoskeletal",
+      "aliases": [
+        "musculoskeletal-health"
+      ],
+      "name": "肌骨/筋骨关节健康",
+      "short_name": "肌骨健康",
+      "description": "预留肌肉、骨骼、关节及运动功能相关研究文献分类。",
+      "status": "reserved"
+    }
+  ]
+}

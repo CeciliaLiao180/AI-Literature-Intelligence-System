@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "retrieval": {
+    "lookback_days": 7,
+    "pubmed_date_field": "edat"
+  },
+  "schedule": {
+    "enabled": false,
+    "timezone": "Asia/Shanghai",
+    "weekday": null,
+    "local_time": null
+  },
+  "execution": {
+    "manual_run_enabled": true
+  }
+}

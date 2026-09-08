@@ -7,8 +7,9 @@
 
 - 工作流只允许人工触发，尚未启用按 `main` 分支推送或定时自动部署。
 - 部署前校验 `site/data/site-manifest.json` 中的全部文件和 SHA-256。
-- 工作流要求 `publication_status=published`。当前真实站点仍为 `preview`，因此不能绕过批次级人工确认直接发布。
-- 当前没有配置 GitHub 账号、目标仓库、远程地址或自定义域名，也没有生成 `CNAME`。
+- 工作流要求 `publication_status=published`，因此不能绕过批次级人工确认直接发布。
+- 当前目标仓库为 `CeciliaLiao180/AI-Literature-Intelligence-System`，本地 `main` 跟踪 `origin/main`。
+- 当前没有配置自定义域名，也没有生成 `CNAME`。
 
 ## 首次部署前置条件
 

@@ -22,6 +22,7 @@ literature-render-codex-preview = "literature_intelligence.pipeline.codex_mvp_pr
 literature-import-codex-results = "literature_intelligence.pipeline.codex_results_import:main"
 literature-generate-static-site = "literature_intelligence.pipeline.static_site:main"
 literature-validate-site = "literature_intelligence.pipeline.site_artifact:main"
+literature-release = "literature_intelligence.pipeline.publication_release:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

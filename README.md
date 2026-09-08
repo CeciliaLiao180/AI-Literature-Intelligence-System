@@ -93,7 +93,32 @@
   --require-publication-status preview
 ~~~
 
-`.github/workflows/deploy-pages.yml` 已准备 GitHub Pages 的人工触发部署流程，但只接受 `publication_status=published` 的站点。当前真实批次仍为 `draft`、站点仍为 `preview`，因此工作流不会绕过批次级人工确认发布。首次部署所需的 GitHub owner、repository、仓库可见性和 Pages 权限仍需需求方明确，详见 `docs/deployment/github-pages.md`。
+`.github/workflows/deploy-pages.yml` 提供 GitHub Pages 的人工触发部署流程，并且只接受 `publication_status=published` 的站点，因此不会绕过批次级人工确认发布。仓库、Pages 权限和首次部署操作说明见 `docs/deployment/github-pages.md`。
+
+人工确认批次后生成正式制品；只有 Pages 实际部署成功后才执行 `finalize` 回写 `published`：
+
+~~~powershell
+./.venv/Scripts/python.exe -m literature_intelligence.pipeline.publication_release `
+  --database-url sqlite:///data/gut_health_mvp.db `
+  confirm `
+  --batch-id <batch-id> `
+  --preview-site-dir site `
+  --confirmed-by <reviewer> `
+  --confirmation-note "批准正式发布"
+
+./.venv/Scripts/python.exe -m literature_intelligence.pipeline.static_site `
+  --database-url sqlite:///data/gut_health_mvp.db `
+  --publication-status published `
+  --output-dir site
+
+# GitHub Pages 部署成功并实际验证网址后再执行：
+./.venv/Scripts/python.exe -m literature_intelligence.pipeline.publication_release `
+  --database-url sqlite:///data/gut_health_mvp.db `
+  finalize `
+  --batch-id <batch-id> `
+  --published-site-dir site `
+  --site-url https://<owner>.github.io/<repository>/
+~~~
 
 `config/update.v1.json` 已预留最近检索天数、PubMed 日期字段、时区、星期和运行时间配置。当前 `schedule.enabled=false`，只允许人工触发；该配置尚未接入调度器。
 

@@ -241,15 +241,28 @@ def build_cumulative_site_data(
     database_url: str,
     site_config_path: Path,
     journal_metrics_path: Path,
+    publication_status: str = "preview",
 ) -> dict[str, Any]:
+    if publication_status not in {"preview", "published"}:
+        raise ValueError(f"unsupported publication_status: {publication_status}")
     site_config = _load_json(site_config_path)
     journal_metrics = _load_json(journal_metrics_path)
     metric_by_journal = _journal_metric_index(journal_metrics)
     domains = [dict(item) for item in site_config["domains"]]
     domain_by_code = {item["code"]: item for item in domains}
-    included_batch_statuses = site_config.get(
-        "preview_batch_statuses",
-        ["draft", "preview_ready", "awaiting_confirmation", "approved", "published"],
+    included_batch_statuses = (
+        site_config.get(
+            "preview_batch_statuses",
+            [
+                "draft",
+                "preview_ready",
+                "awaiting_confirmation",
+                "approved",
+                "published",
+            ],
+        )
+        if publication_status == "preview"
+        else ["approved", "published"]
     )
 
     papers_by_id: dict[int, dict[str, Any]] = {}
@@ -267,6 +280,22 @@ def build_cumulative_site_data(
                     )
                 )
             )
+            if publication_status == "published":
+                if not batches:
+                    raise ValueError(
+                        "published site requires at least one approved publication batch"
+                    )
+                unconfirmed = [
+                    batch.id
+                    for batch in batches
+                    if not batch.confirmed_by
+                    or batch.confirmed_at is None
+                    or not batch.preview_sha256
+                ]
+                if unconfirmed:
+                    raise ValueError(
+                        f"published site has unconfirmed batches: {unconfirmed}"
+                    )
             batch_rows = session.execute(
                 select(ReportItem, PublicationBatch)
                 .join(
@@ -453,7 +482,7 @@ def build_cumulative_site_data(
     return {
         "schema_version": "2.0",
         "generated_at": _iso_now(),
-        "publication_status": "preview",
+        "publication_status": publication_status,
         "data_mode": "cumulative_database",
         "batch_id": latest_batch.id if latest_batch else "none",
         "latest_edition_date": latest_batch.edition_date.isoformat()
@@ -660,8 +689,13 @@ def _nav(domains: list[dict[str, Any]], *, root: str, current: str | None) -> st
     return f'''<header class="site-header"><div class="header-inner"><a class="brand" href="{root}index.html">科研文献速递</a><button class="nav-toggle" type="button" aria-label="打开目录">目录</button><nav class="site-nav" aria-label="主导航">{''.join(links)}</nav></div></header>'''
 
 
-def _footer(batch_id: str) -> str:
-    return f'''<footer class="site-footer"><div class="footer-inner"><span>批次 {_e(batch_id)}</span><span class="preview-badge">本地预览 · 人工确认前不得正式发布</span></div></footer>'''
+def _footer(batch_id: str, publication_status: str) -> str:
+    status_text = (
+        "正式发布 · 已完成批次级人工确认"
+        if publication_status == "published"
+        else "本地预览 · 人工确认前不得正式发布"
+    )
+    return f'''<footer class="site-footer"><div class="footer-inner"><span>批次 {_e(batch_id)}</span><span class="preview-badge">{status_text}</span></div></footer>'''
 
 
 def _redirect_page(*, destination: str, title: str) -> str:
@@ -691,8 +725,18 @@ def _paper_list(papers: list[dict[str, Any]], domains: dict[str, dict[str, Any]]
     return '<ol class="paper-list">' + "".join(rows) + '</ol>'
 
 
-def _page(title: str, body: str, *, domains: list[dict[str, Any]], root: str, current: str | None, batch_id: str) -> str:
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{_e(title)} · 科研文献速递</title><link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{root}assets/site.css"></head><body>{_nav(domains,root=root,current=current)}{body}{_footer(batch_id)}<script src="{root}assets/site.js"></script></body></html>'''
+def _page(
+    title: str,
+    body: str,
+    *,
+    domains: list[dict[str, Any]],
+    root: str,
+    current: str | None,
+    batch_id: str,
+    publication_status: str,
+) -> str:
+    robots = "index,follow" if publication_status == "published" else "noindex,nofollow"
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="{robots}"><title>{_e(title)} · 科研文献速递</title><link rel="icon" href="{root}assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{root}assets/site.css"></head><body>{_nav(domains,root=root,current=current)}{body}{_footer(batch_id, publication_status)}<script src="{root}assets/site.js"></script></body></html>'''
 
 
 def _render_index(data: dict[str, Any]) -> str:
@@ -717,8 +761,21 @@ def _render_index(data: dict[str, Any]) -> str:
         edition_strip = f'''<section class="edition-strip"><div><strong>本期更新 · {_e(latest_archive["edition_date"])}</strong><p>新增 {latest_archive["paper_count"]} 篇文献，已进入固定站点累计展示。</p></div><div class="edition-actions"><a href="archive/{_e(latest_archive["slug"])}/">查看本期 →</a><a href="archive/index.html">历史速递 →</a></div></section>'''
     else:
         edition_strip = '''<section class="edition-strip"><div><strong>尚无历史速递</strong><p>完成首个数据库批次后将在这里生成固定日期归档。</p></div><div class="edition-actions"><a href="archive/index.html">历史速递 →</a></div></section>'''
-    body = f'''<main class="shell"><section class="hero"><div><span class="kicker">AI Research Digest · Preview</span><h1>{_e(data["site"]["title"])}</h1><p>{_e(data["site"]["subtitle"])}</p></div><div class="hero-stat"><strong>{data["summary"]["included"]}</strong><span>{count_label}</span></div></section>{edition_strip}<div class="section-head"><div><h2>关注领域</h2><p>从领域进入最新文献列表，再查看结构化研究详情。</p></div></div><section class="domain-grid">{cards}</section>{''.join(sections)}</main>'''
-    return _page("首页", body, domains=domains, root="", current="home", batch_id=data["batch_id"])
+    kicker = (
+        "AI Research Digest"
+        if data["publication_status"] == "published"
+        else "AI Research Digest · Preview"
+    )
+    body = f'''<main class="shell"><section class="hero"><div><span class="kicker">{kicker}</span><h1>{_e(data["site"]["title"])}</h1><p>{_e(data["site"]["subtitle"])}</p></div><div class="hero-stat"><strong>{data["summary"]["included"]}</strong><span>{count_label}</span></div></section>{edition_strip}<div class="section-head"><div><h2>关注领域</h2><p>从领域进入最新文献列表，再查看结构化研究详情。</p></div></div><section class="domain-grid">{cards}</section>{''.join(sections)}</main>'''
+    return _page(
+        "首页",
+        body,
+        domains=domains,
+        root="",
+        current="home",
+        batch_id=data["batch_id"],
+        publication_status=data["publication_status"],
+    )
 
 
 def _render_domain(data: dict[str, Any], domain: dict[str, Any]) -> str:
@@ -726,7 +783,15 @@ def _render_domain(data: dict[str, Any], domain: dict[str, Any]) -> str:
     domain_by_code = {item["code"]: item for item in domains}
     papers = [paper for paper in data["papers"] if domain["code"] in paper["domain_codes"]]
     body = f'''<main class="shell"><div class="breadcrumb"><a href="../index.html">首页</a><span>/</span>{_e(domain["name"])}</div><section class="page-head"><span class="kicker">Research Domain</span><h1>{_e(domain["name"])}</h1><p>{_e(domain["description"])}</p><span class="page-count">本领域共 {len(papers)} 篇</span></section><div class="section-head"><div><h2>最新文献</h2><p>按 PubMed 期刊日期由新到旧排列。</p></div></div>{_paper_list(papers,domain_by_code,root="../")}</main>'''
-    return _page(domain["name"], body, domains=domains, root="../", current=domain["code"], batch_id=data["batch_id"])
+    return _page(
+        domain["name"],
+        body,
+        domains=domains,
+        root="../",
+        current=domain["code"],
+        batch_id=data["batch_id"],
+        publication_status=data["publication_status"],
+    )
 
 
 def _archive_domain_counts(
@@ -759,6 +824,7 @@ def _render_archive_index(data: dict[str, Any]) -> str:
         root="../",
         current="archive",
         batch_id=data["batch_id"],
+        publication_status=data["publication_status"],
     )
 
 
@@ -780,6 +846,7 @@ def _render_archive(data: dict[str, Any], archive: dict[str, Any]) -> str:
         root="../../",
         current="archive",
         batch_id=data["batch_id"],
+        publication_status=data["publication_status"],
     )
 
 
@@ -811,8 +878,21 @@ def _render_paper(data: dict[str, Any], paper: dict[str, Any]) -> str:
         for link in paper["verified_source_links"]
     )
     sidebar_links = "".join(f'<a href="../domains/{_e(domain_by_code[code]["slug"])}.html">← 返回{_e(domain_by_code[code]["short_name"])}文献列表</a>' for code in paper["domain_codes"])
-    body = f'''<main class="shell"><div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../domains/{_e(primary_domain["slug"])}.html">{_e(primary_domain["name"])}</a><span>/</span>文献详情</div><div class="detail-layout"><article class="detail-main"><span class="kicker">Paper Detail · PMID {_e(paper["identifiers"].get("pmid"))}</span><h1 class="detail-title">{_e(paper["ai_title"])}</h1><p class="detail-original">{_e(paper["title"])}</p><dl class="detail-meta"><dt>作者</dt><dd>{_e(authors)}</dd><dt>期刊</dt><dd>{_e(paper["journal"])}</dd><dt>发布时间</dt><dd>{_e(paper["publication_date"])}（精度：{_e(paper["publication_date_precision"]) }）</dd><dt>PMID</dt><dd>{_e(paper["identifiers"].get("pmid"))}</dd><dt>DOI</dt><dd>{_e(paper["identifiers"].get("doi"))}</dd><dt>研究类型</dt><dd>{_e(STUDY_TYPE_ZH.get(analysis["study_type"], analysis["study_type"]))} / {_e(analysis["evidence_level"])}</dd></dl>{warning_html}<h2 id="background">研究背景</h2><p>{_e(analysis["background"])}</p><h2 id="objective">研究目的</h2><p>{_e(analysis["objective"])}</p><h2 id="design">实验设计与主要方法</h2><h3>设计</h3><p>{_e(methods["design"])}</p><h3>样本量 / 研究对象</h3><p>样本量：{_e(sample["size"])}；研究对象：{_e(sample["population"])}；物种：{_e(sample["species"])}</p><h3>干预与对照</h3><p>干预：{_e(methods["intervention"])}<br>对照：{_e(methods["comparator"])}</p><h3>周期</h3><p>{_e(methods["duration"])}</p><h2 id="results">核心研究结果</h2>{_ul(report["core_results"])}<h2 id="limitations">研究局限</h2>{_ul(report["limitations"])}<h2 id="implications">对研发的启示</h2>{_ul(report["rd_implications"])}<h2 id="evidence">证据 / 原文支持</h2>{evidence_html}<div class="quality-box"><strong>Quality Gate：{_e(paper["quality_gate"]["decision"]) } · {_e(paper["quality_gate"]["quality_score"])}</strong><br>当前内容仅用于内部预览，正式发布前仍需人工确认。</div><div class="source-actions">{links}</div></article><aside class="detail-sidebar"><h2>页面目录</h2><a href="#background">研究背景</a><a href="#objective">研究目的</a><a href="#design">实验设计</a><a href="#results">核心结果</a><a href="#limitations">研究局限</a><a href="#implications">研发启示</a><a href="#evidence">原文证据</a><hr>{sidebar_links}<a href="../index.html">← 返回首页</a></aside></div></main>'''
-    return _page(paper["ai_title"], body, domains=domains, root="../", current=primary_domain["code"], batch_id=data["batch_id"])
+    quality_notice = (
+        "本批次已完成人工确认并正式发布。"
+        if data["publication_status"] == "published"
+        else "当前内容仅用于内部预览，正式发布前仍需人工确认。"
+    )
+    body = f'''<main class="shell"><div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../domains/{_e(primary_domain["slug"])}.html">{_e(primary_domain["name"])}</a><span>/</span>文献详情</div><div class="detail-layout"><article class="detail-main"><span class="kicker">Paper Detail · PMID {_e(paper["identifiers"].get("pmid"))}</span><h1 class="detail-title">{_e(paper["ai_title"])}</h1><p class="detail-original">{_e(paper["title"])}</p><dl class="detail-meta"><dt>作者</dt><dd>{_e(authors)}</dd><dt>期刊</dt><dd>{_e(paper["journal"])}</dd><dt>发布时间</dt><dd>{_e(paper["publication_date"])}（精度：{_e(paper["publication_date_precision"]) }）</dd><dt>PMID</dt><dd>{_e(paper["identifiers"].get("pmid"))}</dd><dt>DOI</dt><dd>{_e(paper["identifiers"].get("doi"))}</dd><dt>研究类型</dt><dd>{_e(STUDY_TYPE_ZH.get(analysis["study_type"], analysis["study_type"]))} / {_e(analysis["evidence_level"])}</dd></dl>{warning_html}<h2 id="background">研究背景</h2><p>{_e(analysis["background"])}</p><h2 id="objective">研究目的</h2><p>{_e(analysis["objective"])}</p><h2 id="design">实验设计与主要方法</h2><h3>设计</h3><p>{_e(methods["design"])}</p><h3>样本量 / 研究对象</h3><p>样本量：{_e(sample["size"])}；研究对象：{_e(sample["population"])}；物种：{_e(sample["species"])}</p><h3>干预与对照</h3><p>干预：{_e(methods["intervention"])}<br>对照：{_e(methods["comparator"])}</p><h3>周期</h3><p>{_e(methods["duration"])}</p><h2 id="results">核心研究结果</h2>{_ul(report["core_results"])}<h2 id="limitations">研究局限</h2>{_ul(report["limitations"])}<h2 id="implications">对研发的启示</h2>{_ul(report["rd_implications"])}<h2 id="evidence">证据 / 原文支持</h2>{evidence_html}<div class="quality-box"><strong>Quality Gate：{_e(paper["quality_gate"]["decision"]) } · {_e(paper["quality_gate"]["quality_score"])}</strong><br>{quality_notice}</div><div class="source-actions">{links}</div></article><aside class="detail-sidebar"><h2>页面目录</h2><a href="#background">研究背景</a><a href="#objective">研究目的</a><a href="#design">实验设计</a><a href="#results">核心结果</a><a href="#limitations">研究局限</a><a href="#implications">研发启示</a><a href="#evidence">原文证据</a><hr>{sidebar_links}<a href="../index.html">← 返回首页</a></aside></div></main>'''
+    return _page(
+        paper["ai_title"],
+        body,
+        domains=domains,
+        root="../",
+        current=primary_domain["code"],
+        batch_id=data["batch_id"],
+        publication_status=data["publication_status"],
+    )
 
 
 def generate_site(data: dict[str, Any], output_dir: Path) -> dict[str, Any]:
@@ -918,7 +998,7 @@ def generate_site(data: dict[str, Any], output_dir: Path) -> dict[str, Any]:
     generated_files = sorted([*content_files, manifest_relative_path])
     return {
         "output_dir": output_dir.resolve().as_posix(),
-        "publication_status": "preview",
+        "publication_status": data["publication_status"],
         "domain_pages": len(data["domains"]),
         "domain_alias_pages": len(alias_slugs),
         "paper_pages": len(data["papers"]),
@@ -940,6 +1020,11 @@ def main() -> None:
     parser.add_argument("--screening-results", type=Path)
     parser.add_argument("--mvp-results", type=Path)
     parser.add_argument("--output-dir", type=Path, default=Path("site"))
+    parser.add_argument(
+        "--publication-status",
+        choices=("preview", "published"),
+        default="preview",
+    )
     args = parser.parse_args()
     legacy_inputs = (
         args.task_package,
@@ -952,6 +1037,8 @@ def main() -> None:
             "provided together for single-batch compatibility mode"
         )
     if all(legacy_inputs):
+        if args.publication_status != "preview":
+            parser.error("single-batch compatibility mode only supports preview")
         data = build_site_data(
             database_url=args.database_url,
             site_config_path=args.site_config,
@@ -965,6 +1052,7 @@ def main() -> None:
             database_url=args.database_url,
             site_config_path=args.site_config,
             journal_metrics_path=args.journal_metrics,
+            publication_status=args.publication_status,
         )
     result = generate_site(data, args.output_dir)
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))

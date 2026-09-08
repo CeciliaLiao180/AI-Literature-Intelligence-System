@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-09-07T07:09:47.642987Z",
-  "publication_status": "preview",
+  "generated_at": "2026-09-08T01:40:11.851019Z",
+  "publication_status": "published",
   "data_mode": "cumulative_database",
   "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
   "latest_edition_date": "2026-09-07",
@@ -1313,7 +1313,7 @@
       "edition_date": "2026-09-07",
       "edition_type": "weekly",
       "title": "科研文献速递 2026-09-07",
-      "status": "draft",
+      "status": "approved",
       "paper_ids": [
         4,
         5,
@@ -1332,7 +1332,7 @@
         "b031d6db-5d87-4506-96c6-5364ad63606a"
       ],
       "batch_statuses": [
-        "draft"
+        "approved"
       ],
       "paper_ids": [
         4,

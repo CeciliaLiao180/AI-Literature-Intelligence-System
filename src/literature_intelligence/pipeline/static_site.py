@@ -80,7 +80,12 @@ def _load_json(path: Path) -> dict[str, Any]:
 
 def _write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
+    # Write deterministic UTF-8 bytes instead of using the platform text mode.
+    # On Windows, text-mode newline translation previously produced CRLF files;
+    # Git normalized them to LF on the Linux Pages runner, invalidating the
+    # byte-level SHA-256 values recorded in site-manifest.json.
+    normalized_content = content.replace("\r\n", "\n").replace("\r", "\n")
+    path.write_bytes(normalized_content.encode("utf-8"))
 
 
 def _normalized_journal_name(value: str | None) -> str:

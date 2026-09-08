@@ -143,6 +143,11 @@ class StaticSiteTests(unittest.TestCase):
             ).hexdigest()
             self.assertEqual(actual_hash, expected_hash)
 
+    def test_generated_text_files_use_cross_platform_lf_newlines(self) -> None:
+        for path in self.output.rglob("*"):
+            if path.is_file():
+                self.assertNotIn(b"\r\n", path.read_bytes(), path.as_posix())
+
     def test_home_and_domain_pages_show_data_and_empty_states(self) -> None:
         home = (self.output / "index.html").read_text(encoding="utf-8")
         self.assertIn("科研文献速递", home)

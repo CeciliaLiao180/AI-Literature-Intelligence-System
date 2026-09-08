@@ -1,0 +1,2 @@
+# Keep generated site bytes stable between Windows development and Linux Pages.
+site/** text eol=lf

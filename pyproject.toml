@@ -23,6 +23,8 @@ literature-import-codex-results = "literature_intelligence.pipeline.codex_result
 literature-generate-static-site = "literature_intelligence.pipeline.static_site:main"
 literature-validate-site = "literature_intelligence.pipeline.site_artifact:main"
 literature-release = "literature_intelligence.pipeline.publication_release:main"
+literature-validate-config = "literature_intelligence.config_validation:main"
+literature-pubmed-candidate-dry-run = "literature_intelligence.pipeline.pubmed_candidate_dry_run:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

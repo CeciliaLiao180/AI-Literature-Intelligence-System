@@ -1,0 +1,134 @@
+{
+  "version": "0.1",
+  "status": "starter_pending_domain_review",
+  "purpose": "V0.1 候选发现和来源质量评分；不是最终权威期刊名单，也不是硬性纳入或排除条件。",
+  "matching": {
+    "default_tier": "unranked",
+    "hard_filter": false,
+    "impact_factor_is_authoritative": false,
+    "fields": ["canonical_name", "pubmed_ta", "aliases"]
+  },
+  "global_s": [
+    {"canonical_name": "Nature", "pubmed_ta": "Nature", "aliases": []},
+    {"canonical_name": "Science", "pubmed_ta": "Science", "aliases": []},
+    {"canonical_name": "Cell", "pubmed_ta": "Cell", "aliases": []},
+    {"canonical_name": "The New England Journal of Medicine", "pubmed_ta": "N Engl J Med", "aliases": ["New England Journal of Medicine"]},
+    {"canonical_name": "The Lancet", "pubmed_ta": "Lancet", "aliases": []},
+    {"canonical_name": "JAMA", "pubmed_ta": "JAMA", "aliases": []},
+    {"canonical_name": "BMJ", "pubmed_ta": "BMJ", "aliases": []},
+    {"canonical_name": "Nature Medicine", "pubmed_ta": "Nat Med", "aliases": []},
+    {"canonical_name": "Nature Biotechnology", "pubmed_ta": "Nat Biotechnol", "aliases": []},
+    {"canonical_name": "Science Translational Medicine", "pubmed_ta": "Sci Transl Med", "aliases": []},
+    {"canonical_name": "Cell Metabolism", "pubmed_ta": "Cell Metab", "aliases": []},
+    {"canonical_name": "Nature Metabolism", "pubmed_ta": "Nat Metab", "aliases": []}
+  ],
+  "domains": {
+    "gut_health": {
+      "A": [
+        {"canonical_name": "Gut", "pubmed_ta": "Gut", "aliases": []},
+        {"canonical_name": "Gastroenterology", "pubmed_ta": "Gastroenterology", "aliases": []},
+        {"canonical_name": "Nature Reviews Gastroenterology & Hepatology", "pubmed_ta": "Nat Rev Gastroenterol Hepatol", "aliases": []},
+        {"canonical_name": "Nature Reviews Microbiology", "pubmed_ta": "Nat Rev Microbiol", "aliases": []},
+        {"canonical_name": "Cell Host & Microbe", "pubmed_ta": "Cell Host Microbe", "aliases": []},
+        {"canonical_name": "Nature Microbiology", "pubmed_ta": "Nat Microbiol", "aliases": []},
+        {"canonical_name": "Microbiome", "pubmed_ta": "Microbiome", "aliases": []},
+        {"canonical_name": "Gut Microbes", "pubmed_ta": "Gut Microbes", "aliases": ["Gut microbes"]},
+        {"canonical_name": "The ISME Journal", "pubmed_ta": "ISME J", "aliases": []},
+        {"canonical_name": "The American Journal of Clinical Nutrition", "pubmed_ta": "Am J Clin Nutr", "aliases": []}
+      ],
+      "B": [
+        {"canonical_name": "Clinical Gastroenterology and Hepatology", "pubmed_ta": "Clin Gastroenterol Hepatol", "aliases": []},
+        {"canonical_name": "Alimentary Pharmacology & Therapeutics", "pubmed_ta": "Aliment Pharmacol Ther", "aliases": []},
+        {"canonical_name": "mSystems", "pubmed_ta": "mSystems", "aliases": []},
+        {"canonical_name": "ISME Communications", "pubmed_ta": "ISME Commun", "aliases": []},
+        {"canonical_name": "Beneficial Microbes", "pubmed_ta": "Benef Microbes", "aliases": []},
+        {"canonical_name": "Probiotics and Antimicrobial Proteins", "pubmed_ta": "Probiotics Antimicrob Proteins", "aliases": []},
+        {"canonical_name": "Molecular Nutrition & Food Research", "pubmed_ta": "Mol Nutr Food Res", "aliases": []},
+        {"canonical_name": "Food & Function", "pubmed_ta": "Food Funct", "aliases": []},
+        {"canonical_name": "Nutrients", "pubmed_ta": "Nutrients", "aliases": []},
+        {"canonical_name": "Food Research International", "pubmed_ta": "Food Res Int", "aliases": []},
+        {"canonical_name": "Journal of Functional Foods", "pubmed_ta": "J Funct Foods", "aliases": []},
+        {"canonical_name": "The Journal of Nutrition", "pubmed_ta": "J Nutr", "aliases": []}
+      ]
+    },
+    "healthy_aging": {
+      "A": [
+        {"canonical_name": "Nature Aging", "pubmed_ta": "Nat Aging", "aliases": []},
+        {"canonical_name": "Aging Cell", "pubmed_ta": "Aging Cell", "aliases": []},
+        {"canonical_name": "GeroScience", "pubmed_ta": "Geroscience", "aliases": []},
+        {"canonical_name": "Age and Ageing", "pubmed_ta": "Age Ageing", "aliases": []},
+        {"canonical_name": "The Journals of Gerontology: Series A", "pubmed_ta": "J Gerontol A Biol Sci Med Sci", "aliases": []},
+        {"canonical_name": "Ageing Research Reviews", "pubmed_ta": "Ageing Res Rev", "aliases": []},
+        {"canonical_name": "The Lancet Healthy Longevity", "pubmed_ta": "Lancet Healthy Longev", "aliases": []},
+        {"canonical_name": "Nature Communications", "pubmed_ta": "Nat Commun", "aliases": []}
+      ],
+      "B": [
+        {"canonical_name": "Experimental Gerontology", "pubmed_ta": "Exp Gerontol", "aliases": []},
+        {"canonical_name": "Mechanisms of Ageing and Development", "pubmed_ta": "Mech Ageing Dev", "aliases": []},
+        {"canonical_name": "Biogerontology", "pubmed_ta": "Biogerontology", "aliases": []},
+        {"canonical_name": "npj Aging", "pubmed_ta": "NPJ Aging", "aliases": []},
+        {"canonical_name": "Gerontology", "pubmed_ta": "Gerontology", "aliases": []},
+        {"canonical_name": "The Journal of Frailty & Aging", "pubmed_ta": "J Frailty Aging", "aliases": []},
+        {"canonical_name": "Neurobiology of Aging", "pubmed_ta": "Neurobiol Aging", "aliases": []},
+        {"canonical_name": "Rejuvenation Research", "pubmed_ta": "Rejuvenation Res", "aliases": []},
+        {"canonical_name": "Frontiers in Aging", "pubmed_ta": "Front Aging", "aliases": []},
+        {"canonical_name": "Molecular Nutrition & Food Research", "pubmed_ta": "Mol Nutr Food Res", "aliases": []},
+        {"canonical_name": "Nutrients", "pubmed_ta": "Nutrients", "aliases": []}
+      ]
+    },
+    "musculoskeletal_health": {
+      "A": [
+        {"canonical_name": "Journal of Bone and Mineral Research", "pubmed_ta": "J Bone Miner Res", "aliases": []},
+        {"canonical_name": "Bone Research", "pubmed_ta": "Bone Res", "aliases": []},
+        {"canonical_name": "Osteoarthritis and Cartilage", "pubmed_ta": "Osteoarthritis Cartilage", "aliases": []},
+        {"canonical_name": "Annals of the Rheumatic Diseases", "pubmed_ta": "Ann Rheum Dis", "aliases": []},
+        {"canonical_name": "Arthritis & Rheumatology", "pubmed_ta": "Arthritis Rheumatol", "aliases": []},
+        {"canonical_name": "Journal of Cachexia, Sarcopenia and Muscle", "pubmed_ta": "J Cachexia Sarcopenia Muscle", "aliases": []},
+        {"canonical_name": "Journal of Orthopaedic Translation", "pubmed_ta": "J Orthop Translat", "aliases": []},
+        {"canonical_name": "Bone", "pubmed_ta": "Bone", "aliases": []},
+        {"canonical_name": "Skeletal Muscle", "pubmed_ta": "Skelet Muscle", "aliases": []}
+      ],
+      "B": [
+        {"canonical_name": "Osteoporosis International", "pubmed_ta": "Osteoporos Int", "aliases": []},
+        {"canonical_name": "Archives of Osteoporosis", "pubmed_ta": "Arch Osteoporos", "aliases": []},
+        {"canonical_name": "Calcified Tissue International", "pubmed_ta": "Calcif Tissue Int", "aliases": []},
+        {"canonical_name": "Journal of Orthopaedic Research", "pubmed_ta": "J Orthop Res", "aliases": []},
+        {"canonical_name": "Muscle & Nerve", "pubmed_ta": "Muscle Nerve", "aliases": []},
+        {"canonical_name": "Journal of Musculoskeletal & Neuronal Interactions", "pubmed_ta": "J Musculoskelet Neuronal Interact", "aliases": []},
+        {"canonical_name": "Clinical Nutrition", "pubmed_ta": "Clin Nutr", "aliases": []},
+        {"canonical_name": "The Journal of Nutrition", "pubmed_ta": "J Nutr", "aliases": []},
+        {"canonical_name": "Nutrients", "pubmed_ta": "Nutrients", "aliases": []},
+        {"canonical_name": "Food & Function", "pubmed_ta": "Food Funct", "aliases": []},
+        {"canonical_name": "Phytomedicine", "pubmed_ta": "Phytomedicine", "aliases": []},
+        {"canonical_name": "Journal of Ethnopharmacology", "pubmed_ta": "J Ethnopharmacol", "aliases": []}
+      ]
+    },
+    "immune_health": {
+      "A": [
+        {"canonical_name": "Nature Immunology", "pubmed_ta": "Nat Immunol", "aliases": []},
+        {"canonical_name": "Immunity", "pubmed_ta": "Immunity", "aliases": []},
+        {"canonical_name": "Science Immunology", "pubmed_ta": "Sci Immunol", "aliases": []},
+        {"canonical_name": "Nature Reviews Immunology", "pubmed_ta": "Nat Rev Immunol", "aliases": []},
+        {"canonical_name": "Journal of Experimental Medicine", "pubmed_ta": "J Exp Med", "aliases": []},
+        {"canonical_name": "Cellular & Molecular Immunology", "pubmed_ta": "Cell Mol Immunol", "aliases": []},
+        {"canonical_name": "Mucosal Immunology", "pubmed_ta": "Mucosal Immunol", "aliases": []},
+        {"canonical_name": "Cell Host & Microbe", "pubmed_ta": "Cell Host Microbe", "aliases": []},
+        {"canonical_name": "Journal of Allergy and Clinical Immunology", "pubmed_ta": "J Allergy Clin Immunol", "aliases": []},
+        {"canonical_name": "Clinical & Translational Immunology", "pubmed_ta": "Clin Transl Immunology", "aliases": []}
+      ],
+      "B": [
+        {"canonical_name": "The Journal of Immunology", "pubmed_ta": "J Immunol", "aliases": []},
+        {"canonical_name": "European Journal of Immunology", "pubmed_ta": "Eur J Immunol", "aliases": []},
+        {"canonical_name": "Clinical and Experimental Immunology", "pubmed_ta": "Clin Exp Immunol", "aliases": []},
+        {"canonical_name": "Frontiers in Immunology", "pubmed_ta": "Front Immunol", "aliases": []},
+        {"canonical_name": "Inflammation Research", "pubmed_ta": "Inflamm Res", "aliases": []},
+        {"canonical_name": "Cytokine", "pubmed_ta": "Cytokine", "aliases": []},
+        {"canonical_name": "Molecular Nutrition & Food Research", "pubmed_ta": "Mol Nutr Food Res", "aliases": []},
+        {"canonical_name": "Nutrients", "pubmed_ta": "Nutrients", "aliases": []},
+        {"canonical_name": "Food & Function", "pubmed_ta": "Food Funct", "aliases": []},
+        {"canonical_name": "International Immunopharmacology", "pubmed_ta": "Int Immunopharmacol", "aliases": []},
+        {"canonical_name": "Phytomedicine", "pubmed_ta": "Phytomedicine", "aliases": []}
+      ]
+    }
+  }
+}

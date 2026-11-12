@@ -1,16 +1,83 @@
 {
-  "version": "1.0",
+  "version": "0.1",
   "retrieval": {
-    "lookback_days": 7,
-    "pubmed_date_field": "edat"
+    "lookback_days": 45,
+    "pubmed_date_field": "edat",
+    "sort": "relevance",
+    "per_domain_hard_cap": 200,
+    "deduplication_keys": ["pmid", "doi", "historical_processing_state"],
+    "base_filter": "hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+    "production_query_template": "({DOMAIN_BLOCK}) AND ({ROUTE_BLOCK}) AND {BASE_FILTER} {DOMAIN_ADDITIONAL_FILTER}",
+    "routes": {
+      "journal_radar": {
+        "limit": 50,
+        "description": "全局 S-tier 或领域 A-tier 期刊且领域高度相关",
+        "block_source": "config/journal_tiers.v0.1.json"
+      },
+      "frontier_radar": {
+        "limit": 60,
+        "description": "新机制、新靶点、新标志物、新技术、新方法、新模型或首次人体证据",
+        "concept_block": "(mechanis*[ti] OR biomarker*[ti] OR target*[ti] OR pathway*[ti] OR multi-omics[ti] OR multiomic*[ti] OR single-cell[ti] OR spatial-transcriptom*[ti] OR organoid*[ti] OR atlas[ti] OR novel-model[ti] OR new-model[ti] OR new-method*[ti] OR new-technolog*[ti] OR first-in-human[tiab])"
+      },
+      "clinical_radar": {
+        "limit": 50,
+        "description": "人体干预、临床证据、系统综述或重要队列研究",
+        "concept_block": "(randomized-controlled-trial[pt] OR clinical-trial[pt] OR meta-analysis[pt] OR systematic-review[pt] OR (random*[tiab] AND placebo*[tiab]) OR first-in-human[tiab] OR cohort[ti] OR longitudinal[ti] OR intervention[ti])"
+      },
+      "business_relevance_radar": {
+        "limit": 60,
+        "description": "营养、天然成分、植物成分、益生菌或功能食品相关研究，不以顶刊为硬条件",
+        "concept_block": "(nutrition*[tiab] OR diet*[tiab] OR dietary[tiab] OR nutrient*[tiab] OR supplement*[tiab] OR nutraceutical*[tiab] OR functional-food*[tiab] OR probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab] OR phytochemical*[tiab] OR polyphenol*[tiab] OR flavonoid*[tiab] OR botanical*[tiab] OR herbal[tiab] OR natural-product*[tiab] OR plant-extract*[tiab] OR traditional-Chinese-medicine[tiab])"
+      }
+    }
   },
-  "schedule": {
-    "enabled": false,
-    "timezone": "Asia/Shanghai",
-    "weekday": null,
-    "local_time": null
+  "recency_scoring": [
+    {"min_age_days": 0, "max_age_days": 14, "points": 10},
+    {"min_age_days": 15, "max_age_days": 30, "points": 7},
+    {"min_age_days": 31, "max_age_days": 45, "points": 4}
+  ],
+  "scoring": {
+    "weights": {
+      "domain_relevance": 25,
+      "novelty_frontier_value": 25,
+      "journal_source_quality": 15,
+      "evidence_strength": 15,
+      "nutrition_natural_product_relevance": 10,
+      "recency": 10
+    },
+    "total": 100,
+    "cross_domain_bonus_max": 2,
+    "cross_domain_bonus_usage": "tie_break_or_small_ranking_bonus",
+    "journal_tier_is_hard_filter": false,
+    "impact_factor_is_hard_filter": false
   },
+  "stored_assessment_fields": ["frontier_type", "business_relevance", "cross_domain_value"],
+  "frontier_types": [
+    "NEW_MECHANISM", "NEW_TARGET", "NEW_BIOMARKER", "NEW_TECHNOLOGY", "NEW_METHOD",
+    "NEW_MODEL", "NEW_INTERVENTION", "NEW_CLINICAL_EVIDENCE", "FIRST_IN_HUMAN"
+  ],
+  "selection_targets": {
+    "ai_shortlist": {"min": 20, "max": 30, "enforce_minimum": false},
+    "human_review_pool": {"min": 5, "max": 10, "enforce_minimum": false},
+    "final_digest": {
+      "suggested_min": 3,
+      "suggested_max": 6,
+      "enforce_minimum": false,
+      "rule": "不为了固定篇数降低质量"
+    }
+  },
+  "supplementary_sources": [
+    {
+      "name": "Aging 微信公众号等外部来源",
+      "role": "benchmark_and_supplementary_discovery_reference",
+      "automatic_ingestion": false
+    }
+  ],
+  "schedule": {"enabled": false, "timezone": "Asia/Shanghai", "weekday": null, "local_time": null},
   "execution": {
-    "manual_run_enabled": true
+    "manual_run_enabled": true,
+    "automatic_analysis_enabled": false,
+    "automatic_publish_enabled": false,
+    "human_confirmation_required_before_publish": true
   }
 }

@@ -1,11 +1,105 @@
 {
-  "version": "1.0",
+  "version": "0.1",
+  "status": "v0.1_trial_pending_domain_review",
+  "shared_profile": {
+    "focus": [
+      "近期发表研究",
+      "高水平综合期刊和领域重要期刊",
+      "新发现、新机制、新靶点、新标志物、新技术、新方法、新模型和新评价指标",
+      "转化研究、人体研究、营养干预、动物机制和细胞机制研究",
+      "天然成分、植物来源成分、营养活性成分及功能食品干预"
+    ],
+    "nutrition_natural_product_policy": "strong_priority_not_hard_requirement",
+    "human_age_policy": {
+      "preferred": "成年人，尤其约30岁以上、中年和中老年人群",
+      "lower_priority": "儿童、青少年和年轻健康运动员",
+      "pubmed_hard_filter": false
+    },
+    "allowed_study_scopes": ["human", "animal", "in_vitro", "translational"]
+  },
+  "multidomain_policy": {
+    "enabled": true,
+    "primary_field": "primary_domain",
+    "secondary_field": "secondary_domains",
+    "cross_domain_value_field": "cross_domain_value",
+    "ranking_bonus_max": 2,
+    "rule": "一篇论文可属于多个领域；选择一个主要领域并保存零个或多个次要领域。"
+  },
   "domains": [
     {
       "code": "gut_health",
-      "name_zh": "肠道健康",
+      "name_zh": "肠道/胃肠健康",
       "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。",
-      "is_active": true
+      "is_active": true,
+      "priority_topics": [
+        "gut microbiome / microbiota", "intestinal barrier", "gut microbial metabolites",
+        "host-microbiome interaction", "probiotics / prebiotics / synbiotics / postbiotics",
+        "microbiome-related nutrition intervention", "microbiome multi-omics",
+        "新型肠道微生态干预", "新机制、新技术和新评价方法"
+      ],
+      "exclusion_policy": [
+        "仅讨论食品发酵、生产工艺或菌株工业性能，且没有肠道或宿主健康结果",
+        "仅命中 probiotics 或 microbiota 等词，但主题与肠道健康无实质关系"
+      ],
+      "pubmed": {
+        "concept_block": "(\"Gastrointestinal Microbiome\"[mesh] OR gut-microbiom*[tiab] OR gut-microbiota[tiab] OR intestinal-microbiom*[tiab] OR intestinal-microbiota[tiab] OR intestinal-barrier[tiab] OR gut-barrier[tiab] OR intestinal-permeability[tiab] OR microbial-metabolite*[tiab] OR host-microbiome[tiab] OR gut-brain-axis[tiab] OR gut-muscle-axis[tiab] OR gut-immune-axis[tiab] OR ((probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab]) AND (gut[tiab] OR intestin*[tiab] OR gastrointestinal[tiab] OR host-health[tiab])))",
+        "additional_filter": null
+      }
+    },
+    {
+      "code": "healthy_aging",
+      "name_zh": "延缓衰老/健康衰老",
+      "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。",
+      "is_active": true,
+      "priority_topics": [
+        "aging mechanisms", "biomarkers of aging / biological age", "cellular senescence",
+        "longevity / healthspan", "mitochondrial dysfunction", "inflammaging", "epigenetic aging",
+        "autophagy / proteostasis / nutrient sensing", "reproductive / ovarian aging",
+        "brain / cognitive aging", "ocular / visual aging", "muscle aging / sarcopenia",
+        "skin aging", "具有明确衰老机制或标志物意义的器官衰老"
+      ],
+      "exclusion_policy": [],
+      "pubmed": {
+        "concept_block": "(\"Aging\"[mesh] OR aging[ti] OR ageing[ti] OR geroscience[tiab] OR longevity[tiab] OR healthspan[tiab] OR cellular-senescence[tiab] OR senolytic*[tiab] OR senomorphic*[tiab] OR biological-age[tiab] OR epigenetic-clock*[tiab] OR inflammaging[tiab] OR immunosenescence[tiab] OR ovarian-aging[tiab] OR reproductive-aging[tiab] OR cognitive-aging[tiab] OR brain-aging[tiab] OR ocular-aging[tiab] OR muscle-aging[tiab] OR skin-aging[tiab])",
+        "additional_filter": null
+      }
+    },
+    {
+      "code": "musculoskeletal_health",
+      "name_zh": "肌骨/筋骨关节健康",
+      "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。",
+      "is_active": true,
+      "priority_topics": [
+        "bone health", "joint health", "cartilage", "muscle / sarcopenia",
+        "osteoporosis / osteoarthritis", "中草药、植物成分、天然提取物、营养成分和功能食品",
+        "作用机制和人体干预"
+      ],
+      "exclusion_policy": [
+        "joint replacement / arthroplasty", "prosthesis / orthopedic implant", "surgical technique",
+        "缺少营养、机制、标志物或转化价值的纯手术和器械研究"
+      ],
+      "pubmed": {
+        "concept_block": "(bone-health[tiab] OR joint-health[tiab] OR cartilage[tiab] OR sarcopenia[tiab] OR skeletal-muscle[tiab] OR muscle-aging[tiab] OR osteoporosis[tiab] OR osteoarthritis[tiab] OR musculoskeletal[tiab])",
+        "additional_filter": "NOT (((arthroplasty[ti] OR joint-replacement[ti] OR prosthes*[ti] OR orthopedic-implant*[ti] OR surgical-technique*[ti]) NOT (nutrition*[tiab] OR diet*[tiab] OR supplement*[tiab] OR natural-product*[tiab] OR biomarker*[tiab] OR mechanis*[tiab])))"
+      }
+    },
+    {
+      "code": "immune_health",
+      "name_zh": "免疫调节",
+      "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。",
+      "is_active": true,
+      "priority_topics": [
+        "healthy immune function", "immune homeostasis / immune regulation",
+        "inflammatory regulation / resolution", "immunosenescence", "mucosal immunity",
+        "metabolic-immune interaction", "nutrition and immunity", "天然成分、植物成分和功能食品",
+        "新机制和人体研究"
+      ],
+      "downrank_policy": ["纯严重疾病药物治疗研究；若揭示重要且可转化的免疫机制则保留"],
+      "exclusion_policy": [],
+      "pubmed": {
+        "concept_block": "(immune-homeostasis[tiab] OR immune-regulat*[tiab] OR immunoregulat*[tiab] OR healthy-immune[tiab] OR inflammat*-regulat*[tiab] OR inflammat*-resolut*[tiab] OR immunosenescence[tiab] OR mucosal-immun*[tiab] OR immunometabol*[tiab] OR metabolic-immune[tiab] OR nutrition*-immun*[tiab] OR diet*-immun*[tiab])",
+        "additional_filter": null
+      }
     }
   ]
 }

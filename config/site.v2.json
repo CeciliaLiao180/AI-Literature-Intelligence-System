@@ -26,15 +26,15 @@
       "status": "active"
     },
     {
-      "code": "immune_modulation",
+      "code": "immune_health",
       "slug": "immune",
       "aliases": [
         "immune-modulation"
       ],
       "name": "免疫调节",
       "short_name": "免疫调节",
-      "description": "预留免疫功能、免疫应答及免疫相关研发文献分类。",
-      "status": "reserved"
+      "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫。",
+      "status": "active"
     },
     {
       "code": "healthy_aging",
@@ -44,8 +44,8 @@
       ],
       "name": "延缓衰老/抗衰老",
       "short_name": "健康衰老",
-      "description": "预留健康寿命、衰老机制及相关干预研究文献分类。",
-      "status": "reserved"
+      "description": "关注健康寿命、衰老机制、生物年龄与衰老标志物、细胞衰老及相关干预。",
+      "status": "active"
     },
     {
       "code": "musculoskeletal_health",
@@ -55,8 +55,8 @@
       ],
       "name": "肌骨/筋骨关节健康",
       "short_name": "肌骨健康",
-      "description": "预留肌肉、骨骼、关节及运动功能相关研究文献分类。",
-      "status": "reserved"
+      "description": "关注肌肉、骨骼、关节和软骨功能，以及营养或天然成分干预研究。",
+      "status": "active"
     }
   ]
 }

@@ -11,6 +11,32 @@
 
 ## 本地运行
 
+V0.1 试运行配置由四个文件共同组成：
+
+- `config/domains.v1.json`：四个领域画像、PubMed concept blocks、排除/降级规则和多领域策略；
+- `config/update.v1.json`：45 天 EDAT 回看、四类候选入口、评分权重、时效分档及人工运行/发布规则；
+- `config/journal_tiers.v0.1.json`：全局 S-tier 和各领域 A/B-tier starter list，明确标记为待领域同事确认，不作为硬筛选；
+- `config/site.v2.json`：领域 code 到稳定站点 URL 的映射。
+
+在运行新批次前可先校验四份配置的一致性：
+
+~~~powershell
+./.venv/Scripts/python.exe -m literature_intelligence.config_validation
+~~~
+
+当前仅完成配置落地，尚未将这些新路由接入下一批真实 PubMed 采集，也未修改 Screening / Analysis / Classification Prompt 契约。
+
+只读生成四领域候选查询并执行 PubMed dry-run（不会写数据库或创建批次）：
+
+~~~powershell
+./.venv/Scripts/python.exe -m literature_intelligence.pipeline.pubmed_candidate_dry_run `
+  --run-date 2026-09-10 `
+  --history-database-url sqlite:///data/gut_health_mvp.db `
+  --output data/candidate_runs/2026-09-10_v01_dry_run.json
+~~~
+
+报告保存每条实际查询、PubMed 总命中数、受配置上限约束的返回 PMID、领域内跨入口去重结果、历史 PMID 排除结果和跨领域命中关系。该阶段只用 PMID 做搜索结果和历史记录的精确去重；DOI 去重在后续 EFetch、标准化和正式采集阶段执行。
+
 ~~~powershell
 ./.venv/Scripts/python.exe -m literature_intelligence.db.init_db
 ./.venv/Scripts/python.exe -m literature_intelligence.db.sync_domains `
@@ -120,7 +146,7 @@
   --site-url https://<owner>.github.io/<repository>/
 ~~~
 
-`config/update.v1.json` 已预留最近检索天数、PubMed 日期字段、时区、星期和运行时间配置。当前 `schedule.enabled=false`，只允许人工触发；该配置尚未接入调度器。
+`config/update.v1.json` 已配置 45 天 PubMed EDAT 滚动回看，并预留时区、星期和运行时间。当前 `schedule.enabled=false`，只允许人工触发；该配置尚未接入调度器。45 天用于处理 PubMed 收录延迟，历史 PMID / DOI / 已处理状态仍须去重，不代表每次重新分析窗口内全部论文。
 
 联网采集遵循 NCBI E-utilities 的请求频率限制；生产运行建议在 `.env` 配置 `NCBI_EMAIL`，高频调用时再配置个人 `NCBI_API_KEY`。采集后运行内容门禁，将结构、哈希和来源权利检查通过的论文推进到 `CONTENT_READY`，随后等待相关性筛选/AI 分析阶段。
 

@@ -1,0 +1,6012 @@
+{
+  "configuration": {
+    "domains": {
+      "path": "config/domains.v1.json",
+      "sha256": "efd10f2b879b4598274f8dbbcad4e2e5b6d4d41a330d9a40d04993f4d269e10d"
+    },
+    "journal_tiers": {
+      "path": "config/journal_tiers.v0.1.json",
+      "sha256": "38baea1f40674eee569b172329234609d67423edb5752bda7ca553ed92ff6027"
+    },
+    "update": {
+      "path": "config/update.v1.json",
+      "sha256": "32c2e532edbdb05e30aade45a9d1a9239b16334ae8e28359e514d69bcb05e0e6"
+    }
+  },
+  "cross_domain_candidates": [
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42821694"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42810339"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42921032"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42859348"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42826873"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42957763"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42812837"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42891116"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42899055"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42953570"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging",
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42863577"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42904982"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42935883"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging"
+      ],
+      "pmid": "42832270"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging"
+      ],
+      "pmid": "42806137"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42840755"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42942988"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42942921"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42819078"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42990397"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42851468"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "immune_health"
+      ],
+      "pmid": "42896091"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging"
+      ],
+      "pmid": "42807640"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42928081"
+    },
+    {
+      "domain_codes": [
+        "gut_health",
+        "healthy_aging"
+      ],
+      "pmid": "42884726"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42874585"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42914977"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42874808"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42858859"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42929810"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42934806"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42942890"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42966512"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42905979"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42807479"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42884087"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42877168"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42829180"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42871766"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42850807"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42961467"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42896263"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42939781"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42846826"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "immune_health"
+      ],
+      "pmid": "42959374"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42822786"
+    },
+    {
+      "domain_codes": [
+        "healthy_aging",
+        "musculoskeletal_health"
+      ],
+      "pmid": "42859978"
+    },
+    {
+      "domain_codes": [
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "43011890"
+    },
+    {
+      "domain_codes": [
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42935734"
+    },
+    {
+      "domain_codes": [
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42852623"
+    },
+    {
+      "domain_codes": [
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42936525"
+    },
+    {
+      "domain_codes": [
+        "musculoskeletal_health",
+        "immune_health"
+      ],
+      "pmid": "42941767"
+    }
+  ],
+  "date_window": {
+    "end": "2026-11-12",
+    "pubmed_date_field": "edat",
+    "start": "2026-09-29"
+  },
+  "deduplication": {
+    "cross_domain": "retained as multi-domain membership",
+    "doi": "deferred to EFetch/normalization stage",
+    "historical_at_search_stage": "PMID exact match",
+    "historical_pmid_count_loaded": 7,
+    "within_domain": "PMID union across candidate routes"
+  },
+  "domains": [
+    {
+      "candidates": [
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42844473"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42821694"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42816625"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42913643"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42896552"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42810339"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42833212"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42874562"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42880255"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42810338"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42895196"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43010111"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42842719"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42848888"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42869256"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43009621"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42810351"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43010182"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42881530"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42876361"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42978537"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42912803"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42886170"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42954409"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42983896"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42989617"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42897202"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42880254"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42841652"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42832344"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42827198"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42934733"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42844483"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43007835"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42843428"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43014287"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42951958"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42841849"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42971204"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42961241"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42983100"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42971202"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42983083"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42933673"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42878173"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42972020"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43004455"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43010179"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42816155"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42989409"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42864924"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42921032"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43013155"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42880833"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43012625"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42859348"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42891954"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42826873"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42957763"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43007607"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42830658"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42812837"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42860646"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42997460"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42861307"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42891116"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42858216"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42930461"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42939828"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42898827"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42807691"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42807681"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42879359"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42948719"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42944051"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42856976"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42958627"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42816440"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935951"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42943571"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42864919"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42936305"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42934742"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43005483"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42837791"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42849550"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42871482"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42899055"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42815574"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42957625"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43005487"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42953570"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42941230"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42942940"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42909399"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42951261"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42828059"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42836164"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42848247"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42813007"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42863577"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42942943"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42848175"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42852060"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42904982"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935883"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42924825"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "30000958"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42832270"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42832303"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42806137"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42840755"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42888447"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42811022"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42849176"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42892966"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42841642"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42812195"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43005077"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42819668"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42840007"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42927507"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42952721"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42853569"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42846992"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42941785"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42942988"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42942921"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42876456"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43004923"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43009990"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42884731"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42845985"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42880811"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42819078"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42856835"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42894232"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42959031"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42891339"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42948641"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42990397"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42813110"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42824337"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42927914"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42906553"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42962373"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42853538"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42851468"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42981705"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42884711"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42834635"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42852572"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42896091"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42847984"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42889669"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42807640"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42943623"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42928081"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42928056"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42807795"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884726"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42898899"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42832251"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42953051"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42852271"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43012839"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884589"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43005569"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42883312"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42867711"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42865215"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42977922"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42883965"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42979195"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42921249"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42957227"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42962201"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884748"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42892458"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42828644"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42824634"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884728"
+        }
+      ],
+      "domain_code": "gut_health",
+      "domain_name": "肠道/胃肠健康",
+      "historical_duplicate_pmids": [],
+      "route_results": [
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42844473",
+            "42821694",
+            "42816625",
+            "42913643",
+            "42896552",
+            "42810339",
+            "42833212",
+            "42874562",
+            "42880255",
+            "42810338",
+            "42895196",
+            "43010111",
+            "42842719",
+            "42848888",
+            "42869256",
+            "43009621",
+            "42810351",
+            "43010182",
+            "42881530",
+            "42876361",
+            "42978537",
+            "42912803",
+            "42886170",
+            "42954409",
+            "42983896",
+            "42989617",
+            "42897202",
+            "42880254",
+            "42841652",
+            "42832344",
+            "42827198",
+            "42934733",
+            "42844483",
+            "43007835",
+            "42843428",
+            "43014287",
+            "42951958",
+            "42841849",
+            "42971204",
+            "42961241",
+            "42983100",
+            "42971202",
+            "42983083",
+            "42933673",
+            "42878173",
+            "42972020",
+            "43004455",
+            "43010179",
+            "42816155",
+            "42989409"
+          ],
+          "pubmed_total_count": 100,
+          "query": "((\"Gastrointestinal Microbiome\"[mesh] OR gut-microbiom*[tiab] OR gut-microbiota[tiab] OR intestinal-microbiom*[tiab] OR intestinal-microbiota[tiab] OR intestinal-barrier[tiab] OR gut-barrier[tiab] OR intestinal-permeability[tiab] OR microbial-metabolite*[tiab] OR host-microbiome[tiab] OR gut-brain-axis[tiab] OR gut-muscle-axis[tiab] OR gut-immune-axis[tiab] OR ((probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab]) AND (gut[tiab] OR intestin*[tiab] OR gastrointestinal[tiab] OR host-health[tiab])))) AND ((\"Nature\"[ta] OR \"Science\"[ta] OR \"Cell\"[ta] OR \"N Engl J Med\"[ta] OR \"Lancet\"[ta] OR \"JAMA\"[ta] OR \"BMJ\"[ta] OR \"Nat Med\"[ta] OR \"Nat Biotechnol\"[ta] OR \"Sci Transl Med\"[ta] OR \"Cell Metab\"[ta] OR \"Nat Metab\"[ta] OR \"Gut\"[ta] OR \"Gastroenterology\"[ta] OR \"Nat Rev Gastroenterol Hepatol\"[ta] OR \"Nat Rev Microbiol\"[ta] OR \"Cell Host Microbe\"[ta] OR \"Nat Microbiol\"[ta] OR \"Microbiome\"[ta] OR \"Gut Microbes\"[ta] OR \"ISME J\"[ta] OR \"Am J Clin Nutr\"[ta])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 50,
+          "route": "journal_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42821694",
+            "42864924",
+            "42921032",
+            "43013155",
+            "42880833",
+            "43012625",
+            "42859348",
+            "42891954",
+            "42826873",
+            "42957763",
+            "43007607",
+            "42830658",
+            "42812837",
+            "42860646",
+            "42997460",
+            "42861307",
+            "42891116",
+            "42858216",
+            "42930461",
+            "42939828",
+            "42898827",
+            "42807691",
+            "42807681",
+            "42879359",
+            "42948719",
+            "42944051",
+            "42856976",
+            "42958627",
+            "42816440",
+            "42935951",
+            "42943571",
+            "42864919",
+            "42936305",
+            "42934742",
+            "43005483",
+            "42837791",
+            "42849550",
+            "42871482",
+            "42899055",
+            "42815574",
+            "42957625",
+            "43005487",
+            "42953570",
+            "42954409",
+            "42983896",
+            "42941230",
+            "42942940",
+            "42909399",
+            "42951261",
+            "42828059",
+            "42836164",
+            "42848247",
+            "42813007",
+            "42863577",
+            "42942943",
+            "42848175",
+            "42852060",
+            "42904982",
+            "42935883",
+            "42924825"
+          ],
+          "pubmed_total_count": 677,
+          "query": "((\"Gastrointestinal Microbiome\"[mesh] OR gut-microbiom*[tiab] OR gut-microbiota[tiab] OR intestinal-microbiom*[tiab] OR intestinal-microbiota[tiab] OR intestinal-barrier[tiab] OR gut-barrier[tiab] OR intestinal-permeability[tiab] OR microbial-metabolite*[tiab] OR host-microbiome[tiab] OR gut-brain-axis[tiab] OR gut-muscle-axis[tiab] OR gut-immune-axis[tiab] OR ((probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab]) AND (gut[tiab] OR intestin*[tiab] OR gastrointestinal[tiab] OR host-health[tiab])))) AND ((mechanis*[ti] OR biomarker*[ti] OR target*[ti] OR pathway*[ti] OR multi-omics[ti] OR multiomic*[ti] OR single-cell[ti] OR spatial-transcriptom*[ti] OR organoid*[ti] OR atlas[ti] OR novel-model[ti] OR new-model[ti] OR new-method*[ti] OR new-technolog*[ti] OR first-in-human[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "frontier_radar"
+        },
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "30000958",
+            "42921032",
+            "42810338",
+            "42832270",
+            "42832303",
+            "42806137",
+            "42840755",
+            "42888447",
+            "42811022",
+            "42849176",
+            "42892966",
+            "42841642",
+            "42812195",
+            "43005077",
+            "42819668",
+            "42840007",
+            "42927507",
+            "42841652",
+            "42952721",
+            "42909399",
+            "42853569",
+            "42846992",
+            "42912803",
+            "42941785",
+            "42942988",
+            "42942921",
+            "42876456",
+            "43004923",
+            "43009990",
+            "42884731",
+            "42845985",
+            "42880811",
+            "42819078",
+            "42856835",
+            "42894232",
+            "42959031",
+            "42891339",
+            "42948641",
+            "42990397",
+            "42813110",
+            "42824337",
+            "42927914",
+            "42906553",
+            "42962373",
+            "42853538",
+            "42851468",
+            "42981705",
+            "42884711",
+            "42834635",
+            "42852572"
+          ],
+          "pubmed_total_count": 221,
+          "query": "((\"Gastrointestinal Microbiome\"[mesh] OR gut-microbiom*[tiab] OR gut-microbiota[tiab] OR intestinal-microbiom*[tiab] OR intestinal-microbiota[tiab] OR intestinal-barrier[tiab] OR gut-barrier[tiab] OR intestinal-permeability[tiab] OR microbial-metabolite*[tiab] OR host-microbiome[tiab] OR gut-brain-axis[tiab] OR gut-muscle-axis[tiab] OR gut-immune-axis[tiab] OR ((probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab]) AND (gut[tiab] OR intestin*[tiab] OR gastrointestinal[tiab] OR host-health[tiab])))) AND ((randomized-controlled-trial[pt] OR clinical-trial[pt] OR meta-analysis[pt] OR systematic-review[pt] OR (random*[tiab] AND placebo*[tiab]) OR first-in-human[tiab] OR cohort[ti] OR longitudinal[ti] OR intervention[ti])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 50,
+          "route": "clinical_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42816625",
+            "42896091",
+            "42913643",
+            "42832303",
+            "42847984",
+            "42806137",
+            "42840755",
+            "42880833",
+            "42889669",
+            "42997460",
+            "42807640",
+            "42860646",
+            "42943623",
+            "43013155",
+            "42928081",
+            "42874562",
+            "42880255",
+            "42810351",
+            "42858216",
+            "42928056",
+            "42848888",
+            "42807795",
+            "42948719",
+            "42884726",
+            "43010182",
+            "42898899",
+            "42832251",
+            "42958627",
+            "42856976",
+            "42953051",
+            "42864919",
+            "42936305",
+            "43005483",
+            "42849550",
+            "42852271",
+            "43012839",
+            "42884589",
+            "43005569",
+            "42957625",
+            "42954409",
+            "42883312",
+            "42953570",
+            "42867711",
+            "42865215",
+            "42977922",
+            "42942940",
+            "42883965",
+            "42979195",
+            "42848247",
+            "42921249",
+            "42957227",
+            "42962201",
+            "42884748",
+            "42989617",
+            "42942943",
+            "42892458",
+            "42828644",
+            "42819668",
+            "42824634",
+            "42884728"
+          ],
+          "pubmed_total_count": 1713,
+          "query": "((\"Gastrointestinal Microbiome\"[mesh] OR gut-microbiom*[tiab] OR gut-microbiota[tiab] OR intestinal-microbiom*[tiab] OR intestinal-microbiota[tiab] OR intestinal-barrier[tiab] OR gut-barrier[tiab] OR intestinal-permeability[tiab] OR microbial-metabolite*[tiab] OR host-microbiome[tiab] OR gut-brain-axis[tiab] OR gut-muscle-axis[tiab] OR gut-immune-axis[tiab] OR ((probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab]) AND (gut[tiab] OR intestin*[tiab] OR gastrointestinal[tiab] OR host-health[tiab])))) AND ((nutrition*[tiab] OR diet*[tiab] OR dietary[tiab] OR nutrient*[tiab] OR supplement*[tiab] OR nutraceutical*[tiab] OR functional-food*[tiab] OR probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab] OR phytochemical*[tiab] OR polyphenol*[tiab] OR flavonoid*[tiab] OR botanical*[tiab] OR herbal[tiab] OR natural-product*[tiab] OR plant-extract*[tiab] OR traditional-Chinese-medicine[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "business_relevance_radar"
+        }
+      ],
+      "summary": {
+        "capped_count": 0,
+        "cross_route_overlap_count": 37,
+        "eligible_new_before_cap": 182,
+        "historical_duplicate_count": 0,
+        "route_hit_count_sum": 2711,
+        "route_returned_count_sum": 220,
+        "selected_new_after_cap": 182,
+        "unique_returned_before_history_dedupe": 182
+      }
+    },
+    {
+      "candidates": [
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42848887"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42821696"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42842075"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42874585"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42849757"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42852525"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42914977"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42841610"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42874807"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42814802"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42858860"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42843466"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42874808"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42875583"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42869105"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42827331"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42843467"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42844664"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42919924"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42808563"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42863579"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42839094"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42870449"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42874809"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42850752"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42823846"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42811797"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42963494"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42858183"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42858859"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42843462"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42875584"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42863577"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42829448"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42855641"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42814287"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42876337"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42873893"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42896675"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42811122"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42853103"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42885644"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42904520"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42849758"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42875585"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42838290"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42811065"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42933452"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42836454"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42971265"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42929810"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42854692"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42811583"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42821343"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42832275"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42828249"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42934806"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42942890"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42823884"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935340"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42942798"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42811336"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42943050"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42966512"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42853938"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42903992"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42905979"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42981464"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42959209"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42807479"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42918485"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42805938"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42880850"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42865824"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42811261"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43000522"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42884087"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42882779"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43011470"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42819788"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42877168"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42919370"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42929014"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42853939"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42858323"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42953779"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42937851"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42928929"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42901431"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42928374"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42835499"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42829180"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42889359"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43011407"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43013560"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42914031"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42811497"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42955884"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42871766"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42854708"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42832270"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42806137"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42900678"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42926958"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42835252"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43009876"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42959782"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42926120"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42833432"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42912393"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42859694"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42840755"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42866687"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42824593"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42808498"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42813622"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42850807"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42945173"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42994381"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42861734"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42961467"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42935337"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42910095"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42842104"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42850599"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42922721"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42896263"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42847329"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42905723"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42815860"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42967585"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42867075"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42806354"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42908614"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42849852"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42836600"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42863602"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43002725"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42948906"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42945353"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42974085"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42949226"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43011813"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42811603"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42897693"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42939781"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42807640"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42846826"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43005022"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884726"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42886693"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42901266"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42815968"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42973544"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42872291"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42837294"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42844817"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42862118"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42854375"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42815273"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42863768"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42959374"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42830460"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42957849"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42812893"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42843232"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42851544"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42925463"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42945831"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42822786"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42859978"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42836501"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42887807"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42922504"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43010707"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42939291"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42936152"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42807193"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42865256"
+        }
+      ],
+      "domain_code": "healthy_aging",
+      "domain_name": "延缓衰老/健康衰老",
+      "historical_duplicate_pmids": [],
+      "route_results": [
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42848887",
+            "42821696",
+            "42842075",
+            "42874585",
+            "42849757",
+            "42852525",
+            "42914977",
+            "42841610",
+            "42874807",
+            "42814802",
+            "42858860",
+            "42843466",
+            "42874808",
+            "42875583",
+            "42869105",
+            "42827331",
+            "42843467",
+            "42844664",
+            "42919924",
+            "42808563",
+            "42863579",
+            "42839094",
+            "42870449",
+            "42874809",
+            "42850752",
+            "42823846",
+            "42811797",
+            "42963494",
+            "42858183",
+            "42858859",
+            "42843462",
+            "42875584",
+            "42863577",
+            "42829448",
+            "42855641",
+            "42814287",
+            "42876337",
+            "42873893",
+            "42896675",
+            "42811122",
+            "42853103",
+            "42885644",
+            "42904520",
+            "42849758",
+            "42875585",
+            "42838290",
+            "42811065",
+            "42933452",
+            "42836454",
+            "42971265"
+          ],
+          "pubmed_total_count": 212,
+          "query": "((\"Aging\"[mesh] OR aging[ti] OR ageing[ti] OR geroscience[tiab] OR longevity[tiab] OR healthspan[tiab] OR cellular-senescence[tiab] OR senolytic*[tiab] OR senomorphic*[tiab] OR biological-age[tiab] OR epigenetic-clock*[tiab] OR inflammaging[tiab] OR immunosenescence[tiab] OR ovarian-aging[tiab] OR reproductive-aging[tiab] OR cognitive-aging[tiab] OR brain-aging[tiab] OR ocular-aging[tiab] OR muscle-aging[tiab] OR skin-aging[tiab])) AND ((\"Nature\"[ta] OR \"Science\"[ta] OR \"Cell\"[ta] OR \"N Engl J Med\"[ta] OR \"Lancet\"[ta] OR \"JAMA\"[ta] OR \"BMJ\"[ta] OR \"Nat Med\"[ta] OR \"Nat Biotechnol\"[ta] OR \"Sci Transl Med\"[ta] OR \"Cell Metab\"[ta] OR \"Nat Metab\"[ta] OR \"Nat Aging\"[ta] OR \"Aging Cell\"[ta] OR \"Geroscience\"[ta] OR \"Age Ageing\"[ta] OR \"J Gerontol A Biol Sci Med Sci\"[ta] OR \"Ageing Res Rev\"[ta] OR \"Lancet Healthy Longev\"[ta] OR \"Nat Commun\"[ta])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 50,
+          "route": "journal_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42929810",
+            "42849757",
+            "42854692",
+            "42811583",
+            "42863579",
+            "42874807",
+            "42821343",
+            "42832275",
+            "42828249",
+            "42934806",
+            "42869105",
+            "42942890",
+            "42823884",
+            "42843467",
+            "42935340",
+            "42919924",
+            "42942798",
+            "42811336",
+            "42943050",
+            "42966512",
+            "42853938",
+            "42903992",
+            "42905979",
+            "42981464",
+            "42959209",
+            "42807479",
+            "42896675",
+            "42918485",
+            "42863577",
+            "42855641",
+            "42805938",
+            "42880850",
+            "42865824",
+            "42811261",
+            "43000522",
+            "42884087",
+            "42882779",
+            "42823846",
+            "43011470",
+            "42819788",
+            "42877168",
+            "42919370",
+            "42929014",
+            "42853939",
+            "42858323",
+            "42953779",
+            "42937851",
+            "42928929",
+            "42901431",
+            "42849758",
+            "42928374",
+            "42835499",
+            "42829180",
+            "42889359",
+            "43011407",
+            "43013560",
+            "42914031",
+            "42811497",
+            "42955884",
+            "42871766"
+          ],
+          "pubmed_total_count": 345,
+          "query": "((\"Aging\"[mesh] OR aging[ti] OR ageing[ti] OR geroscience[tiab] OR longevity[tiab] OR healthspan[tiab] OR cellular-senescence[tiab] OR senolytic*[tiab] OR senomorphic*[tiab] OR biological-age[tiab] OR epigenetic-clock*[tiab] OR inflammaging[tiab] OR immunosenescence[tiab] OR ovarian-aging[tiab] OR reproductive-aging[tiab] OR cognitive-aging[tiab] OR brain-aging[tiab] OR ocular-aging[tiab] OR muscle-aging[tiab] OR skin-aging[tiab])) AND ((mechanis*[ti] OR biomarker*[ti] OR target*[ti] OR pathway*[ti] OR multi-omics[ti] OR multiomic*[ti] OR single-cell[ti] OR spatial-transcriptom*[ti] OR organoid*[ti] OR atlas[ti] OR novel-model[ti] OR new-model[ti] OR new-method*[ti] OR new-technolog*[ti] OR first-in-human[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "frontier_radar"
+        },
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42854708",
+            "42832270",
+            "42842075",
+            "42869105",
+            "42806137",
+            "42900678",
+            "42850752",
+            "42926958",
+            "42877168",
+            "42835252",
+            "43009876",
+            "42959782",
+            "42926120",
+            "42833432",
+            "42912393",
+            "42859694",
+            "42840755",
+            "42866687",
+            "42824593",
+            "42808498",
+            "42813622",
+            "42850807",
+            "42945173",
+            "42994381",
+            "42871766",
+            "42861734",
+            "42961467",
+            "42935337",
+            "42910095",
+            "42842104",
+            "42850599",
+            "42922721",
+            "42896263",
+            "42847329",
+            "42905723",
+            "42815860",
+            "42967585",
+            "42867075",
+            "42806354",
+            "42908614",
+            "42849852",
+            "42836600",
+            "42863602",
+            "43002725",
+            "42948906",
+            "42945353",
+            "42974085",
+            "42949226",
+            "43011813",
+            "42811603"
+          ],
+          "pubmed_total_count": 193,
+          "query": "((\"Aging\"[mesh] OR aging[ti] OR ageing[ti] OR geroscience[tiab] OR longevity[tiab] OR healthspan[tiab] OR cellular-senescence[tiab] OR senolytic*[tiab] OR senomorphic*[tiab] OR biological-age[tiab] OR epigenetic-clock*[tiab] OR inflammaging[tiab] OR immunosenescence[tiab] OR ovarian-aging[tiab] OR reproductive-aging[tiab] OR cognitive-aging[tiab] OR brain-aging[tiab] OR ocular-aging[tiab] OR muscle-aging[tiab] OR skin-aging[tiab])) AND ((randomized-controlled-trial[pt] OR clinical-trial[pt] OR meta-analysis[pt] OR systematic-review[pt] OR (random*[tiab] AND placebo*[tiab]) OR first-in-human[tiab] OR cohort[ti] OR longitudinal[ti] OR intervention[ti])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 50,
+          "route": "clinical_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42842075",
+            "42897693",
+            "42874585",
+            "42840755",
+            "42939781",
+            "42852525",
+            "42858183",
+            "42869105",
+            "42942890",
+            "42839094",
+            "42807640",
+            "42846826",
+            "42859694",
+            "43005022",
+            "42884726",
+            "42863577",
+            "42886693",
+            "42901266",
+            "42865824",
+            "42874809",
+            "42850752",
+            "43011470",
+            "42877168",
+            "42919370",
+            "42844664",
+            "42815968",
+            "42973544",
+            "42872291",
+            "42953779",
+            "42837294",
+            "42844817",
+            "42905723",
+            "42835499",
+            "42862118",
+            "42854375",
+            "42815273",
+            "42863768",
+            "42858859",
+            "42874808",
+            "42866687",
+            "42959374",
+            "42830460",
+            "42957849",
+            "42812893",
+            "42843232",
+            "42851544",
+            "42925463",
+            "42945831",
+            "42822786",
+            "42859978",
+            "42808563",
+            "42836501",
+            "42887807",
+            "42922504",
+            "43010707",
+            "42939291",
+            "42936152",
+            "42807193",
+            "42865256",
+            "42850599"
+          ],
+          "pubmed_total_count": 394,
+          "query": "((\"Aging\"[mesh] OR aging[ti] OR ageing[ti] OR geroscience[tiab] OR longevity[tiab] OR healthspan[tiab] OR cellular-senescence[tiab] OR senolytic*[tiab] OR senomorphic*[tiab] OR biological-age[tiab] OR epigenetic-clock*[tiab] OR inflammaging[tiab] OR immunosenescence[tiab] OR ovarian-aging[tiab] OR reproductive-aging[tiab] OR cognitive-aging[tiab] OR brain-aging[tiab] OR ocular-aging[tiab] OR muscle-aging[tiab] OR skin-aging[tiab])) AND ((nutrition*[tiab] OR diet*[tiab] OR dietary[tiab] OR nutrient*[tiab] OR supplement*[tiab] OR nutraceutical*[tiab] OR functional-food*[tiab] OR probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab] OR phytochemical*[tiab] OR polyphenol*[tiab] OR flavonoid*[tiab] OR botanical*[tiab] OR herbal[tiab] OR natural-product*[tiab] OR plant-extract*[tiab] OR traditional-Chinese-medicine[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "business_relevance_radar"
+        }
+      ],
+      "summary": {
+        "capped_count": 0,
+        "cross_route_overlap_count": 35,
+        "eligible_new_before_cap": 179,
+        "historical_duplicate_count": 0,
+        "route_hit_count_sum": 1144,
+        "route_returned_count_sum": 220,
+        "selected_new_after_cap": 179,
+        "unique_returned_before_history_dedupe": 179
+      }
+    },
+    {
+      "candidates": [
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42814954"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42821663"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42880284"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42821694"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42810372"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42874585"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42810572"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42842721"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42806518"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42817217"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42822751"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42903858"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42830273"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42841422"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42811652"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42881169"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42964394"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42888238"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42827299"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42864320"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42936921"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42904865"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42965107"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42898659"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43012350"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42849865"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42896625"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42849643"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42934004"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42869115"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42858765"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43010086"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42969786"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43006737"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42855028"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43003902"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42972446"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "43001755"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42823780"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42849901"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42980093"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42860133"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42936920"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42962844"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42880393"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42965151"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42984296"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42850807"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42954866"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42816429"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42929864"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42957763"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42934806"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42921032"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43011890"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42816597"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42877168"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42825366"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42922297"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42833297"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42905979"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42857004"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42824268"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42925003"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42827784"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42923636"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42816182"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42942239"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42939618"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42863577"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42892668"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43005079"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42884087"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935734"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42829180"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42903359"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42990086"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42829606"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42811796"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43014469"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42840692"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43007655"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42953570"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42918690"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42923538"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42930206"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42955510"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42852623"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42926076"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42944934"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42850371"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42841355"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42822338"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42887609"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42862431"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935883"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43009041"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42942033"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42975027"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42860389"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42899055"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42942365"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42830045"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42823204"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42822786"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42864666"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42937786"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42894572"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42819314"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42823945"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42849036"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42806498"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42888637"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42880755"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42902285"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43011413"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43003818"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42942477"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42871020"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42959116"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42930579"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42835888"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42958323"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42933756"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42876520"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42855472"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42828472"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42885452"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42942988"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43004102"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43005990"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42884706"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42926012"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42813966"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42835775"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42878582"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42961467"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42959053"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42923055"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42953252"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42865597"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42894777"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42837429"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42896263"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42878931"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42885413"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42867412"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42939781"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42831646"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42886608"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42827680"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42967254"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42936525"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42885307"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42863640"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42896510"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42964324"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42960422"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42946838"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42881808"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43012758"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42951408"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42934991"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42880628"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42928060"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42964938"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42928081"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42989537"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42942904"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42939898"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42849031"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42884574"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42850974"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42848257"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42861355"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42941767"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42871579"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42816995"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42837075"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42859978"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42994129"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42870613"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42946056"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42943256"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42857558"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42875697"
+        }
+      ],
+      "domain_code": "musculoskeletal_health",
+      "domain_name": "肌骨/筋骨关节健康",
+      "historical_duplicate_pmids": [],
+      "route_results": [
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42814954",
+            "42821663",
+            "42880284",
+            "42821694",
+            "42810372",
+            "42874585",
+            "42810572",
+            "42842721",
+            "42806518",
+            "42817217",
+            "42822751",
+            "42903858",
+            "42830273",
+            "42841422",
+            "42811652",
+            "42881169",
+            "42964394",
+            "42888238",
+            "42827299",
+            "42864320",
+            "42936921",
+            "42904865",
+            "42965107",
+            "42898659",
+            "43012350",
+            "42849865",
+            "42896625",
+            "42849643",
+            "42934004",
+            "42869115",
+            "42858765",
+            "43010086",
+            "42969786",
+            "43006737",
+            "42855028",
+            "43003902",
+            "42972446",
+            "43001755",
+            "42823780",
+            "42849901",
+            "42980093",
+            "42860133",
+            "42936920",
+            "42962844",
+            "42880393",
+            "42965151",
+            "42984296",
+            "42850807",
+            "42954866",
+            "42816429"
+          ],
+          "pubmed_total_count": 101,
+          "query": "((bone-health[tiab] OR joint-health[tiab] OR cartilage[tiab] OR sarcopenia[tiab] OR skeletal-muscle[tiab] OR muscle-aging[tiab] OR osteoporosis[tiab] OR osteoarthritis[tiab] OR musculoskeletal[tiab])) AND ((\"Nature\"[ta] OR \"Science\"[ta] OR \"Cell\"[ta] OR \"N Engl J Med\"[ta] OR \"Lancet\"[ta] OR \"JAMA\"[ta] OR \"BMJ\"[ta] OR \"Nat Med\"[ta] OR \"Nat Biotechnol\"[ta] OR \"Sci Transl Med\"[ta] OR \"Cell Metab\"[ta] OR \"Nat Metab\"[ta] OR \"J Bone Miner Res\"[ta] OR \"Bone Res\"[ta] OR \"Osteoarthritis Cartilage\"[ta] OR \"Ann Rheum Dis\"[ta] OR \"Arthritis Rheumatol\"[ta] OR \"J Cachexia Sarcopenia Muscle\"[ta] OR \"J Orthop Translat\"[ta] OR \"Bone\"[ta] OR \"Skelet Muscle\"[ta])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt]) NOT (((arthroplasty[ti] OR joint-replacement[ti] OR prosthes*[ti] OR orthopedic-implant*[ti] OR surgical-technique*[ti]) NOT (nutrition*[tiab] OR diet*[tiab] OR supplement*[tiab] OR natural-product*[tiab] OR biomarker*[tiab] OR mechanis*[tiab])))",
+          "returned_count": 50,
+          "route": "journal_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42821694",
+            "42880284",
+            "42929864",
+            "42957763",
+            "42934806",
+            "42921032",
+            "43011890",
+            "42816597",
+            "42877168",
+            "42825366",
+            "42922297",
+            "42833297",
+            "42905979",
+            "42858765",
+            "42857004",
+            "42824268",
+            "42925003",
+            "42827784",
+            "42923636",
+            "42816182",
+            "42942239",
+            "42939618",
+            "42863577",
+            "42892668",
+            "43005079",
+            "42884087",
+            "42935734",
+            "42829180",
+            "42903359",
+            "42990086",
+            "42829606",
+            "42811796",
+            "43014469",
+            "42840692",
+            "43007655",
+            "42841422",
+            "42953570",
+            "42918690",
+            "42923538",
+            "42930206",
+            "42955510",
+            "42852623",
+            "42926076",
+            "42944934",
+            "42850371",
+            "42841355",
+            "42822338",
+            "42887609",
+            "42896625",
+            "42862431",
+            "42935883",
+            "43009041",
+            "42942033",
+            "42975027",
+            "42860389",
+            "42899055",
+            "42942365",
+            "42830045",
+            "42823204",
+            "42822786"
+          ],
+          "pubmed_total_count": 448,
+          "query": "((bone-health[tiab] OR joint-health[tiab] OR cartilage[tiab] OR sarcopenia[tiab] OR skeletal-muscle[tiab] OR muscle-aging[tiab] OR osteoporosis[tiab] OR osteoarthritis[tiab] OR musculoskeletal[tiab])) AND ((mechanis*[ti] OR biomarker*[ti] OR target*[ti] OR pathway*[ti] OR multi-omics[ti] OR multiomic*[ti] OR single-cell[ti] OR spatial-transcriptom*[ti] OR organoid*[ti] OR atlas[ti] OR novel-model[ti] OR new-model[ti] OR new-method*[ti] OR new-technolog*[ti] OR first-in-human[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt]) NOT (((arthroplasty[ti] OR joint-replacement[ti] OR prosthes*[ti] OR orthopedic-implant*[ti] OR surgical-technique*[ti]) NOT (nutrition*[tiab] OR diet*[tiab] OR supplement*[tiab] OR natural-product*[tiab] OR biomarker*[tiab] OR mechanis*[tiab])))",
+          "returned_count": 60,
+          "route": "frontier_radar"
+        },
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42814954",
+            "42810372",
+            "42864666",
+            "42937786",
+            "42894572",
+            "42819314",
+            "42921032",
+            "42849901",
+            "42877168",
+            "42823945",
+            "42849036",
+            "42806498",
+            "42888637",
+            "42944934",
+            "42880755",
+            "42902285",
+            "43011413",
+            "43003818",
+            "42942477",
+            "42871020",
+            "42959116",
+            "42930579",
+            "42835888",
+            "42958323",
+            "42933756",
+            "42876520",
+            "42855472",
+            "42828472",
+            "42930206",
+            "42885452",
+            "42942988",
+            "43004102",
+            "43005990",
+            "42852623",
+            "42884706",
+            "42926012",
+            "42813966",
+            "42835775",
+            "42878582",
+            "42961467",
+            "42959053",
+            "42830045",
+            "42923055",
+            "42953252",
+            "42865597",
+            "42894777",
+            "42837429",
+            "42896263",
+            "42878931",
+            "42885413"
+          ],
+          "pubmed_total_count": 452,
+          "query": "((bone-health[tiab] OR joint-health[tiab] OR cartilage[tiab] OR sarcopenia[tiab] OR skeletal-muscle[tiab] OR muscle-aging[tiab] OR osteoporosis[tiab] OR osteoarthritis[tiab] OR musculoskeletal[tiab])) AND ((randomized-controlled-trial[pt] OR clinical-trial[pt] OR meta-analysis[pt] OR systematic-review[pt] OR (random*[tiab] AND placebo*[tiab]) OR first-in-human[tiab] OR cohort[ti] OR longitudinal[ti] OR intervention[ti])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt]) NOT (((arthroplasty[ti] OR joint-replacement[ti] OR prosthes*[ti] OR orthopedic-implant*[ti] OR surgical-technique*[ti]) NOT (nutrition*[tiab] OR diet*[tiab] OR supplement*[tiab] OR natural-product*[tiab] OR biomarker*[tiab] OR mechanis*[tiab])))",
+          "returned_count": 50,
+          "route": "clinical_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42867412",
+            "42939781",
+            "42831646",
+            "42886608",
+            "42827680",
+            "42967254",
+            "42936525",
+            "42885307",
+            "42863640",
+            "42806518",
+            "42896510",
+            "42942239",
+            "42964324",
+            "42921032",
+            "42960422",
+            "42852623",
+            "42830273",
+            "42871020",
+            "42877168",
+            "42946838",
+            "42881808",
+            "42892668",
+            "43012758",
+            "42829606",
+            "43014469",
+            "42951408",
+            "42958323",
+            "42934991",
+            "42880628",
+            "42928060",
+            "42964938",
+            "42928081",
+            "42989537",
+            "42942904",
+            "42926076",
+            "42939898",
+            "42835775",
+            "42828472",
+            "42953570",
+            "42959053",
+            "42849031",
+            "42884574",
+            "42850974",
+            "42848257",
+            "42899055",
+            "42816182",
+            "42861355",
+            "42941767",
+            "42871579",
+            "42816995",
+            "42837075",
+            "42859978",
+            "42994129",
+            "42840692",
+            "42870613",
+            "42946056",
+            "42943256",
+            "42857558",
+            "42875697",
+            "43007655"
+          ],
+          "pubmed_total_count": 724,
+          "query": "((bone-health[tiab] OR joint-health[tiab] OR cartilage[tiab] OR sarcopenia[tiab] OR skeletal-muscle[tiab] OR muscle-aging[tiab] OR osteoporosis[tiab] OR osteoarthritis[tiab] OR musculoskeletal[tiab])) AND ((nutrition*[tiab] OR diet*[tiab] OR dietary[tiab] OR nutrient*[tiab] OR supplement*[tiab] OR nutraceutical*[tiab] OR functional-food*[tiab] OR probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab] OR phytochemical*[tiab] OR polyphenol*[tiab] OR flavonoid*[tiab] OR botanical*[tiab] OR herbal[tiab] OR natural-product*[tiab] OR plant-extract*[tiab] OR traditional-Chinese-medicine[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt]) NOT (((arthroplasty[ti] OR joint-replacement[ti] OR prosthes*[ti] OR orthopedic-implant*[ti] OR surgical-technique*[ti]) NOT (nutrition*[tiab] OR diet*[tiab] OR supplement*[tiab] OR natural-product*[tiab] OR biomarker*[tiab] OR mechanis*[tiab])))",
+          "returned_count": 60,
+          "route": "business_relevance_radar"
+        }
+      ],
+      "summary": {
+        "capped_count": 0,
+        "cross_route_overlap_count": 31,
+        "eligible_new_before_cap": 186,
+        "historical_duplicate_count": 0,
+        "route_hit_count_sum": 1725,
+        "route_returned_count_sum": 220,
+        "selected_new_after_cap": 186,
+        "unique_returned_before_history_dedupe": 186
+      }
+    },
+    {
+      "candidates": [
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42810339"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42914977"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42833591"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42844481"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "frontier_radar"
+          ],
+          "pmid": "42855599"
+        },
+        {
+          "matched_routes": [
+            "journal_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42853963"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42849439"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42841903"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42864399"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42844382"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42896672"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42842720"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42933395"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42821676"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42914985"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42815464"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42946800"
+        },
+        {
+          "matched_routes": [
+            "journal_radar"
+          ],
+          "pmid": "42907581"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42929810"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43014339"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42964246"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42891116"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42942890"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42829067"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43001167"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42894313"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42941996"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42876116"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42838996"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42865804"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42910324"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42966512"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42981190"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42934744"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42948898"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42934224"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "43014223"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42869337"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42807479"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42873068"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42863577"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42921032"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42871271"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42881205"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42859348"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42829718"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42852623"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42935734"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42936105"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42828167"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42857321"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42892508"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42920733"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42953043"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42842582"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42922454"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42806500"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "43009128"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42882432"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42932980"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42921569"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42812837"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42897806"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "clinical_radar"
+          ],
+          "pmid": "42871766"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42941901"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42978882"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42858484"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42904982"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42829195"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42849084"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42986599"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42809537"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42948745"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42843480"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42826873"
+        },
+        {
+          "matched_routes": [
+            "frontier_radar"
+          ],
+          "pmid": "42941241"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42917966"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42840755"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42864853"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42819078"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42982805"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42990397"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42834437"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42809046"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42822488"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42882456"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42884601"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42824162"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42851468"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42942921"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43005218"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42870902"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42929006"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42973761"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42869816"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42996646"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42940127"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42939785"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42889985"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42824105"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42913803"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42938388"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42870872"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42948404"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42810159"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "43001156"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar",
+            "business_relevance_radar"
+          ],
+          "pmid": "42890516"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42919218"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42862661"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42956318"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42888989"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42959125"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42974266"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42957065"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42828627"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42970167"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42809069"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42908321"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42995693"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42830172"
+        },
+        {
+          "matched_routes": [
+            "clinical_radar"
+          ],
+          "pmid": "42993406"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "43011890"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42846826"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42826809"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42863469"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42862796"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42923651"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42883044"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42862045"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42859560"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42845359"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42828074"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42830947"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42898270"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42881889"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42857244"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42940167"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42897831"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42935746"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42889337"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42921545"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42858859"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42874808"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42809174"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42959374"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42943398"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42896091"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42860997"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42941767"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42842161"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42911103"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42913780"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42937055"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42828139"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42856411"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42844111"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42843441"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42922714"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42899835"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42845118"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42899200"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42954296"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42976420"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42830705"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42819723"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42903485"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42819344"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42936525"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42941198"
+        },
+        {
+          "matched_routes": [
+            "business_relevance_radar"
+          ],
+          "pmid": "42868144"
+        }
+      ],
+      "domain_code": "immune_health",
+      "domain_name": "免疫调节",
+      "historical_duplicate_pmids": [],
+      "route_results": [
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42810339",
+            "42914977",
+            "42833591",
+            "42844481",
+            "42855599",
+            "42853963",
+            "42849439",
+            "42841903",
+            "42864399",
+            "42844382",
+            "42896672",
+            "42842720",
+            "42933395",
+            "42821676",
+            "42914985",
+            "42815464",
+            "42946800",
+            "42907581"
+          ],
+          "pubmed_total_count": 18,
+          "query": "((immune-homeostasis[tiab] OR immune-regulat*[tiab] OR immunoregulat*[tiab] OR healthy-immune[tiab] OR inflammat*-regulat*[tiab] OR inflammat*-resolut*[tiab] OR immunosenescence[tiab] OR mucosal-immun*[tiab] OR immunometabol*[tiab] OR metabolic-immune[tiab] OR nutrition*-immun*[tiab] OR diet*-immun*[tiab])) AND ((\"Nature\"[ta] OR \"Science\"[ta] OR \"Cell\"[ta] OR \"N Engl J Med\"[ta] OR \"Lancet\"[ta] OR \"JAMA\"[ta] OR \"BMJ\"[ta] OR \"Nat Med\"[ta] OR \"Nat Biotechnol\"[ta] OR \"Sci Transl Med\"[ta] OR \"Cell Metab\"[ta] OR \"Nat Metab\"[ta] OR \"Nat Immunol\"[ta] OR \"Immunity\"[ta] OR \"Sci Immunol\"[ta] OR \"Nat Rev Immunol\"[ta] OR \"J Exp Med\"[ta] OR \"Cell Mol Immunol\"[ta] OR \"Mucosal Immunol\"[ta] OR \"Cell Host Microbe\"[ta] OR \"J Allergy Clin Immunol\"[ta] OR \"Clin Transl Immunology\"[ta])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 18,
+          "route": "journal_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42929810",
+            "43014339",
+            "42964246",
+            "42891116",
+            "42942890",
+            "42829067",
+            "43001167",
+            "42894313",
+            "42941996",
+            "42833591",
+            "42876116",
+            "42838996",
+            "42865804",
+            "42910324",
+            "42966512",
+            "42981190",
+            "42934744",
+            "42948898",
+            "42934224",
+            "43014223",
+            "42869337",
+            "42807479",
+            "42873068",
+            "42863577",
+            "42921032",
+            "42871271",
+            "42881205",
+            "42859348",
+            "42829718",
+            "42852623",
+            "42935734",
+            "42936105",
+            "42828167",
+            "42857321",
+            "42892508",
+            "42920733",
+            "42953043",
+            "42842582",
+            "42922454",
+            "42806500",
+            "43009128",
+            "42855599",
+            "42882432",
+            "42932980",
+            "42921569",
+            "42812837",
+            "42897806",
+            "42871766",
+            "42941901",
+            "42978882",
+            "42858484",
+            "42904982",
+            "42829195",
+            "42849084",
+            "42986599",
+            "42809537",
+            "42948745",
+            "42843480",
+            "42826873",
+            "42941241"
+          ],
+          "pubmed_total_count": 559,
+          "query": "((immune-homeostasis[tiab] OR immune-regulat*[tiab] OR immunoregulat*[tiab] OR healthy-immune[tiab] OR inflammat*-regulat*[tiab] OR inflammat*-resolut*[tiab] OR immunosenescence[tiab] OR mucosal-immun*[tiab] OR immunometabol*[tiab] OR metabolic-immune[tiab] OR nutrition*-immun*[tiab] OR diet*-immun*[tiab])) AND ((mechanis*[ti] OR biomarker*[ti] OR target*[ti] OR pathway*[ti] OR multi-omics[ti] OR multiomic*[ti] OR single-cell[ti] OR spatial-transcriptom*[ti] OR organoid*[ti] OR atlas[ti] OR novel-model[ti] OR new-model[ti] OR new-method*[ti] OR new-technolog*[ti] OR first-in-human[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "frontier_radar"
+        },
+        {
+          "configured_limit": 50,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42917966",
+            "42921032",
+            "42869337",
+            "42840755",
+            "42871766",
+            "42864853",
+            "42829718",
+            "42819078",
+            "42982805",
+            "42990397",
+            "42834437",
+            "42809046",
+            "42822488",
+            "42882456",
+            "42884601",
+            "42824162",
+            "42851468",
+            "42942921",
+            "42852623",
+            "43005218",
+            "42870902",
+            "42929006",
+            "42973761",
+            "42869816",
+            "42996646",
+            "42940127",
+            "42939785",
+            "42889985",
+            "42824105",
+            "42913803",
+            "42938388",
+            "42870872",
+            "42948404",
+            "42810159",
+            "43001156",
+            "42890516",
+            "42919218",
+            "42862661",
+            "42956318",
+            "42888989",
+            "42959125",
+            "42974266",
+            "42957065",
+            "42828627",
+            "42970167",
+            "42809069",
+            "42908321",
+            "42995693",
+            "42830172",
+            "42993406"
+          ],
+          "pubmed_total_count": 91,
+          "query": "((immune-homeostasis[tiab] OR immune-regulat*[tiab] OR immunoregulat*[tiab] OR healthy-immune[tiab] OR inflammat*-regulat*[tiab] OR inflammat*-resolut*[tiab] OR immunosenescence[tiab] OR mucosal-immun*[tiab] OR immunometabol*[tiab] OR metabolic-immune[tiab] OR nutrition*-immun*[tiab] OR diet*-immun*[tiab])) AND ((randomized-controlled-trial[pt] OR clinical-trial[pt] OR meta-analysis[pt] OR systematic-review[pt] OR (random*[tiab] AND placebo*[tiab]) OR first-in-human[tiab] OR cohort[ti] OR longitudinal[ti] OR intervention[ti])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 50,
+          "route": "clinical_radar"
+        },
+        {
+          "configured_limit": 60,
+          "date_parameters": {
+            "datetype": "edat",
+            "maxdate": "2026/11/12",
+            "mindate": "2026/09/29",
+            "sort": "relevance"
+          },
+          "pmids": [
+            "42840755",
+            "43011890",
+            "42846826",
+            "42826809",
+            "42863469",
+            "42862796",
+            "42923651",
+            "43014223",
+            "42869337",
+            "42883044",
+            "42862045",
+            "42859560",
+            "42921032",
+            "42845359",
+            "42920733",
+            "42828074",
+            "42853963",
+            "42859348",
+            "42830947",
+            "42898270",
+            "42881889",
+            "42892508",
+            "42857244",
+            "42940167",
+            "42897831",
+            "42935746",
+            "42889337",
+            "42921545",
+            "42858859",
+            "42874808",
+            "42809174",
+            "42959374",
+            "42943398",
+            "42896091",
+            "42858484",
+            "42860997",
+            "42849084",
+            "42941767",
+            "42842161",
+            "42911103",
+            "42913780",
+            "42937055",
+            "42890516",
+            "42828139",
+            "42856411",
+            "42844111",
+            "42843441",
+            "42922714",
+            "42899835",
+            "42845118",
+            "42899200",
+            "42954296",
+            "42976420",
+            "42830705",
+            "42819723",
+            "42903485",
+            "42819344",
+            "42936525",
+            "42941198",
+            "42868144"
+          ],
+          "pubmed_total_count": 455,
+          "query": "((immune-homeostasis[tiab] OR immune-regulat*[tiab] OR immunoregulat*[tiab] OR healthy-immune[tiab] OR inflammat*-regulat*[tiab] OR inflammat*-resolut*[tiab] OR immunosenescence[tiab] OR mucosal-immun*[tiab] OR immunometabol*[tiab] OR metabolic-immune[tiab] OR nutrition*-immun*[tiab] OR diet*-immun*[tiab])) AND ((nutrition*[tiab] OR diet*[tiab] OR dietary[tiab] OR nutrient*[tiab] OR supplement*[tiab] OR nutraceutical*[tiab] OR functional-food*[tiab] OR probiotic*[tiab] OR prebiotic*[tiab] OR synbiotic*[tiab] OR postbiotic*[tiab] OR phytochemical*[tiab] OR polyphenol*[tiab] OR flavonoid*[tiab] OR botanical*[tiab] OR herbal[tiab] OR natural-product*[tiab] OR plant-extract*[tiab] OR traditional-Chinese-medicine[tiab])) AND hasabstract NOT (editorial[pt] OR comment[pt] OR letter[pt] OR news[pt] OR retracted-publication[pt])",
+          "returned_count": 60,
+          "route": "business_relevance_radar"
+        }
+      ],
+      "summary": {
+        "capped_count": 0,
+        "cross_route_overlap_count": 16,
+        "eligible_new_before_cap": 170,
+        "historical_duplicate_count": 0,
+        "route_hit_count_sum": 1123,
+        "route_returned_count_sum": 188,
+        "selected_new_after_cap": 170,
+        "unique_returned_before_history_dedupe": 170
+      }
+    }
+  ],
+  "generated_at": "2026-11-12T16:24:48.764367+08:00",
+  "run_type": "pubmed_candidate_dry_run",
+  "schema_version": "0.1",
+  "summary": {
+    "capped_domain_candidates": 0,
+    "cross_domain_pmid_count": 52,
+    "domain_count": 4,
+    "global_unique_new_pmids": 661,
+    "historical_duplicate_memberships": 0,
+    "query_count": 16,
+    "route_hit_count_sum": 6703,
+    "route_returned_count_sum": 848,
+    "selected_domain_memberships": 717
+  },
+  "write_policy": "no_database_writes"
+}

@@ -41,6 +41,18 @@ class PublicationReleaseTests(unittest.TestCase):
         engine = make_engine(self.database_url)
         try:
             with Session(engine) as session, session.begin():
+                for other_batch in session.scalars(
+                    select(PublicationBatch).where(PublicationBatch.id != BATCH_ID)
+                ):
+                    other_batch.status = "draft"
+                    other_batch.preview_path = None
+                    other_batch.preview_sha256 = None
+                    other_batch.output_path = None
+                    other_batch.content_sha256 = None
+                    other_batch.confirmed_by = None
+                    other_batch.confirmed_at = None
+                    other_batch.confirmation_note = None
+                    other_batch.published_at = None
                 batch = session.get(PublicationBatch, BATCH_ID)
                 assert batch is not None
                 batch.status = "draft"

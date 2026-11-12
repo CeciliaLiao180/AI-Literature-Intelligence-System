@@ -26,6 +26,7 @@ class SiteArtifactTests(unittest.TestCase):
             site_config_path=PROJECT_ROOT / "config" / "site.v2.json",
             journal_metrics_path=PROJECT_ROOT / "config" / "journal_metrics.v1.json",
         )
+        self.paper_count = len(data["papers"])
         generate_site(data, self.site_dir)
 
     def tearDown(self) -> None:
@@ -37,7 +38,7 @@ class SiteArtifactTests(unittest.TestCase):
             required_publication_status="preview",
         )
         self.assertEqual(result["publication_status"], "preview")
-        self.assertEqual(result["papers"], 4)
+        self.assertEqual(result["papers"], self.paper_count)
         self.assertTrue((self.site_dir / ".nojekyll").exists())
 
     def test_rejects_preview_when_published_is_required(self) -> None:

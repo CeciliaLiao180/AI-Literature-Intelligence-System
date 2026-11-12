@@ -1,0 +1,2407 @@
+{
+  "package_version": "1.0",
+  "generated_at": "2026-11-12T08:36:29.132266Z",
+  "batch": {
+    "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+    "source": "pubmed",
+    "required_state": "CONTENT_READY",
+    "pipeline_run_ids": [
+      "1977825f-3e1e-479d-81de-9cfa1c8c7def"
+    ],
+    "task_count": 8,
+    "generated_at": "2026-11-12T08:36:29.132266Z"
+  },
+  "domain": null,
+  "selection": {
+    "required_state": "CONTENT_READY",
+    "domain_code": null,
+    "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+    "limit": null
+  },
+  "prompt_spec": {
+    "path": "D:/AAA gpt files/AI-Literature-Intelligence-System/config/prompts.v1.yaml",
+    "sha256": "4c33ebb446335e6d39ef721e15127b40fe0b68166afca09b0b650e8312067a77",
+    "input_contract_version": "1.0",
+    "workflow": [
+      "paper_relevance",
+      "paper_analysis",
+      "paper_classification",
+      "report_composition",
+      "report_quality_gate"
+    ]
+  },
+  "execution_mode": "codex_manual",
+  "state_policy": {
+    "database_is_read_only_for_export": true,
+    "export_does_not_advance_task_state": true,
+    "formal_publish_requires_human_confirmation": true
+  },
+  "task_count": 8,
+  "tasks": [
+    {
+      "paper_task_id": "7692087c-ed9d-429d-b7da-0567d8fbdcd1",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "c4e2ff082025752eafd5881e5edc98e28102aafffa94536f88ec5d5a87f96279",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 8,
+          "title": "Sugar-rich foods exacerbate antibiotic-induced microbiome disruption.",
+          "abstract": "Diet shapes the composition of the gut microbiota1; however, the specific effects of distinct food groups on microbiome dynamics are unclear, particularly in circumstances of extreme perturbation. Here we evaluated the relationship between diet and intestinal microbiome dynamics by precisely tracking 9,419 meals consumed by 173 patients who were hospitalized for haematopoietic cell transplantation and analysing subsequent microbiome changes. Bayesian inference applied to data from 158 patients with paired longitudinal microbiome samples revealed that the intake of sweets and sugars during antibiotic exposure predicted exacerbated microbial dysbiosis, manifesting as lowered α-diversity and greater expansion of the pathobiont Enterococcus. Experiments in mice also showed that sucrose supplementation increased and prolonged antibiotic-induced Enterococcus expansion. These data suggest that avoiding a diet rich in simple sugars during antibiotic treatment may mitigate microbiota disruption. Further studies in independent cohorts will offer opportunities to generalize these findings and evaluate microbiota-sparing interventions.",
+          "journal": "Nature",
+          "publication_date": "2026-10-01",
+          "identifiers": {
+            "pmid": "42816625",
+            "doi": "10.1038/s41586-026-11077-3",
+            "pmcid": "PMC13668661"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Anqi Dai",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Annamaria Ballweg",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "William Jogia",
+                "orcid": "0009-0000-5513-2375",
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+              },
+              {
+                "name": "Madhumitha Rangesa",
+                "orcid": "0000-0002-5825-2775",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Peter A Adintori",
+                "orcid": "0000-0001-7099-1143",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Mirae Baichoo",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Tyler Funnell",
+                "orcid": "0000-0003-1612-5644",
+                "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+              },
+              {
+                "name": "Teng Fei",
+                "orcid": "0000-0001-7888-1715",
+                "affiliation": "Department of Epidemiology and Biostatistics, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Nicholas R Waters",
+                "orcid": "0000-0002-9035-2143",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Abrielle Swartz",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Sukanya Sahu",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Brianna Gipson",
+                "orcid": "0009-0005-5837-8676",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Sandeep S Raj",
+                "orcid": "0000-0003-4629-0528",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Eiko Hayase",
+                "orcid": "0000-0002-4824-8844",
+                "affiliation": "Departments of Genomic Medicine and Stem Cell Transplantation Cellular Therapy, Division of Cancer Medicine, University of Texas MD Anderson Cancer Center, Houston, TX, USA."
+              },
+              {
+                "name": "Zoe Pierce",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Kenton Wu",
+                "orcid": "0000-0003-1676-9837",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Natalie Smith",
+                "orcid": null,
+                "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+              },
+              {
+                "name": "Justin Neuberger",
+                "orcid": "0009-0009-2930-3754",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Adam Warren",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Marina Burgos da Silva",
+                "orcid": null,
+                "affiliation": "Human Oncology & Pathogenesis Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Oriana Miltiadous",
+                "orcid": "0000-0002-1571-3893",
+                "affiliation": "Department of Pediatrics, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Corrado Zuanelli Brambilla",
+                "orcid": "0000-0002-6396-2990",
+                "affiliation": "Haematology Unit, Department of Cellular Therapy, Hematology and Laboratory Medicine, Azienda Ospedaliero-Universitaria Senese, Siena, Italy."
+              },
+              {
+                "name": "Marissa Lubin Buchan",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Tatanisha K Peets",
+                "orcid": null,
+                "affiliation": "Food and Nutrition Services, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Ana Gradissimo",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Luigi A Amoretti",
+                "orcid": "0000-0002-4625-5119",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Caichen Duan",
+                "orcid": null,
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+              },
+              {
+                "name": "Chenzhen Zhang",
+                "orcid": null,
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+              },
+              {
+                "name": "Fanny Matheis",
+                "orcid": null,
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+              },
+              {
+                "name": "Alexis P Sullivan",
+                "orcid": "0000-0001-9296-8112",
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+              },
+              {
+                "name": "John B Slingerland",
+                "orcid": null,
+                "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+              },
+              {
+                "name": "Annelie G Clurman",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Daniel G Brereton",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Paul A Giardina",
+                "orcid": null,
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Antonio L C Gomes",
+                "orcid": "0000-0003-3790-3724",
+                "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+              },
+              {
+                "name": "Abigail J Johnson",
+                "orcid": "0000-0002-5998-4724",
+                "affiliation": "Division of Epidemiology and Community Health, School of Public Health, University of Minnesota, Minneapolis, MN, USA."
+              },
+              {
+                "name": "Dan Knights",
+                "orcid": null,
+                "affiliation": "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA."
+              },
+              {
+                "name": "Robert R Jenq",
+                "orcid": null,
+                "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+              },
+              {
+                "name": "Kate A Markey",
+                "orcid": null,
+                "affiliation": "Translational Science and Therapeutics Division, Fred Hutchinson Cancer Center, Seattle, WA, USA."
+              },
+              {
+                "name": "Miguel-Angel Perales",
+                "orcid": "0000-0002-5910-4571",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Sergio A Giralt",
+                "orcid": "0000-0003-1944-5053",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+              },
+              {
+                "name": "Marcel R M van den Brink",
+                "orcid": "0000-0003-0696-4401",
+                "affiliation": "City of Hope, Duarte, CA, USA. mvandenbrink@coh.org."
+              },
+              {
+                "name": "Jonas Schluter",
+                "orcid": "0000-0002-6214-9367",
+                "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA. jonas.schluter@nyulangone.org."
+              },
+              {
+                "name": "Jonathan U Peled",
+                "orcid": "0000-0002-4029-7625",
+                "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA. peledj@mskcc.org."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "09",
+                  "day": "30"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2025",
+                  "month": "3",
+                  "day": "4",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "25",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "15",
+                  "hour": "7",
+                  "minute": "17"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "1",
+                  "hour": "5",
+                  "minute": "31"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "30",
+                  "hour": "23",
+                  "minute": "27"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "30",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "e2ccb0c1-d32c-4dd3-ad5b-cf7cfb2ef7a6",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:34:51.462868Z",
+          "content_sha256": "e0f9d7b628c734409d31b12543b8cea22e5e4d0704a3423820ad2f475de4f933",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Diet shapes the composition of the gut microbiota1; however, the specific effects of distinct food groups on microbiome dynamics are unclear, particularly in circumstances of extreme perturbation. Here we evaluated the relationship between diet and intestinal microbiome dynamics by precisely tracking 9,419 meals consumed by 173 patients who were hospitalized for haematopoietic cell transplantation and analysing subsequent microbiome changes. Bayesian inference applied to data from 158 patients with paired longitudinal microbiome samples revealed that the intake of sweets and sugars during antibiotic exposure predicted exacerbated microbial dysbiosis, manifesting as lowered α-diversity and greater expansion of the pathobiont Enterococcus. Experiments in mice also showed that sucrose supplementation increased and prolonged antibiotic-induced Enterococcus expansion. These data suggest that avoiding a diet rich in simple sugars during antibiotic treatment may mitigate microbiota disruption. Further studies in independent cohorts will offer opportunities to generalize these findings and evaluate microbiota-sparing interventions."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+          "https://doi.org/10.1038/s41586-026-11077-3"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42816625",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+            "checked_at": "2026-11-12T08:34:55.005441Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1038/s41586-026-11077-3",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1038/s41586-026-11077-3",
+            "checked_at": "2026-11-12T08:34:55.005441Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+            "checked_at": "2026-11-12T08:34:55.005441Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "dfcb5004-9782-4fea-8c9c-06cfc847f502",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "363e008469ad31876debc15d775a81cbbfb282354cc254d9ed8ba2a523b92f32",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 9,
+          "title": "Microbial inositol phosphates orchestrate host diurnal metabolism and energy homeostasis via HDAC3.",
+          "abstract": "The gut microbiota programs mammalian circadian metabolism, yet the mechanisms remain unclear. Because feeding behavior is inherently rhythmic and strongly influences microbial metabolism, we hypothesized that the microbiota translates feeding timing into host circadian programs. We show that gut commensal Bacteroides thetaiotaomicron (Bt), in concert with feeding schedules, promotes diurnal chromatin-binding activity of the histone deacetylase 3 (HDAC3) in intestinal epithelial cells. Bt produces inositol triphosphate (InsP3) in a feeding-entrained diurnal manner that enhances HDAC3 activity. Colonization with wild-type Bt, but not an inositol phosphatase mutant, enhanced genome-wide rhythms in epithelial histone acetylation and metabolic gene expression. InsP3-activated HDAC3 deacetylates the transcriptional coactivator PGC-1α, resulting in enhanced expression of nutrient transporter genes. This Bt-InsPs-HDAC3 axis worsens diet-induced obesity in overnourished mice while improving growth in undernourished juvenile mice. These findings reveal a co-evolved microbial-epigenetic-circadian axis that orchestrates nutrient absorption and impacts energy homeostasis across nutritional states.",
+          "journal": "Cell host & microbe",
+          "publication_date": "2026-11-11",
+          "identifiers": {
+            "pmid": "42913643",
+            "doi": "10.1016/j.chom.2026.09.021",
+            "pmcid": "PMC13700225"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Jianglin Zhang",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Sarah O Oladejo",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Xianda Ma",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Junjie Ma",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Dingjiacheng Jia",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Wenchao Yu",
+                "orcid": null,
+                "affiliation": "Department of Pharmaceutical Sciences, University of Pittsburgh, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Samskrathi Sharma",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Cassie L Behrendt",
+                "orcid": null,
+                "affiliation": "Department of Immunology, The University of Texas Southwestern Medical Center, Dallas, TX 75390, USA; The Howard Hughes Medical Institute, The University of Texas Southwestern Medical Center, Dallas, TX 75390, USA."
+              },
+              {
+                "name": "Regis Stentz",
+                "orcid": null,
+                "affiliation": "Food, Microbiome and Health Research Programme, Quadram Institute Bioscience, Norwich NR4 7UQ, UK."
+              },
+              {
+                "name": "Simon R Carding",
+                "orcid": null,
+                "affiliation": "Food, Microbiome and Health Research Programme, Quadram Institute Bioscience, Norwich NR4 7UQ, UK; Norwich Medical School, University of East Anglia, Norwich NR4 7TJ, UK."
+              },
+              {
+                "name": "Qihao Wu",
+                "orcid": null,
+                "affiliation": "Department of Pharmaceutical Sciences, University of Pittsburgh, Pittsburgh, PA 15213, USA."
+              },
+              {
+                "name": "Zheng Kuang",
+                "orcid": null,
+                "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA. Electronic address: zhengkua@andrew.cmu.edu."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-11-11",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Nov",
+                "day": 11,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "22"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "1",
+                  "day": "14",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "15",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "30",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "23",
+                  "hour": "23",
+                  "minute": "31"
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "11",
+                  "day": "11",
+                  "hour": "23",
+                  "minute": "27"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "23",
+                  "hour": "17",
+                  "minute": "57"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "26",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "gut_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "797a1e57-218b-4330-a201-6e4fba3b0052",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:34:55.466633Z",
+          "content_sha256": "2edb334f3db757ef3bdc540dfc6364b2eab837f813631ab01b6fd881a7a3e0f4",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "The gut microbiota programs mammalian circadian metabolism, yet the mechanisms remain unclear. Because feeding behavior is inherently rhythmic and strongly influences microbial metabolism, we hypothesized that the microbiota translates feeding timing into host circadian programs. We show that gut commensal Bacteroides thetaiotaomicron (Bt), in concert with feeding schedules, promotes diurnal chromatin-binding activity of the histone deacetylase 3 (HDAC3) in intestinal epithelial cells. Bt produces inositol triphosphate (InsP3) in a feeding-entrained diurnal manner that enhances HDAC3 activity. Colonization with wild-type Bt, but not an inositol phosphatase mutant, enhanced genome-wide rhythms in epithelial histone acetylation and metabolic gene expression. InsP3-activated HDAC3 deacetylates the transcriptional coactivator PGC-1α, resulting in enhanced expression of nutrient transporter genes. This Bt-InsPs-HDAC3 axis worsens diet-induced obesity in overnourished mice while improving growth in undernourished juvenile mice. These findings reveal a co-evolved microbial-epigenetic-circadian axis that orchestrates nutrient absorption and impacts energy homeostasis across nutritional states."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+          "https://doi.org/10.1016/j.chom.2026.09.021"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42913643",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+            "checked_at": "2026-11-12T08:34:59.503325Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1016/j.chom.2026.09.021",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1016/j.chom.2026.09.021",
+            "checked_at": "2026-11-12T08:34:59.503325Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+            "checked_at": "2026-11-12T08:34:59.503325Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "cd18fa05-d001-4b2b-80f0-4034a0a59303",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "07364f14010008d53784098b6d860ba62b7b6a25824b5dd97ed08b84f6c83ccf",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 10,
+          "title": "Dietary preference, biological aging, and incident dementia: a prospective cohort study.",
+          "abstract": "Dietary patterns are modifiable determinants of dementia risk, but the interactions between individual dietary preference profiles, biological aging, and dementia risk remain unclear. We aimed to investigate associations of dietary preference profiles with biological aging and incident dementia, as well as the potential modifying effect of genetic susceptibility. Dietary preference profiles were identified using latent profile analysis on food preferences questionnaire data. Cox models estimated the association between dietary preferences and dementia risk and their interaction with genetic risk. Associations with biological aging acceleration (Klemera-Doubal method biological age [KDM-BA] acceleration, phenotypic age (PhenoAge) acceleration, leucocyte telomere length [LTL]) were assessed with linear regression. Mediation analysis explored potential mediators. Three dietary preference profiles were identified: health-aligned, broad-preference, and sweet-tooth. The sweet-tooth group showed a 79% higher risk of all-cause dementia, 62% higher risk of Alzheimer's disease, and 202% higher risk of vascular dementia compared to the health-aligned group. The sweet-tooth profile was associated with accelerated KDM-BA, PhenoAge, and shorter LTL. A significant additive interaction between sweet-tooth profile and high genetic risk amplified dementia risk. Exploratory mediation analyses suggested that biological aging markers statistically accounted for 2.28-4.82% of the observed association. Sweet-tooth dietary preference was associated with higher dementia risk and accelerated biological aging, particularly among individuals with high genetic susceptibility. These findings support targeted dietary interventions for dementia prevention, especially in genetically at-risk populations.",
+          "journal": "GeroScience",
+          "publication_date": "2026-10-07",
+          "identifiers": {
+            "pmid": "42842075",
+            "doi": "10.1007/s11357-026-02567-3"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Mengtong Sun",
+                "orcid": null,
+                "affiliation": "Department of Infectious Diseases and Public Health, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China."
+              },
+              {
+                "name": "Feng Huang",
+                "orcid": null,
+                "affiliation": "State Key Laboratory of Cognitive Science and Mental Health, Institute of Psychology, Chinese Academy of Sciences, Beijing, China."
+              },
+              {
+                "name": "Na Sun",
+                "orcid": null,
+                "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+              },
+              {
+                "name": "Huimin Ding",
+                "orcid": null,
+                "affiliation": "Department of Psychology, University of Notre Dame, Notre Dame, IN, USA."
+              },
+              {
+                "name": "Fuyan Shi",
+                "orcid": null,
+                "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+              },
+              {
+                "name": "Suzhen Wang",
+                "orcid": null,
+                "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+              },
+              {
+                "name": "Jiazhen Yao",
+                "orcid": "0000-0003-0889-016X",
+                "affiliation": "School of Public Health, Southeast University, 87 Dingjiaqiao, Nanjing, China. 230249305@seu.edu.cn."
+              },
+              {
+                "name": "Qida He",
+                "orcid": "0000-0003-0796-7620",
+                "affiliation": "Department of Infectious Diseases and Public Health, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China. qida.he@my.cityu.edu.hk."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-07",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": 7,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "Publisher",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "07"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2025",
+                  "month": "12",
+                  "day": "10",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "24",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "7",
+                  "hour": "17",
+                  "minute": "33"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "7",
+                  "hour": "17",
+                  "minute": "33"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "7",
+                  "hour": "12",
+                  "minute": "22"
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "healthy_aging"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "f6579680-e084-444e-824b-34111393a1ce",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:34:59.549463Z",
+          "content_sha256": "c9f5cb5aec341e5d4de56b917e8143d5f9a8efd0ffb7a2a317656c1e15a3f9a6",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Dietary patterns are modifiable determinants of dementia risk, but the interactions between individual dietary preference profiles, biological aging, and dementia risk remain unclear. We aimed to investigate associations of dietary preference profiles with biological aging and incident dementia, as well as the potential modifying effect of genetic susceptibility. Dietary preference profiles were identified using latent profile analysis on food preferences questionnaire data. Cox models estimated the association between dietary preferences and dementia risk and their interaction with genetic risk. Associations with biological aging acceleration (Klemera-Doubal method biological age [KDM-BA] acceleration, phenotypic age (PhenoAge) acceleration, leucocyte telomere length [LTL]) were assessed with linear regression. Mediation analysis explored potential mediators. Three dietary preference profiles were identified: health-aligned, broad-preference, and sweet-tooth. The sweet-tooth group showed a 79% higher risk of all-cause dementia, 62% higher risk of Alzheimer's disease, and 202% higher risk of vascular dementia compared to the health-aligned group. The sweet-tooth profile was associated with accelerated KDM-BA, PhenoAge, and shorter LTL. A significant additive interaction between sweet-tooth profile and high genetic risk amplified dementia risk. Exploratory mediation analyses suggested that biological aging markers statistically accounted for 2.28-4.82% of the observed association. Sweet-tooth dietary preference was associated with higher dementia risk and accelerated biological aging, particularly among individuals with high genetic susceptibility. These findings support targeted dietary interventions for dementia prevention, especially in genetically at-risk populations."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+          "https://doi.org/10.1007/s11357-026-02567-3"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42842075",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+            "checked_at": "2026-11-12T08:35:02.708993Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1007/s11357-026-02567-3",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1007/s11357-026-02567-3",
+            "checked_at": "2026-11-12T08:35:02.708993Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+            "checked_at": "2026-11-12T08:35:02.708993Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "58e5ccab-4e50-497e-a524-b4ac0510d35d",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "ef330a9a24987f6ba482ff30f77005fe20a59c0afc7a0baf968d5b7cd4ca41ea",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 11,
+          "title": "Uncovering the transcriptional hallmarks of endothelial cell aging via integrated single-cell analysis.",
+          "abstract": "Endothelial cells (ECs) are critical regulators of vascular function and exhibit tissue-specialized roles. During aging, these cells become dysfunctional, resulting in increased susceptibility to cardiovascular disease. Although single-cell transcriptomics has revealed extensive endothelial heterogeneity, a comprehensive atlas of human EC transcriptomes over the course of the adult human lifespan has been lacking. Here, we present the Human Aging Endothelial Cell Atlas (HAECA), a harmonized single-cell transcriptomic compendium of over 375,000 ECs from 12 human tissues throughout adulthood. We identified age-associated transcriptional shifts, including a decline in angiogenic gene expression in venous ECs and widespread alterations in extracellular matrix and mechanotransduction-associated signatures. Furthermore, we uncovered a p21-linked transcriptional program in ECs, which we linked to cellular senescence in both in vitro and in vivo models. Together, our study provides a high-resolution transcriptomic reference of the human endothelium across tissues and age.",
+          "journal": "Nature aging",
+          "publication_date": "2026-10-23",
+          "identifiers": {
+            "pmid": "42919924",
+            "doi": "10.1038/s43587-026-01247-3"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Sarah Dobner",
+                "orcid": "0009-0000-4186-9958",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Lisa Kleissl",
+                "orcid": "0000-0001-8011-796X",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Fanni Tóth",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Robert L Paxton",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Irena Yordanova",
+                "orcid": "0009-0009-9986-4581",
+                "affiliation": "Medical University of Vienna, Institute of Medical Chemistry, Center for Pathobiochemistry and Genetics, Vienna, Austria."
+              },
+              {
+                "name": "Kveta Brazdilova",
+                "orcid": "0009-0009-1198-4993",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Cedric Vanluyten",
+                "orcid": null,
+                "affiliation": "Department of Thoracic Surgery, University Hospitals Leuven, Leuven, Belgium."
+              },
+              {
+                "name": "Aleksandra Aizenshtadt",
+                "orcid": null,
+                "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+              },
+              {
+                "name": "Hanna Tóth",
+                "orcid": "0009-0001-4696-2171",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Jake Burton",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Aglaja Kopf",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Vera Belyaeva",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Katharina Ferencevic",
+                "orcid": null,
+                "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+              },
+              {
+                "name": "Dunja A Al-Nuaimi",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Mauriz A Lichtenstein",
+                "orcid": "0000-0002-2124-8262",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Georg E Winter",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "André F Rendeiro",
+                "orcid": "0000-0001-9362-5373",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Christoph Bock",
+                "orcid": "0000-0001-6091-3088",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Joanna Kalucka",
+                "orcid": "0000-0003-4887-7672",
+                "affiliation": "Department of Biomedicine, Aarhus University, Aarhus, Denmark."
+              },
+              {
+                "name": "Stefan Krauss",
+                "orcid": null,
+                "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+              },
+              {
+                "name": "Selma Osmanagic-Myers",
+                "orcid": "0000-0002-3834-1332",
+                "affiliation": "Medical University of Vienna, Institute of Medical Chemistry, Center for Pathobiochemistry and Genetics, Vienna, Austria."
+              },
+              {
+                "name": "Laurens J Ceulemans",
+                "orcid": null,
+                "affiliation": "Department of Thoracic Surgery, University Hospitals Leuven, Leuven, Belgium."
+              },
+              {
+                "name": "Georg Stary",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Abdel Rahman Abdel Fattah",
+                "orcid": null,
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+              },
+              {
+                "name": "Laura P M H de Rooij",
+                "orcid": "0000-0002-1810-4620",
+                "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria. lderooij@cemm.at."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-23",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": 23,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "Publisher",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "23"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2025",
+                  "month": "9",
+                  "day": "23",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "11",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "24",
+                  "hour": "5",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "24",
+                  "hour": "5",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "23",
+                  "hour": "23",
+                  "minute": "17"
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "healthy_aging"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "4d9741b5-99f6-4647-861c-f2c8ea608126",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:35:02.755630Z",
+          "content_sha256": "eca4f1c9aac4c675f83b5e65bf650e84233bd2dbd4568a4bb10c18b14431e64e",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Endothelial cells (ECs) are critical regulators of vascular function and exhibit tissue-specialized roles. During aging, these cells become dysfunctional, resulting in increased susceptibility to cardiovascular disease. Although single-cell transcriptomics has revealed extensive endothelial heterogeneity, a comprehensive atlas of human EC transcriptomes over the course of the adult human lifespan has been lacking. Here, we present the Human Aging Endothelial Cell Atlas (HAECA), a harmonized single-cell transcriptomic compendium of over 375,000 ECs from 12 human tissues throughout adulthood. We identified age-associated transcriptional shifts, including a decline in angiogenic gene expression in venous ECs and widespread alterations in extracellular matrix and mechanotransduction-associated signatures. Furthermore, we uncovered a p21-linked transcriptional program in ECs, which we linked to cellular senescence in both in vitro and in vivo models. Together, our study provides a high-resolution transcriptomic reference of the human endothelium across tissues and age."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+          "https://doi.org/10.1038/s43587-026-01247-3"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42919924",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+            "checked_at": "2026-11-12T08:35:07.786183Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1038/s43587-026-01247-3",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1038/s43587-026-01247-3",
+            "checked_at": "2026-11-12T08:35:07.786183Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+            "checked_at": "2026-11-12T08:35:07.786183Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "6199cd05-098b-4756-b0f6-fb88374b0d47",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "1f314badef83d197aceca411cd795e780d95926471eda2a092d8d6f9ad65d621",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 12,
+          "title": "Integrated Single-Myofibre Multi-Omics Correlates Inflammatory State to Myosin Energetics in ICU-Acquired Weakness.",
+          "abstract": "BACKGROUND: Skeletal muscle atrophy is a pervasive complication of critical illness that worsens survival and recovery, yet remains poorly explained by current clinical or molecular markers. METHODS: To directly connect disease-associated molecular states to the contractile machinery, this study combined sequential functional, transcriptomic and proteomic profiling of the same single human skeletal myofibres from critically ill patients in the intensive care unit with acquired weakness (ICU-AW) and controls. This integrated approach provides a framework for validating molecular signals directly within the cellular and biomechanical context. RESULTS: Differential expression analyses between control and ICU-AW myofibres show marked donor-level heterogeneity, with no differentially expressed features (FDR < 0.05). Ranked gene set enrichment analyses revealed distinct transcriptional and proteomic signatures between conditions, as well as a subtle yet conserved myofibre state enriched in ICU-AW, characterised by inflammatory and chemotactic gene programmes, intracellular structural remodelling and bioenergetic adaptation. Nineteen features were significantly (FDR < 0.05) altered at both RNA and protein levels from the same myofibre. Overall, these 19 overlapping features link an inflammatory transcriptional landscape to a proteomic shift toward mitochondrial and translational machinery, revealing a coordinated stress-adaptation programme with selective post-translational control in fibres from patients with ICU-AW. Further integration with the functional dataset revealed fibres in this state displayed selectively disrupted myosin dynamics, evidenced by prolonged ATP turnover time of myosin heads in their super-relaxed conformation, suggesting altered myosin energetics as a contributor to muscle dysfunction. CONCLUSIONS: These findings define a discrete, disease-associated myofibre state and validate a proof-of-concept integrative single-fibre framework for connecting multi-omic heterogeneity to molecular motor function in complex human disease. The identification of coordinated transcriptomic and proteomic programmes, validated through functional measurement, suggests that targeting this fibre state may offer new therapeutic opportunities in ICU-acquired dysfunction and related muscle disorders.",
+          "journal": "Journal of cachexia, sarcopenia and muscle",
+          "publication_date": "2026-10-01",
+          "identifiers": {
+            "pmid": "42896625",
+            "doi": "10.1002/jcsm.70407",
+            "pmcid": "PMC13680048"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Alexandra M Winant",
+                "orcid": "0009-0009-8934-1103",
+                "affiliation": "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+              },
+              {
+                "name": "Roger Moreno-Justicia",
+                "orcid": null,
+                "affiliation": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+              },
+              {
+                "name": "Lucia Paolini",
+                "orcid": "0000-0002-4410-5272",
+                "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+              },
+              {
+                "name": "Wout J Claassen",
+                "orcid": "0000-0001-5154-7311",
+                "affiliation": "Amsterdam UMC, Location VUmc, Department of Physiology, Amsterdam, the Netherlands."
+              },
+              {
+                "name": "Coen A C Ottenheijm",
+                "orcid": "0000-0002-8808-4813",
+                "affiliation": "Amsterdam UMC, Location VUmc, Department of Physiology, Amsterdam, the Netherlands."
+              },
+              {
+                "name": "Atul S Deshmukh",
+                "orcid": "0000-0002-2278-1843",
+                "affiliation": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+              },
+              {
+                "name": "Stefano Cattaneo",
+                "orcid": "0000-0001-7562-1053",
+                "affiliation": "ASST Spedali Civili di Brescia, ASST Spedali Civili, Dept. of Bone and Joint Surgery, Brescia, Italy."
+              },
+              {
+                "name": "Simone Piva",
+                "orcid": "0000-0002-5483-8007",
+                "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+              },
+              {
+                "name": "Nicola Latronico",
+                "orcid": "0000-0002-2521-5871",
+                "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+              },
+              {
+                "name": "Robert A E Seaborne",
+                "orcid": "0000-0003-2491-3747",
+                "affiliation": "Centre of Human and Applied Physiological Sciences, School of Basic and Medical Biosciences, Faculty of Life Sciences & Medicine, King's College London, London, UK."
+              },
+              {
+                "name": "Julien Ochala",
+                "orcid": "0000-0002-6358-2920",
+                "affiliation": "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print",
+              "citation_status": "MEDLINE",
+              "article_dates": [],
+              "history_dates": [
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "10",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "3",
+                  "day": "17",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "8",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "19",
+                  "hour": "23",
+                  "minute": "31"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "19",
+                  "hour": "23",
+                  "minute": "30"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "19",
+                  "hour": "19",
+                  "minute": "25"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "19",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "musculoskeletal_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "da150d33-78c5-4942-98f8-a56d1d8b7a2a",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:35:07.810242Z",
+          "content_sha256": "973a6273196f16880f6ae260b274ae9f0509a92190f689d602603ba62c0e1b43",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "BACKGROUND: Skeletal muscle atrophy is a pervasive complication of critical illness that worsens survival and recovery, yet remains poorly explained by current clinical or molecular markers. METHODS: To directly connect disease-associated molecular states to the contractile machinery, this study combined sequential functional, transcriptomic and proteomic profiling of the same single human skeletal myofibres from critically ill patients in the intensive care unit with acquired weakness (ICU-AW) and controls. This integrated approach provides a framework for validating molecular signals directly within the cellular and biomechanical context. RESULTS: Differential expression analyses between control and ICU-AW myofibres show marked donor-level heterogeneity, with no differentially expressed features (FDR < 0.05). Ranked gene set enrichment analyses revealed distinct transcriptional and proteomic signatures between conditions, as well as a subtle yet conserved myofibre state enriched in ICU-AW, characterised by inflammatory and chemotactic gene programmes, intracellular structural remodelling and bioenergetic adaptation. Nineteen features were significantly (FDR < 0.05) altered at both RNA and protein levels from the same myofibre. Overall, these 19 overlapping features link an inflammatory transcriptional landscape to a proteomic shift toward mitochondrial and translational machinery, revealing a coordinated stress-adaptation programme with selective post-translational control in fibres from patients with ICU-AW. Further integration with the functional dataset revealed fibres in this state displayed selectively disrupted myosin dynamics, evidenced by prolonged ATP turnover time of myosin heads in their super-relaxed conformation, suggesting altered myosin energetics as a contributor to muscle dysfunction. CONCLUSIONS: These findings define a discrete, disease-associated myofibre state and validate a proof-of-concept integrative single-fibre framework for connecting multi-omic heterogeneity to molecular motor function in complex human disease. The identification of coordinated transcriptomic and proteomic programmes, validated through functional measurement, suggests that targeting this fibre state may offer new therapeutic opportunities in ICU-acquired dysfunction and related muscle disorders."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+          "https://doi.org/10.1002/jcsm.70407"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42896625",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+            "checked_at": "2026-11-12T08:35:13.190141Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1002/jcsm.70407",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1002/jcsm.70407",
+            "checked_at": "2026-11-12T08:35:13.190141Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+            "checked_at": "2026-11-12T08:35:13.190141Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "a81f6dff-23f4-47bb-a315-d31421f41d2c",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "d2310f46af7220449dad5bbb35d454bfecc6172b65646ae272e5d027ebcbaba8",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 13,
+          "title": "A 5:2 Intermittent Fasting Regimen Ameliorates High-Fat Diet-Induced MASLD-Associated Skeletal Muscle Impairment in Mice.",
+          "abstract": "BACKGROUND: Metabolic dysfunction-associated steatotic liver disease (MASLD) is a highly prevalent chronic liver disorder worldwide. Its pathogenesis is closely linked to high-fat diets (HFDs) and is frequently accompanied by decreased skeletal muscle quality. Although intermittent fasting (IF) has been shown to effectively alleviate hepatic steatosis and inflammation, its impact on skeletal muscle quality remains unclear. METHODS: Eight-week-old male C57BL/6J mice were randomly divided into two groups and fed a normal chow (NC) or 45% HFD for 14 weeks to induce MASLD. Subsequently, the MASLD model mice were subjected to a 5:2 intermittent fasting (IF5:2) regimen for 12 cycles (2 days of fasting per week, with ad libitum HFD feeding on the remaining 5 days). Grip strength, liver weight and quadriceps muscle mass were measured at sacrifice. Serum samples were collected for biochemical analysis and lipopolysaccharide (LPS) measurement. Liver, skeletal muscle and intestinal tissues were harvested for histopathological examination. Faecal samples were analysed by metagenomic sequencing. The mRNA expression of bile acid receptors and inflammatory genes was detected by qRT-PCR. Targeted free fatty acid profiling was performed in liver and skeletal muscle tissues. RESULTS: Compared with the continuous HFD group, the IF5:2 group showed no significant difference in cumulative energy intake but exhibited significantly reduced body weight, as well as alleviated hepatic steatosis and inflammation. IF5:2 significantly increased grip strength and skeletal muscle cross-sectional area and markedly downregulated mRNA expression of inflammation-related genes in muscle tissue. Regarding intestinal barrier function, the IF5:2 group displayed significantly higher mRNA expression of intestinal tight junction-related genes, a thicker colonic wall and lower serum LPS levels compared with the HFD group. Metagenomic analysis suggested that IF5:2 effectively remodelled HFD-induced gut microbiota dysbiosis and significantly enriched beneficial bacteria including Limosilactobacillus reuteri and Faecalibaculum rodentium, accompanied by significant upregulation of microbial secondary bile acid biosynthesis pathways. mRNA expression levels of bile acid receptors and their downstream regulatory genes in the intestine, liver and skeletal muscle were significantly elevated in the IF5:2 group. IF5:2 treatment significantly reduced free fatty acid levels in the liver and skeletal muscle, which were negatively correlated with the gene expression of bile acid-related receptors in these two tissues. CONCLUSIONS: Cyclic IF5:2 effectively ameliorates HFD-induced MASLD and protects against skeletal muscle impairment. It represents a promising dietary intervention with dual beneficial effects on alleviating hepatic steatosis and maintaining skeletal muscle quality.",
+          "journal": "Journal of cachexia, sarcopenia and muscle",
+          "publication_date": "2026-10-01",
+          "identifiers": {
+            "pmid": "42830273",
+            "doi": "10.1002/jcsm.70398",
+            "pmcid": "PMC13634929"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Ruohua Wang",
+                "orcid": "0000-0002-7863-3866",
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "Rui Yang",
+                "orcid": null,
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "Dan Hu",
+                "orcid": null,
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "Tonghe Xin",
+                "orcid": null,
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "ZiXin Yang",
+                "orcid": null,
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "Yue Guan",
+                "orcid": null,
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              },
+              {
+                "name": "Yucun Niu",
+                "orcid": "0000-0002-4879-6664",
+                "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "month",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-01",
+              "precision": "month",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Print",
+              "citation_status": "MEDLINE",
+              "article_dates": [],
+              "history_dates": [
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "9",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "4",
+                  "day": "8",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "22",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "4",
+                  "hour": "23",
+                  "minute": "30"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "4",
+                  "hour": "23",
+                  "minute": "29"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "4",
+                  "hour": "22",
+                  "minute": "32"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "4",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "musculoskeletal_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "fcf6f6b0-629c-44aa-80d3-682cd62efe41",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:35:13.209696Z",
+          "content_sha256": "95cc0edd83dd47dbe804e64c7f5f1994c28d58136a4088f1aa491378e04ba84c",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "BACKGROUND: Metabolic dysfunction-associated steatotic liver disease (MASLD) is a highly prevalent chronic liver disorder worldwide. Its pathogenesis is closely linked to high-fat diets (HFDs) and is frequently accompanied by decreased skeletal muscle quality. Although intermittent fasting (IF) has been shown to effectively alleviate hepatic steatosis and inflammation, its impact on skeletal muscle quality remains unclear. METHODS: Eight-week-old male C57BL/6J mice were randomly divided into two groups and fed a normal chow (NC) or 45% HFD for 14 weeks to induce MASLD. Subsequently, the MASLD model mice were subjected to a 5:2 intermittent fasting (IF5:2) regimen for 12 cycles (2 days of fasting per week, with ad libitum HFD feeding on the remaining 5 days). Grip strength, liver weight and quadriceps muscle mass were measured at sacrifice. Serum samples were collected for biochemical analysis and lipopolysaccharide (LPS) measurement. Liver, skeletal muscle and intestinal tissues were harvested for histopathological examination. Faecal samples were analysed by metagenomic sequencing. The mRNA expression of bile acid receptors and inflammatory genes was detected by qRT-PCR. Targeted free fatty acid profiling was performed in liver and skeletal muscle tissues. RESULTS: Compared with the continuous HFD group, the IF5:2 group showed no significant difference in cumulative energy intake but exhibited significantly reduced body weight, as well as alleviated hepatic steatosis and inflammation. IF5:2 significantly increased grip strength and skeletal muscle cross-sectional area and markedly downregulated mRNA expression of inflammation-related genes in muscle tissue. Regarding intestinal barrier function, the IF5:2 group displayed significantly higher mRNA expression of intestinal tight junction-related genes, a thicker colonic wall and lower serum LPS levels compared with the HFD group. Metagenomic analysis suggested that IF5:2 effectively remodelled HFD-induced gut microbiota dysbiosis and significantly enriched beneficial bacteria including Limosilactobacillus reuteri and Faecalibaculum rodentium, accompanied by significant upregulation of microbial secondary bile acid biosynthesis pathways. mRNA expression levels of bile acid receptors and their downstream regulatory genes in the intestine, liver and skeletal muscle were significantly elevated in the IF5:2 group. IF5:2 treatment significantly reduced free fatty acid levels in the liver and skeletal muscle, which were negatively correlated with the gene expression of bile acid-related receptors in these two tissues. CONCLUSIONS: Cyclic IF5:2 effectively ameliorates HFD-induced MASLD and protects against skeletal muscle impairment. It represents a promising dietary intervention with dual beneficial effects on alleviating hepatic steatosis and maintaining skeletal muscle quality."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+          "https://doi.org/10.1002/jcsm.70398"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42830273",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+            "checked_at": "2026-11-12T08:35:16.487938Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1002/jcsm.70398",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1002/jcsm.70398",
+            "checked_at": "2026-11-12T08:35:16.487938Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+            "checked_at": "2026-11-12T08:35:16.487938Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "dcf4c0f3-392d-449a-8b08-ef23566a398d",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "2047a08667c03499d7e14824567a3c2b2aa7cd98e3cf9895cd81900a3340187b",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 14,
+          "title": "Follicle-associated epithelial tuft cells amplify type 2 mucosal immunity and IgA production.",
+          "abstract": "Peyer's patches (PPs) in the intestinal mucosa coordinate antibody responses to luminal microbes and dietary antigens. The follicle-associated epithelium (FAE) is traditionally recognized by the presence of microfold cells (M cells) that mediate antigen sampling in PPs. By analyzing Gfi1b-eGFP reporter mice and human PP biopsies, we identified tuft cells as an additional, evolutionarily conserved FAE population that regulates mucosal immunity. Using mouse models and intestinal organoids, we demonstrate that M cells and tuft cells are distinct lineages arising from Pou2f3+ progenitors, whose differentiation is reciprocally regulated by RANKL and interleukin-13 (IL-13), respectively. Tuft cell-derived IL-25 activates type 2 innate lymphoid cells (ILC2s) in PPs. Furthermore, IL-13 production by ILC2 enhances immunoglobulin A class switching and antigen-specific immunity. These findings reveal a dual surveillance system in the FAE, where developmentally related epithelial lineages use distinct mechanisms to coordinate mucosal immunity.",
+          "journal": "Science immunology",
+          "publication_date": "2026-10-09",
+          "identifiers": {
+            "pmid": "42853963",
+            "doi": "10.1126/sciimmunol.aee1358"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Gabriel M Barrón",
+                "orcid": "0000-0002-1442-5072",
+                "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Radeesha D Jayewickreme",
+                "orcid": "0000-0002-7011-0112",
+                "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Heather H Tran",
+                "orcid": null,
+                "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Thornton W Thompson",
+                "orcid": "0000-0002-6352-8238",
+                "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+              },
+              {
+                "name": "Ramya Narasimhan",
+                "orcid": "0000-0002-2581-2342",
+                "affiliation": "Department of Microbiology and Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Ying Zhu",
+                "orcid": "0009-0001-1500-9281",
+                "affiliation": "Division of Pediatric Gastroenterology, Department of Pediatrics, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Leila B DeSchepper",
+                "orcid": "0000-0003-1330-5586",
+                "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Dahlya Habashi",
+                "orcid": null,
+                "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Katherine F Nico",
+                "orcid": "0000-0002-0003-1558",
+                "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Miles D Tyner",
+                "orcid": "0000-0001-8424-9273",
+                "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Flora M Tierney",
+                "orcid": "0000-0001-8289-0358",
+                "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Tyler E Billipp",
+                "orcid": "0009-0008-1460-3458",
+                "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+              },
+              {
+                "name": "Michael J Rosen",
+                "orcid": "0000-0002-5149-718X",
+                "affiliation": "Division of Pediatric Gastroenterology, Department of Pediatrics, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Denise M Monack",
+                "orcid": "0000-0003-3804-2209",
+                "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+              },
+              {
+                "name": "Jakob von Moltke",
+                "orcid": "0000-0003-2894-3353",
+                "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+              },
+              {
+                "name": "Michael R Howitt",
+                "orcid": "0000-0002-3643-2468",
+                "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+              }
+            ],
+            "article_type": "journal_article",
+            "language": "eng",
+            "publication_date_precision": "day",
+            "publication_date_metadata": {
+              "normalized_date": "2026-10-09",
+              "precision": "day",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": "Oct",
+                "day": 9,
+                "medline_date": null
+              },
+              "publication_model": "Print-Electronic",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "09"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "9",
+                  "hour": "17",
+                  "minute": "35"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "9",
+                  "hour": "17",
+                  "minute": "34"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "9",
+                  "hour": "14",
+                  "minute": "5"
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "immune_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "df3bcf0f-86bd-446f-8b09-9f144fedbb53",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:35:16.521948Z",
+          "content_sha256": "f99afdd8604d1a4e5c4a83cfae0c7fc70d431509ff52f6734bfd0f79996cc8a4",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "Peyer's patches (PPs) in the intestinal mucosa coordinate antibody responses to luminal microbes and dietary antigens. The follicle-associated epithelium (FAE) is traditionally recognized by the presence of microfold cells (M cells) that mediate antigen sampling in PPs. By analyzing Gfi1b-eGFP reporter mice and human PP biopsies, we identified tuft cells as an additional, evolutionarily conserved FAE population that regulates mucosal immunity. Using mouse models and intestinal organoids, we demonstrate that M cells and tuft cells are distinct lineages arising from Pou2f3+ progenitors, whose differentiation is reciprocally regulated by RANKL and interleukin-13 (IL-13), respectively. Tuft cell-derived IL-25 activates type 2 innate lymphoid cells (ILC2s) in PPs. Furthermore, IL-13 production by ILC2 enhances immunoglobulin A class switching and antigen-specific immunity. These findings reveal a dual surveillance system in the FAE, where developmentally related epithelial lineages use distinct mechanisms to coordinate mucosal immunity."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+          "https://doi.org/10.1126/sciimmunol.aee1358"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42853963",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+            "checked_at": "2026-11-12T08:35:19.468085Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.1126/sciimmunol.aee1358",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.1126/sciimmunol.aee1358",
+            "checked_at": "2026-11-12T08:35:19.468085Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+            "checked_at": "2026-11-12T08:35:19.468085Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    },
+    {
+      "paper_task_id": "e7dd84e2-e191-4029-aabd-cf5f0e7713f0",
+      "pipeline_run_id": "1977825f-3e1e-479d-81de-9cfa1c8c7def",
+      "current_state": "CONTENT_READY",
+      "input_sha256": "1442b2155302fd87cb89f5ef0f4feb7bdebef9b487cfcf8125eec1896fc4f8ba",
+      "input_data": {
+        "contract_version": "1.0",
+        "task": "paper_relevance",
+        "paper": {
+          "paper_id": 15,
+          "title": "Effects of exercise and physical activity on circulating inflammaging- and immunosenescence-related biomarkers in older adults and adults with chronic diseases: an umbrella review.",
+          "abstract": "BACKGROUND: Chronic low-grade inflammation and immunosenescence accompany ageing and chronic disease. Exercise and physical activity are proposed to modify circulating inflammatory biomarkers, but review-level evidence is dispersed across populations and conditions. METHODS: We searched PubMed, Web of Science, Embase, Cochrane Library, Scopus, and SPORTDiscus through 1 March 2026 for systematic reviews, meta-analyses, and overviews on exercise or physical activity and circulating inflammaging- or immunosenescence-related biomarkers in older adults and adults with chronic diseases. We reported the review in accordance with PRISMA 2020 and PRIOR. Methodological quality was appraised with A MeaSurement Tool to Assess systematic Reviews, version 2 (AMSTAR-2), primary-study overlap with the corrected covered area, and certainty with GRADE. We performed no de novo meta-analysis or meta-regression; this umbrella review is a structured narrative synthesis of quantitative review-level estimates rather than a quantitative reanalysis. RESULTS: Twenty-one reviews were included: 14 core-eligible (full Population, Intervention, Comparator, Outcomes, and Study design [PICOS] match, contributing to the primary synthesis and conclusions) and seven evidence-map-only (partial PICOS match, used only for mapping and background). Among core-eligible reviews reporting standardised mean differences, exercise was associated with small reductions in tumour necrosis factor-alpha (TNF-alpha; point estimates - 1.42 to - 0.05, two of five confidence intervals excluding the null) and C-reactive protein (CRP; - 0.65 to - 0.47, two of three excluding the null), whereas interleukin-6 (IL-6) estimates were inconsistent (- 0.81 to + 0.09, two of five excluding the null). Heterogeneity was frequently high (I 2 up to 94%). Overall primary-study overlap was slight (corrected covered area [CCA] = 0.0091), but very high within the multiple sclerosis cluster (CCA = 0.4048). AMSTAR-2 confidence was critically low in 11 reviews, low in nine, and moderate in one; GRADE certainty was very low for every biomarker construct. A post hoc restricted descriptive sensitivity analysis excluding critically low reviews attenuated the apparent signal. CONCLUSION: Exercise and physical activity may produce small reductions in some circulating inflammatory biomarkers, most consistently TNF-alpha and CRP, but effects on IL-6 are inconsistent, and certainty is very low. Effects on immunosenescence and cellular-senescence markers remain an evidence gap. This biomarker evidence alone is insufficient to justify prescribing exercise specifically to lower inflammatory biomarkers and does not alter broader physical-activity recommendations based on clinical and functional outcomes.PROSPERO: CRD420261410061.",
+          "journal": "Frontiers in immunology",
+          "publication_date": "2026-01-01",
+          "identifiers": {
+            "pmid": "42871766",
+            "doi": "10.3389/fimmu.2026.1931607",
+            "pmcid": "PMC13659453"
+          },
+          "study_metadata": {
+            "authors": [
+              {
+                "name": "Guangwei Chai",
+                "orcid": null,
+                "affiliation": "Department of Sports Human Science, Hebei Sport University, Shijiazhuang, China."
+              },
+              {
+                "name": "Jinhong Xue",
+                "orcid": null,
+                "affiliation": "Department of Wushu, Hebei Sport University, Shijiazhuang, China."
+              },
+              {
+                "name": "Bin Xie",
+                "orcid": null,
+                "affiliation": "Department of Physical Education, Hebei Chemical & Pharmaceutical College, Shijiazhuang, Hebei, China."
+              }
+            ],
+            "article_type": "systematic_review",
+            "language": "eng",
+            "publication_date_precision": "year",
+            "publication_date_metadata": {
+              "normalized_date": "2026-01-01",
+              "precision": "year",
+              "source_path": "Article/Journal/JournalIssue/PubDate",
+              "raw_issue_date": {
+                "year": 2026,
+                "month": null,
+                "day": null,
+                "medline_date": null
+              },
+              "publication_model": "Electronic-eCollection",
+              "citation_status": "MEDLINE",
+              "article_dates": [
+                {
+                  "date_type": "Electronic",
+                  "year": "2026",
+                  "month": "09",
+                  "day": "29"
+                }
+              ],
+              "history_dates": [
+                {
+                  "pub_status": "received",
+                  "year": "2026",
+                  "month": "7",
+                  "day": "8",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "revised",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "22",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "accepted",
+                  "year": "2026",
+                  "month": "8",
+                  "day": "30",
+                  "hour": null,
+                  "minute": null
+                },
+                {
+                  "pub_status": "medline",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "14",
+                  "hour": "18",
+                  "minute": "15"
+                },
+                {
+                  "pub_status": "pubmed",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "14",
+                  "hour": "18",
+                  "minute": "14"
+                },
+                {
+                  "pub_status": "entrez",
+                  "year": "2026",
+                  "month": "10",
+                  "day": "14",
+                  "hour": "11",
+                  "minute": "31"
+                },
+                {
+                  "pub_status": "pmc-release",
+                  "year": "2026",
+                  "month": "9",
+                  "day": "29",
+                  "hour": null,
+                  "minute": null
+                }
+              ],
+              "is_future_date": false,
+              "warnings": []
+            },
+            "source_domain_codes": [
+              "immune_health"
+            ]
+          }
+        },
+        "content_snapshot": {
+          "snapshot_id": "37cb1b37-b275-45db-8e24-e7188feb81b7",
+          "source_type": "pubmed_abstract",
+          "content_scope": "abstract",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+          "rights_basis": "public_metadata",
+          "retrieved_at": "2026-11-12T08:35:19.511247Z",
+          "content_sha256": "9e1bf4159312ff62aea93c48fff4e76924220dede5196b207b8210980942fd4a",
+          "is_truncated": false,
+          "truncation_reason": null,
+          "sections": [
+            {
+              "section_id": "abstract",
+              "name": "Abstract",
+              "text": "BACKGROUND: Chronic low-grade inflammation and immunosenescence accompany ageing and chronic disease. Exercise and physical activity are proposed to modify circulating inflammatory biomarkers, but review-level evidence is dispersed across populations and conditions. METHODS: We searched PubMed, Web of Science, Embase, Cochrane Library, Scopus, and SPORTDiscus through 1 March 2026 for systematic reviews, meta-analyses, and overviews on exercise or physical activity and circulating inflammaging- or immunosenescence-related biomarkers in older adults and adults with chronic diseases. We reported the review in accordance with PRISMA 2020 and PRIOR. Methodological quality was appraised with A MeaSurement Tool to Assess systematic Reviews, version 2 (AMSTAR-2), primary-study overlap with the corrected covered area, and certainty with GRADE. We performed no de novo meta-analysis or meta-regression; this umbrella review is a structured narrative synthesis of quantitative review-level estimates rather than a quantitative reanalysis. RESULTS: Twenty-one reviews were included: 14 core-eligible (full Population, Intervention, Comparator, Outcomes, and Study design [PICOS] match, contributing to the primary synthesis and conclusions) and seven evidence-map-only (partial PICOS match, used only for mapping and background). Among core-eligible reviews reporting standardised mean differences, exercise was associated with small reductions in tumour necrosis factor-alpha (TNF-alpha; point estimates - 1.42 to - 0.05, two of five confidence intervals excluding the null) and C-reactive protein (CRP; - 0.65 to - 0.47, two of three excluding the null), whereas interleukin-6 (IL-6) estimates were inconsistent (- 0.81 to + 0.09, two of five excluding the null). Heterogeneity was frequently high (I 2 up to 94%). Overall primary-study overlap was slight (corrected covered area [CCA] = 0.0091), but very high within the multiple sclerosis cluster (CCA = 0.4048). AMSTAR-2 confidence was critically low in 11 reviews, low in nine, and moderate in one; GRADE certainty was very low for every biomarker construct. A post hoc restricted descriptive sensitivity analysis excluding critically low reviews attenuated the apparent signal. CONCLUSION: Exercise and physical activity may produce small reductions in some circulating inflammatory biomarkers, most consistently TNF-alpha and CRP, but effects on IL-6 are inconsistent, and certainty is very low. Effects on immunosenescence and cellular-senescence markers remain an evidence gap. This biomarker evidence alone is insufficient to justify prescribing exercise specifically to lower inflammatory biomarkers and does not alter broader physical-activity recommendations based on clinical and functional outcomes.PROSPERO: CRD420261410061."
+            }
+          ]
+        },
+        "domain_context": {
+          "target_audience": "保健食品、生物科技与生命科学研发人员",
+          "active_domains": [
+            {
+              "code": "gut_health",
+              "name_zh": "肠道/胃肠健康",
+              "description": "关注与胃肠道功能、肠道菌群、消化吸收、肠屏障、排便功能、胃肠道症状及相关宿主健康效应有关的研究；包括益生菌、益生元、合生元、后生元、膳食成分、植物活性成分等对上述指标的影响。明确排除：仅讨论食品发酵、生产工艺或菌株工业性能，但没有肠道/宿主健康结果的研究；仅因为标题或摘要出现 probiotics、microbiota 等关键词，但研究主题与肠道健康没有实质关系的论文。对边界不清楚的研究不要强行判断，保留为 uncertain / 后续人工审核候选。"
+            },
+            {
+              "code": "healthy_aging",
+              "name_zh": "延缓衰老/健康衰老",
+              "description": "关注衰老机制、生物年龄与衰老标志物、细胞衰老、健康寿命及器官衰老研究；优先营养、天然成分、新机制和具有转化价值的研究。"
+            },
+            {
+              "code": "immune_health",
+              "name_zh": "免疫调节",
+              "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫；纯严重疾病药物治疗研究降低优先级，但可保留重要且可转化的免疫机制研究。"
+            },
+            {
+              "code": "musculoskeletal_health",
+              "name_zh": "肌骨/筋骨关节健康",
+              "description": "关注骨、关节、软骨和肌肉功能，尤其是骨质疏松、骨关节炎、肌少症及营养或天然成分干预；纯手术、关节置换、假体和植入器械研究默认排除或降级。"
+            }
+          ]
+        },
+        "verified_source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+          "https://doi.org/10.3389/fimmu.2026.1931607"
+        ],
+        "verification_summary": [
+          {
+            "check_type": "pmid",
+            "target": "42871766",
+            "status": "valid",
+            "http_status": null,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+            "checked_at": "2026-11-12T08:35:22.600011Z"
+          },
+          {
+            "check_type": "doi",
+            "target": "10.3389/fimmu.2026.1931607",
+            "status": "valid",
+            "http_status": 200,
+            "resolved_url": "https://doi.org/10.3389/fimmu.2026.1931607",
+            "checked_at": "2026-11-12T08:35:22.600011Z"
+          },
+          {
+            "check_type": "url",
+            "target": "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+            "status": "valid",
+            "http_status": 203,
+            "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+            "checked_at": "2026-11-12T08:35:22.600011Z"
+          }
+        ],
+        "runtime_rules": {
+          "output_language": "zh-CN",
+          "max_key_findings": 5,
+          "truncated": false,
+          "manual_human_confirmation_required_before_publish": true
+        }
+      },
+      "codex_workflow": [
+        {
+          "order": 1,
+          "prompt_key": "paper_relevance",
+          "input": "input_data",
+          "produces": "paper_relevance"
+        },
+        {
+          "order": 2,
+          "prompt_key": "paper_analysis",
+          "input": "input_data",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_analysis"
+        },
+        {
+          "order": 3,
+          "prompt_key": "paper_classification",
+          "input": "input_data + paper_analysis",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "paper_classification"
+        },
+        {
+          "order": 4,
+          "prompt_key": "report_composition",
+          "input": "input_data + paper_analysis + paper_classification",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_composition"
+        },
+        {
+          "order": 5,
+          "prompt_key": "report_quality_gate",
+          "input": "input_data + paper_analysis + paper_classification + report_composition",
+          "run_when": "paper_relevance.decision == 'relevant'",
+          "produces": "report_quality_gate"
+        }
+      ]
+    }
+  ]
+}

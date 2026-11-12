@@ -1,0 +1,154 @@
+{
+  "result_package_version": "1.0",
+  "generated_at": "2026-11-12T08:50:00Z",
+  "execution_mode": "codex_manual",
+  "source_task_package": {
+    "path": "D:/AAA gpt files/AI-Literature-Intelligence-System/data/codex_tasks/b9d2568e-3d17-4f65-b006-8b691907f453_all_domains.json",
+    "sha256": "868da2025ac80dde3bce69644c8d98ddf94ed062f2588fa93c5fcee1ab0ed751",
+    "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453"
+  },
+  "prompt": {
+    "key": "paper_relevance",
+    "version": "1.0.0",
+    "output_schema_version": "1.0",
+    "prompt_spec_path": "D:/AAA gpt files/AI-Literature-Intelligence-System/config/prompts.v1.yaml",
+    "prompt_spec_sha256": "4c33ebb446335e6d39ef721e15127b40fe0b68166afca09b0b650e8312067a77"
+  },
+  "summary": {
+    "total": 8,
+    "relevant": 8,
+    "irrelevant": 0,
+    "uncertain": 0,
+    "needs_human_review": 0
+  },
+  "results": [
+    {
+      "paper_id": 8,
+      "paper_task_id": "7692087c-ed9d-429d-b7da-0567d8fbdcd1",
+      "pmid": "42816625",
+      "input_sha256": "c4e2ff082025752eafd5881e5edc98e28102aafffa94536f88ec5d5a87f96279",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": ["gut_health"],
+        "reason": "研究直接考察造血干细胞移植住院患者的饮食、抗生素暴露与肠道菌群扰动，并以小鼠实验验证蔗糖对Enterococcus扩增的影响，符合肠道菌群和营养干预方向。",
+        "confidence": 0.99,
+        "warnings": ["人体部分为纵向观察关系，小鼠实验不能改写成人体因果功效。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 9,
+      "paper_task_id": "dfcb5004-9782-4fea-8c9c-06cfc847f502",
+      "pmid": "42913643",
+      "input_sha256": "363e008469ad31876debc15d775a81cbbfb282354cc254d9ed8ba2a523b92f32",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": ["gut_health"],
+        "reason": "研究解析肠道共生菌Bacteroides thetaiotaomicron、肌醇磷酸、肠上皮HDAC3和宿主营养吸收之间的新机制，属于宿主—微生物互作与菌群代谢物研究。",
+        "confidence": 0.99,
+        "warnings": ["表型证据来自小鼠，不能表述为人体代谢功效。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 10,
+      "paper_task_id": "cd18fa05-d001-4b2b-80f0-4034a0a59303",
+      "pmid": "42842075",
+      "input_sha256": "07364f14010008d53784098b6d860ba62b7b6a25824b5dd97ed08b84f6c83ccf",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.98,
+        "matched_domain_codes": ["healthy_aging"],
+        "reason": "前瞻性队列研究直接连接饮食偏好、生物年龄加速指标、端粒长度和痴呆发生风险，符合营养、衰老标志物和脑衰老方向。",
+        "confidence": 0.98,
+        "warnings": ["观察性关联和探索性中介分析不能解释为饮食导致痴呆或生物衰老。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 11,
+      "paper_task_id": "58e5ccab-4e50-497e-a524-b4ac0510d35d",
+      "pmid": "42919924",
+      "input_sha256": "ef330a9a24987f6ba482ff30f77005fe20a59c0afc7a0baf968d5b7cd4ca41ea",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": ["healthy_aging"],
+        "reason": "研究建立覆盖成人生命周期和多组织的人类内皮细胞单细胞图谱，并识别衰老相关转录变化及p21相关细胞衰老程序，符合衰老机制和新技术方向。",
+        "confidence": 0.99,
+        "warnings": [],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 12,
+      "paper_task_id": "6199cd05-098b-4756-b0f6-fb88374b0d47",
+      "pmid": "42896625",
+      "input_sha256": "1f314badef83d197aceca411cd795e780d95926471eda2a092d8d6f9ad65d621",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.98,
+        "matched_domain_codes": ["musculoskeletal_health"],
+        "reason": "研究对ICU获得性肌无力患者单根骨骼肌纤维同步开展功能、转录组和蛋白组分析，连接炎症状态、肌球蛋白能量学和肌肉功能。",
+        "confidence": 0.98,
+        "warnings": ["摘要未报告样本量，不能补充患者或肌纤维数量。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 13,
+      "paper_task_id": "a81f6dff-23f4-47bb-a315-d31421f41d2c",
+      "pmid": "42830273",
+      "input_sha256": "d2310f46af7220449dad5bbb35d454bfecc6172b65646ae272e5d027ebcbaba8",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": ["musculoskeletal_health", "gut_health"],
+        "reason": "小鼠营养干预研究直接评价5:2间歇性禁食对握力、肌纤维面积、肌肉炎症、肠屏障、菌群和胆汁酸通路的影响，兼具肌骨和肠道健康价值。",
+        "confidence": 0.99,
+        "warnings": ["全部干预结果来自小鼠，不得表述为人体减重、护肝或改善肌肉功效。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 14,
+      "paper_task_id": "dcf4c0f3-392d-449a-8b08-ef23566a398d",
+      "pmid": "42853963",
+      "input_sha256": "2047a08667c03499d7e14824567a3c2b2aa7cd98e3cf9895cd81900a3340187b",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.99,
+        "matched_domain_codes": ["immune_health", "gut_health"],
+        "reason": "研究使用小鼠、人Peyer斑活检和肠类器官解析tuft cell—ILC2—IL-13—IgA黏膜免疫轴，直接符合黏膜免疫并涉及肠道宿主防御。",
+        "confidence": 0.99,
+        "warnings": ["人组织用于识别保守细胞群，功能机制主要来自小鼠和类器官。"],
+        "needs_human_review": false
+      }
+    },
+    {
+      "paper_id": 15,
+      "paper_task_id": "e7dd84e2-e191-4029-aabd-cf5f0e7713f0",
+      "pmid": "42871766",
+      "input_sha256": "1442b2155302fd87cb89f5ef0f4feb7bdebef9b487cfcf8125eec1896fc4f8ba",
+      "output": {
+        "schema_version": "1.0",
+        "decision": "relevant",
+        "relevance_score": 0.98,
+        "matched_domain_codes": ["immune_health", "healthy_aging"],
+        "reason": "umbrella review系统评价老年人与慢病成人运动对炎症衰老和免疫衰老相关循环标志物的影响，兼具免疫调节和健康衰老价值。",
+        "confidence": 0.98,
+        "warnings": ["证据确定性均很低，不能据此提出特异性降低炎症标志物的运动处方。"],
+        "needs_human_review": false
+      }
+    }
+  ]
+}

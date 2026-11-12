@@ -283,6 +283,16 @@ def _list_html(items: list[str], empty: str = "未报告") -> str:
     return "<ul>" + "".join(f"<li>{_e(item)}</li>" for item in items) + "</ul>"
 
 
+def _display_publication_date(value: str | None, precision: str | None) -> str:
+    if not value:
+        return "未报告"
+    if precision == "year":
+        return value[:4]
+    if precision == "month":
+        return value[:7]
+    return value
+
+
 def render_preview(task_path: Path, screening_path: Path, results_path: Path, output_path: Path) -> dict[str, Any]:
     validation = validate_mvp_results(task_path, screening_path, results_path)
     tasks_package = json.loads(task_path.read_text(encoding="utf-8"))
@@ -310,6 +320,10 @@ def render_preview(task_path: Path, screening_path: Path, results_path: Path, ou
         )
         date_warning = meta["publication_date_metadata"]["warnings"]
         warning_html = "".join(f'<p class="warning">{_e(w["message"])}</p>' for w in date_warning)
+        warning_line = f"  {warning_html}" if warning_html else ""
+        publication_date = _display_publication_date(
+            paper["publication_date"], meta["publication_date_precision"]
+        )
         cards.append(f'''
 <article class="paper-card">
   <div class="card-top"><div><span class="field-label">领域分类</span>{domains}</div><span class="quality pass">Quality Gate：{_e(quality["decision"]) } · {_e(quality["quality_score"])}</span></div>
@@ -317,10 +331,10 @@ def render_preview(task_path: Path, screening_path: Path, results_path: Path, ou
   <p class="original-title">{_e(paper["title"])}</p>
   <dl class="metadata">
     <div><dt>作者</dt><dd>{_e(authors)}</dd></div><div><dt>期刊</dt><dd>{_e(paper["journal"])}</dd></div>
-    <div><dt>发布日期</dt><dd>{_e(paper["publication_date"])}（精度：{_e(meta["publication_date_precision"]) }）</dd></div>
+    <div><dt>发布日期</dt><dd>{_e(publication_date)}（精度：{_e(meta["publication_date_precision"]) }）</dd></div>
     <div><dt>研究类型</dt><dd>{_e(analysis["study_type"])} / {_e(analysis["evidence_level"])}</dd></div>
   </dl>
-  {warning_html}
+{warning_line}
   <section><h3>核心摘要</h3><p>{_e(report["research_background"])}</p><p>{_e(report["research_objective"])}</p></section>
   <section><h3>实验设计</h3><p>{_e(report["study_design"])}</p></section>
   <section><h3>核心结果</h3>{_list_html(report["core_results"])}</section>

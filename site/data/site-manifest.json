@@ -5,9 +5,11 @@
     "domains/musculoskeletal-health.html"
   ],
   "archive_pages": [
+    "archive/2026-11-12/index.html",
     "archive/2026-09-07/index.html"
   ],
   "batch_ids": [
+    "b9d2568e-3d17-4f65-b006-8b691907f453",
     "b031d6db-5d87-4506-96c6-5364ad63606a"
   ],
   "canonical_domain_pages": [
@@ -17,41 +19,58 @@
     "domains/musculoskeletal.html"
   ],
   "counts": {
-    "archives": 1,
-    "batches": 1,
+    "archives": 2,
+    "batches": 2,
     "domains": 4,
-    "papers": 4
+    "papers": 12
   },
   "data_mode": "cumulative_database",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "archive/2026-09-07/index.html": "a3b4a1b1a1b92f636adb808266dde9f94a9685d9ae84e9c1f5fc114b1d6006f9",
-    "archive/index.html": "8f8e82cf902cc73479d73193e4d4d7120df64af9405dcc14f759871473f35524",
+    "archive/2026-09-07/index.html": "f57f93714c21a06805ab17bfdecc7883f755fdbce64f80efd92c086931bc7386",
+    "archive/2026-11-12/index.html": "97646bb985c0af6d2fb4806456a36cbeec4732a37988aad0206bd20fa3b5a7be",
+    "archive/index.html": "4c0e05aeebb0c13e45005c55850e8b59ed2c0f00ee32241d755441da713a99c0",
     "assets/favicon.svg": "a60ec67bd91ceb4c34a449c30496cb309d227ed77707da665b6a25b1f740657f",
     "assets/site.css": "8007ef34d8fc1d4d67a0a0eb84b8a764ae0d70154f6db9ec68ddc568c7af539a",
     "assets/site.js": "b453adf9ff0bccabd62fe646712905bc8758ebc567821b7645a6b7e37a472290",
-    "data/site-data.json": "65cefb81150187bc7ad706ad98126606e5fa532f48e15d8f77f1308a2fcf574a",
-    "domains/anti-aging.html": "ba1fac3ec4f6b62ce339de338db3980c66209f6cd4ff3a2dbdc61b34630cb86a",
-    "domains/gut-health.html": "ec4b2782bb8935eab3523766ee190df719d7b307f4b2eec44e13229e83a85ac7",
+    "data/site-data.json": "28b23316e645d246d95e035388e22d8069f0b7c79d11e95812a5a3932967cd7b",
+    "domains/anti-aging.html": "32c227f39fe0d8516637b2663bb2f6c426d14ce12da0d90d0f836646a03b7143",
+    "domains/gut-health.html": "469134a1239b68d913cb4679948b6d91b1f0a422f72e4f0e6f1fdb8777f682ca",
     "domains/healthy-aging.html": "c0deaa05bbd0c9be330c98e8239627e3015c44d308e4f9567eef975d1e5f3652",
     "domains/immune-modulation.html": "de3ea69c1e6057df2280bcfc37d91c0fabb25766130b9b59167a33fa44cd3c27",
-    "domains/immune.html": "bd5f0be0e8eb8bfd8b16e8de4d5a1878bb0ef2e6d6d7ec80c0f639daecafd76b",
+    "domains/immune.html": "1358522efb274cac1812601611635dafaffebebc0a2848ad1e75393515fe5f05",
     "domains/musculoskeletal-health.html": "b6e2fcd6b346ef0e030e3a3dc3cc3380f6a6da69590354020396846bc9400ade",
-    "domains/musculoskeletal.html": "93c5a3944521496f93fe8cd1047107069e9b9ac2dd44668ccc0ab605425e9250",
-    "index.html": "cdbafacbc3d41ec3a715a3e3ac5b7f85892fe83db109fc46b071872e07a2ed3b",
-    "papers/4.html": "aa7524c5a92dacfa058751bfc1c0080e44168efe1bcaf5683f386ba1c9e78016",
-    "papers/5.html": "826d6df0a63bb9d57b4c34718ca96651f57af9befc7eef575fbe15f6556f25d2",
-    "papers/6.html": "856566bb21307d268f1e3514e4ea45fd83927d908f0c01257959f253dc818cea",
-    "papers/7.html": "2a71b4415796af0305183fedb9030a5046e687e4d54cc863fd1b143dc865d0f5"
+    "domains/musculoskeletal.html": "d3824dd8e359aeab220d432fea7b3bcd1f980044f484c42b2c98498185c399b5",
+    "index.html": "51bae1e61378b76758949383e393e5ed88620c6ba623b84547c4236b488fd819",
+    "papers/10.html": "538afa0241452c3e745d4e4f276a76534cd7fe66633bf5ac0e713509c2468c37",
+    "papers/11.html": "b21bc5f650a3532c7b5093b92aab6880e762c5c99240291a42b307bd21e96a08",
+    "papers/12.html": "7adc0a30eb4b5a7b0a80b68e1ffb19e25ecbb53bfb343f28c40c68dec575c762",
+    "papers/13.html": "f4abeb89df7697965f38d078970833f71bb216c0be70901e098d94651ecc4eeb",
+    "papers/14.html": "f385c24acbe7ffee44bf5caa4c240e119f90207acc463c849b1b1f68bf71f7f4",
+    "papers/15.html": "b0e83598beb77811043519fac1d4d75100444758168f635422f46334283cf4ee",
+    "papers/4.html": "ab6d759c5c720beb6c477cb7b2b9249397b9b448cd437597f36bca4f58afddb2",
+    "papers/5.html": "ad5e06a125f818a1629d2c30ca9ba699685443d447b8d9dbf8c19b552cabc9d4",
+    "papers/6.html": "72d44b50ee189b743da2cd7f0379749aba2d7bc79bf914a9d704e2fc00f727ef",
+    "papers/7.html": "1d3e8f859db4d41c1e98c8c58de5dddac33b3f0f537586db7f4ede6380434693",
+    "papers/8.html": "06cc713e81d843be5782e8fe61c28c4cd03063affe1676c7d84fc34bad7da187",
+    "papers/9.html": "7671c397552fc6919eabf19bd24768c7ad6301b635fb940aaf9a2dca0c9cbea7"
   },
-  "generated_at": "2026-09-08T01:50:45.458484Z",
-  "latest_batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
-  "latest_edition_date": "2026-09-07",
+  "generated_at": "2026-11-12T09:10:01.899283Z",
+  "latest_batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+  "latest_edition_date": "2026-11-12",
   "paper_ids": [
     4,
+    9,
+    11,
+    14,
+    10,
+    13,
+    12,
+    8,
     5,
     6,
-    7
+    7,
+    15
   ],
   "publication_status": "published",
   "schema_version": "1.0",
@@ -63,6 +82,6 @@
       "sha256": "83533f0e353a23e2d55ef51f4f7fe733d4dc6e26cdef3dd7c3fe3106d01c5772",
       "version": "1.0"
     },
-    "publication_batch_count": 1
+    "publication_batch_count": 2
   }
 }

@@ -25,6 +25,8 @@ literature-validate-site = "literature_intelligence.pipeline.site_artifact:main"
 literature-release = "literature_intelligence.pipeline.publication_release:main"
 literature-validate-config = "literature_intelligence.config_validation:main"
 literature-pubmed-candidate-dry-run = "literature_intelligence.pipeline.pubmed_candidate_dry_run:main"
+literature-pubmed-candidate-metadata = "literature_intelligence.pipeline.pubmed_candidate_metadata:main"
+literature-ingest-selection = "literature_intelligence.pipeline.selected_candidate_ingestion:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

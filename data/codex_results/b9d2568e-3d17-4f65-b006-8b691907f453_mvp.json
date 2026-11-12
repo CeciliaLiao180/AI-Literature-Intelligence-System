@@ -1,0 +1,400 @@
+{
+  "result_package_version": "1.0",
+  "generated_at": "2026-11-12T09:20:00Z",
+  "execution_mode": "codex_manual",
+  "source": {
+    "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+    "task_package_sha256": "868da2025ac80dde3bce69644c8d98ddf94ed062f2588fa93c5fcee1ab0ed751",
+    "screening_results_sha256": "07075c2b19eb70b75f6ce34e5d581e0e950f216b5428c73f8d107f12f0df190c"
+  },
+  "prompts": {
+    "paper_analysis": "1.0.0",
+    "paper_classification": "1.0.0",
+    "report_composition": "1.0.0",
+    "report_quality_gate": "1.0.0"
+  },
+  "summary": {
+    "retrieved": 8,
+    "included": 8,
+    "excluded": 0,
+    "manual_review": 0,
+    "quality_pass": 8,
+    "quality_review": 0,
+    "quality_reject": 0
+  },
+  "items": [
+    {
+      "paper_id": 8,
+      "paper_task_id": "7692087c-ed9d-429d-b7da-0567d8fbdcd1",
+      "pmid": "42816625",
+      "input_sha256": "c4e2ff082025752eafd5881e5edc98e28102aafffa94536f88ec5d5a87f96279",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "饮食会影响肠道菌群，但在抗生素等强扰动条件下，不同食物类别与菌群动态之间的关系仍不清楚。",
+        "objective": "评价造血干细胞移植住院患者饮食与抗生素期间肠道菌群变化的关系，并在小鼠中考察蔗糖补充对抗生素诱导Enterococcus扩增的影响。",
+        "methods": {
+          "design": "人体纵向观察结合小鼠实验；记录患者膳食并分析配对纵向菌群样本，随后用小鼠实验考察蔗糖补充。",
+          "intervention": "人体部分观察甜食和糖摄入；小鼠部分补充蔗糖。",
+          "comparator": null,
+          "duration": null
+        },
+        "sample": {
+          "size": 173,
+          "population": "住院接受造血干细胞移植的患者；其中158名患者具有配对纵向菌群样本。",
+          "species": "人类和小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "研究记录了173名患者的9,419餐饮食，并分析其后的肠道菌群变化。",
+            "evidence": [{"section_id": "abstract", "quote": "Here we evaluated the relationship between diet and intestinal microbiome dynamics by precisely tracking 9,419 meals consumed by 173 patients who were hospitalized for haematopoietic cell transplantation and analysing subsequent microbiome changes.", "support_level": "direct"}],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "在抗生素暴露期间，甜食和糖摄入可预测更严重的菌群失调，包括α多样性降低和Enterococcus扩增。",
+            "evidence": [{"section_id": "abstract", "quote": "Bayesian inference applied to data from 158 patients with paired longitudinal microbiome samples revealed that the intake of sweets and sugars during antibiotic exposure predicted exacerbated microbial dysbiosis, manifesting as lowered α-diversity and greater expansion of the pathobiont Enterococcus.", "support_level": "direct"}],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "小鼠实验中，蔗糖补充增加并延长了抗生素诱导的Enterococcus扩增。",
+            "evidence": [{"section_id": "abstract", "quote": "Experiments in mice also showed that sucrose supplementation increased and prolonged antibiotic-induced Enterococcus expansion.", "support_level": "direct"}],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {"text": "人体结果为纵向观察关系，不能确认糖摄入导致菌群变化。", "basis": "inferred"},
+          {"text": "研究对象为造血干细胞移植住院患者，结果未必适用于一般人群。", "basis": "inferred"},
+          {"text": "摘要指出仍需独立队列验证其可推广性及菌群保护干预。", "basis": "reported"}
+        ],
+        "rd_implications": [
+          {"text": "抗生素相关菌群扰动研究可将简单糖摄入作为重要膳食协变量，并考虑饮食管理型菌群保护策略。", "evidence_boundary": "人体部分仅显示预测关系；饮食规避策略仍需独立干预研究验证。"},
+          {"text": "Enterococcus扩增和α多样性可作为后续营养—抗生素互作研究的候选评价指标。", "evidence_boundary": "候选指标来自特殊住院人群和小鼠实验，不代表已建立产品功效终点。"}
+        ],
+        "confidence": 0.96,
+        "warnings": ["人体观察与小鼠干预证据已分开表述。"],
+        "needs_human_review": false
+      },
+      "classification": {
+        "schema_version": "1.0",
+        "classifications": [{"domain_code": "gut_health", "score": 0.99, "reason": "直接涉及饮食、抗生素、肠道菌群多样性和机会致病菌扩增。"}],
+        "unclassified": false,
+        "confidence": 0.99,
+        "warnings": [],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "高糖饮食与抗生素期间菌群扰动加重相关",
+        "research_background": "抗生素会对肠道菌群形成强扰动，但具体食物类别是否影响扰动程度仍缺少精细的人体纵向数据。",
+        "research_objective": "评估造血干细胞移植住院患者饮食与肠道菌群动态的关系，并用小鼠实验考察蔗糖对抗生素诱导菌群变化的影响。",
+        "study_design": "人体纵向观察结合小鼠实验。研究记录173名患者的9,419餐饮食，其中158名具有配对纵向菌群样本；摘要未报告随访周期和小鼠数量。",
+        "core_results": [
+          "抗生素暴露期间，甜食和糖摄入可预测更低的α多样性及更明显的Enterococcus扩增。",
+          "小鼠中补充蔗糖增加并延长了抗生素诱导的Enterococcus扩增。",
+          "作者提出避免富含简单糖的饮食可能有助于减轻菌群扰动，但仍需独立队列和干预研究验证。"
+        ],
+        "limitations": ["人体部分属于观察性关联，不能确认因果。", "研究对象为造血干细胞移植住院患者，外推性有限。", "摘要未报告随访周期、小鼠数量和完整对照设置。"],
+        "rd_implications": ["开展抗生素相关菌群保护研究时，可将简单糖摄入纳入膳食控制和分层因素。", "Enterococcus扩增与α多样性可作为候选研究指标，但尚不是已验证的产品功效终点。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42816625/", "https://doi.org/10.1038/s41586-026-11077-3"],
+        "confidence": 0.96,
+        "warnings": ["人体结果为观察性；小鼠结果不代表人体功效。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.98, "issues": [], "confidence": 0.98, "warnings": ["已区分人体关联和小鼠干预证据。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 9,
+      "paper_task_id": "dfcb5004-9782-4fea-8c9c-06cfc847f502",
+      "pmid": "42913643",
+      "input_sha256": "363e008469ad31876debc15d775a81cbbfb282354cc254d9ed8ba2a523b92f32",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "animal",
+        "evidence_level": "animal",
+        "background": "肠道菌群可调节哺乳动物昼夜代谢，但微生物如何把进食节律转化为宿主代谢程序仍不清楚。",
+        "objective": "解析Bacteroides thetaiotaomicron产生的肌醇磷酸是否通过肠上皮HDAC3连接进食节律、染色质调控、营养转运与能量稳态。",
+        "methods": {"design": "小鼠定植和微生物突变体比较结合肠上皮染色质、组蛋白乙酰化及代谢基因分析。", "intervention": "野生型或肌醇磷酸酶突变的Bacteroides thetaiotaomicron定植，并结合进食时间和不同营养状态。", "comparator": "野生型菌与肌醇磷酸酶突变株比较。", "duration": null},
+        "sample": {"size": null, "population": "过度营养和营养不足状态的小鼠模型；摘要未报告数量和品系。", "species": "小鼠。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "B. thetaiotaomicron以受进食节律调控的方式产生InsP3并增强HDAC3活性。", "evidence": [{"section_id": "abstract", "quote": "Bt produces inositol triphosphate (InsP3) in a feeding-entrained diurnal manner that enhances HDAC3 activity.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "野生型菌而非肌醇磷酸酶突变株增强了上皮组蛋白乙酰化和代谢基因表达的全基因组节律。", "evidence": [{"section_id": "abstract", "quote": "Colonization with wild-type Bt, but not an inositol phosphatase mutant, enhanced genome-wide rhythms in epithelial histone acetylation and metabolic gene expression.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "该轴在过度营养小鼠中加重饮食诱导肥胖，但在营养不足幼鼠中改善生长。", "evidence": [{"section_id": "abstract", "quote": "This Bt-InsPs-HDAC3 axis worsens diet-induced obesity in overnourished mice while improving growth in undernourished juvenile mice.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "结果来自小鼠和机制实验，不能外推为人体代谢效果。", "basis": "inferred"}, {"text": "同一机制在过度营养和营养不足状态下呈现方向不同的表型，转化应用需考虑营养背景。", "basis": "reported"}, {"text": "摘要未报告动物数量、品系、剂量和实验周期。", "basis": "inferred"}],
+        "rd_implications": [{"text": "微生物肌醇磷酸—HDAC3轴可作为宿主—菌群节律代谢研究的新机制靶点。", "evidence_boundary": "仅有小鼠机制证据，尚不能形成面向人体的产品功效结论。"}, {"text": "菌株或代谢物评价应同时考虑进食时间和宿主营养状态，避免把作用方向视为固定。", "evidence_boundary": "摘要报告在两种营养状态下表型方向不同。"}],
+        "confidence": 0.96,
+        "warnings": ["动物证据，不代表人体功效。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "gut_health", "score": 0.99, "reason": "直接解析肠道共生菌代谢物与肠上皮表观遗传和营养吸收的互作机制。"}], "unclassified": false, "confidence": 0.99, "warnings": [], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "微生物肌醇磷酸连接进食节律与宿主代谢",
+        "research_background": "菌群能够影响宿主昼夜代谢，但连接进食节律、微生物代谢和肠上皮基因调控的分子路径尚不清楚。",
+        "research_objective": "研究B. thetaiotaomicron产生的肌醇磷酸如何通过HDAC3调节肠上皮代谢程序和能量稳态。",
+        "study_design": "小鼠与机制研究，比较野生型菌和肌醇磷酸酶突变株定植，并分析肠上皮染色质及代谢表达；摘要未报告动物数量、剂量和周期。",
+        "core_results": ["B. thetaiotaomicron随进食节律产生InsP3并增强HDAC3活性。", "野生型菌而非突变株增强上皮组蛋白乙酰化和代谢基因表达节律。", "该轴在过度营养小鼠中加重饮食诱导肥胖，但在营养不足幼鼠中改善生长。"],
+        "limitations": ["全部表型和机制证据来自小鼠。", "不同营养状态下作用方向不同。", "摘要未报告动物数量、剂量和周期。"],
+        "rd_implications": ["该微生物—表观遗传—昼夜轴可作为菌群代谢物研发的新机制线索。", "后续评价需同时控制进食时点和宿主营养状态。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42913643/", "https://doi.org/10.1016/j.chom.2026.09.021"],
+        "confidence": 0.96,
+        "warnings": ["动物机制研究，不代表人体代谢功效。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.98, "issues": [], "confidence": 0.98, "warnings": ["已明确动物证据及营养状态依赖性。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 10,
+      "paper_task_id": "cd18fa05-d001-4b2b-80f0-4034a0a59303",
+      "pmid": "42842075",
+      "input_sha256": "07364f14010008d53784098b6d860ba62b7b6a25824b5dd97ed08b84f6c83ccf",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "observational",
+        "evidence_level": "human_observational",
+        "background": "饮食模式是可改变的痴呆风险相关因素，但个体饮食偏好、生物衰老和痴呆风险之间的关系仍不清楚。",
+        "objective": "研究饮食偏好类型与生物年龄加速、端粒长度和新发痴呆的关联，并评估遗传易感性和探索性中介关系。",
+        "methods": {"design": "前瞻性队列研究；潜在类别分析识别饮食偏好，Cox模型评估痴呆风险，线性回归评估衰老指标，并开展探索性中介分析。", "intervention": null, "comparator": "以health-aligned饮食偏好组作为主要参照。", "duration": null},
+        "sample": {"size": null, "population": "接受食物偏好问卷、生物衰老指标和痴呆随访的人群；摘要未报告样本量和年龄范围。", "species": "人类。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "识别出健康一致、广泛偏好和嗜甜三种饮食偏好类型。", "evidence": [{"section_id": "abstract", "quote": "Three dietary preference profiles were identified: health-aligned, broad-preference, and sweet-tooth.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "与健康一致组相比，嗜甜组全因痴呆、阿尔茨海默病和血管性痴呆风险分别高79%、62%和202%。", "evidence": [{"section_id": "abstract", "quote": "The sweet-tooth group showed a 79% higher risk of all-cause dementia, 62% higher risk of Alzheimer's disease, and 202% higher risk of vascular dementia compared to the health-aligned group.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "嗜甜偏好与KDM-BA及PhenoAge加速和更短白细胞端粒长度相关。", "evidence": [{"section_id": "abstract", "quote": "The sweet-tooth profile was associated with accelerated KDM-BA, PhenoAge, and shorter LTL.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_4", "claim": "探索性分析显示生物衰老标志物在观察关联中的统计解释比例为2.28%至4.82%。", "evidence": [{"section_id": "abstract", "quote": "Exploratory mediation analyses suggested that biological aging markers statistically accounted for 2.28-4.82% of the observed association.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "观察性研究不能确认嗜甜偏好导致生物衰老或痴呆。", "basis": "inferred"}, {"text": "中介分析为探索性统计分析，解释比例较小，不能确认生物机制。", "basis": "inferred"}, {"text": "摘要未报告样本量、随访期和人群年龄构成。", "basis": "inferred"}],
+        "rd_implications": [{"text": "饮食偏好画像可作为营养与认知衰老研究的分层工具，并与多种生物年龄指标联合观察。", "evidence_boundary": "当前仅为人群关联，不能据此承诺饮食干预可预防痴呆。"}, {"text": "高遗传风险人群可能值得在后续前瞻干预中单独分层。", "evidence_boundary": "摘要报告的是加性交互关联，并非干预获益证据。"}],
+        "confidence": 0.94,
+        "warnings": ["摘要未报告样本量和随访期。", "不得将观察关联改写为因果。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "healthy_aging", "score": 0.99, "reason": "直接涉及饮食偏好、生物年龄指标、端粒长度和脑衰老相关痴呆风险。"}], "unclassified": false, "confidence": 0.99, "warnings": [], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "嗜甜偏好与生物年龄加速及痴呆风险相关",
+        "research_background": "饮食可能与认知衰老有关，但饮食偏好类型、生物衰老指标和痴呆风险之间的关系仍需厘清。",
+        "research_objective": "评估饮食偏好类型与生物年龄加速、新发痴呆的关联，以及遗传易感性的影响。",
+        "study_design": "前瞻性人群队列，通过潜在类别分析识别饮食偏好，并使用Cox模型、线性回归和探索性中介分析；摘要未报告样本量和随访期。",
+        "core_results": ["研究识别出健康一致、广泛偏好和嗜甜三种饮食偏好类型。", "嗜甜组相对健康一致组的全因痴呆、阿尔茨海默病和血管性痴呆风险分别高79%、62%和202%。", "嗜甜偏好与KDM-BA、PhenoAge加速及更短白细胞端粒长度相关。", "探索性分析显示生物衰老指标仅统计解释观察关联的一小部分。"],
+        "limitations": ["观察性关联不能确认因果。", "探索性中介分析不能建立生物机制。", "摘要未报告样本量、随访期和年龄构成。"],
+        "rd_implications": ["可在营养与认知衰老研究中联合使用饮食偏好画像和多维生物年龄指标。", "遗传风险可作为后续干预研究的预设分层因素，但目前没有干预获益证据。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42842075/", "https://doi.org/10.1007/s11357-026-02567-3"],
+        "confidence": 0.94,
+        "warnings": ["结果为人群关联，不代表嗜甜偏好导致痴呆。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.97, "issues": [], "confidence": 0.98, "warnings": ["已保留观察性和探索性中介分析边界。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 11,
+      "paper_task_id": "58e5ccab-4e50-497e-a524-b4ac0510d35d",
+      "pmid": "42919924",
+      "input_sha256": "ef330a9a24987f6ba482ff30f77005fe20a59c0afc7a0baf968d5b7cd4ca41ea",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "内皮细胞在衰老过程中出现功能异常，但覆盖成人生命周期、多组织的人类内皮细胞转录图谱此前仍不完整。",
+        "objective": "建立人类衰老内皮细胞图谱并识别跨组织、随年龄变化的转录特征及与细胞衰老相关的程序。",
+        "methods": {"design": "整合人类多组织单细胞转录组，并使用体外和体内模型连接p21相关转录程序与细胞衰老。", "intervention": null, "comparator": "不同成人年龄阶段和组织的内皮细胞。", "duration": null},
+        "sample": {"size": null, "population": "覆盖成人期的12种人类组织、超过375,000个内皮细胞；摘要未报告供体数量。", "species": "人类，并包含体外和体内验证模型。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "研究构建了覆盖12种人类组织和成人期超过375,000个内皮细胞的整合单细胞图谱。", "evidence": [{"section_id": "abstract", "quote": "Here, we present the Human Aging Endothelial Cell Atlas (HAECA), a harmonized single-cell transcriptomic compendium of over 375,000 ECs from 12 human tissues throughout adulthood.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "年龄相关变化包括静脉内皮血管生成基因表达下降，以及细胞外基质和机械转导特征的广泛改变。", "evidence": [{"section_id": "abstract", "quote": "We identified age-associated transcriptional shifts, including a decline in angiogenic gene expression in venous ECs and widespread alterations in extracellular matrix and mechanotransduction-associated signatures.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "研究识别出p21相关内皮转录程序，并在体外和体内模型中将其与细胞衰老联系起来。", "evidence": [{"section_id": "abstract", "quote": "Furthermore, we uncovered a p21-linked transcriptional program in ECs, which we linked to cellular senescence in both in vitro and in vivo models.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "摘要报告细胞数量但未报告供体数量、年龄分布和各组织样本构成。", "basis": "inferred"}, {"text": "整合图谱主要描述转录关联，不能单独确认年龄变化的因果机制。", "basis": "inferred"}, {"text": "摘要未提供模型验证的具体数量、对照和效应大小。", "basis": "inferred"}],
+        "rd_implications": [{"text": "HAECA可作为血管衰老靶点、标志物和组织差异研究的参考资源。", "evidence_boundary": "图谱为研究资源，不能直接解释为干预靶点已经验证。"}, {"text": "p21相关内皮程序和机械转导特征可进入后续功能验证与标志物开发。", "evidence_boundary": "摘要提供关联与模型连接，尚缺人体干预或纵向验证。"}],
+        "confidence": 0.96,
+        "warnings": ["375,000指细胞数量，不是人体样本量。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "healthy_aging", "score": 0.99, "reason": "直接建立人类内皮衰老图谱并识别年龄相关转录及细胞衰老程序。"}], "unclassified": false, "confidence": 0.99, "warnings": [], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "人类内皮衰老单细胞图谱揭示跨组织变化",
+        "research_background": "血管内皮功能会随年龄下降，但缺少覆盖成人生命周期和多组织的统一人类内皮细胞图谱。",
+        "research_objective": "构建人类衰老内皮细胞图谱，识别年龄相关转录变化和细胞衰老相关程序。",
+        "study_design": "整合单细胞转录组研究，覆盖12种人类组织和超过375,000个内皮细胞，并结合体外和体内模型验证；摘要未报告供体数量。",
+        "core_results": ["研究建立了覆盖成人期的高分辨率人类内皮细胞转录参考图谱。", "年龄相关变化包括静脉内皮血管生成基因表达下降，以及细胞外基质和机械转导特征改变。", "研究识别出p21相关转录程序，并在模型中将其与细胞衰老联系起来。"],
+        "limitations": ["摘要未报告供体数量、年龄分布和组织样本构成。", "图谱中的年龄相关变化主要是转录关联。", "摘要未提供模型验证的效应大小和完整对照。"],
+        "rd_implications": ["该图谱可支持血管衰老标志物、靶点和组织差异的后续研究。", "p21相关程序和机械转导信号需进一步功能与纵向验证后再考虑转化。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42919924/", "https://doi.org/10.1038/s43587-026-01247-3"],
+        "confidence": 0.96,
+        "warnings": ["超过375,000为细胞数，不代表人体样本量。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.98, "issues": [], "confidence": 0.98, "warnings": ["已区分细胞数量与人体样本量。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 12,
+      "paper_task_id": "6199cd05-098b-4756-b0f6-fb88374b0d47",
+      "pmid": "42896625",
+      "input_sha256": "1f314badef83d197aceca411cd795e780d95926471eda2a092d8d6f9ad65d621",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "observational",
+        "evidence_level": "human_observational",
+        "background": "危重症相关骨骼肌萎缩会影响生存和恢复，但现有临床或分子指标难以解释其复杂机制。",
+        "objective": "在同一根人骨骼肌纤维中整合功能、转录组和蛋白组数据，连接ICU获得性肌无力相关分子状态与肌球蛋白功能。",
+        "methods": {"design": "比较ICU获得性肌无力患者和对照的单根人骨骼肌纤维，依次进行功能、转录组和蛋白组分析。", "intervention": null, "comparator": "ICU获得性肌无力患者与对照。", "duration": null},
+        "sample": {"size": null, "population": "ICU获得性肌无力的危重患者和对照；摘要未报告患者和肌纤维数量。", "species": "人类。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "病例与对照肌纤维存在明显供体异质性，常规差异表达分析未发现FDR小于0.05的特征。", "evidence": [{"section_id": "abstract", "quote": "Differential expression analyses between control and ICU-AW myofibres show marked donor-level heterogeneity, with no differentially expressed features (FDR < 0.05).", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "同一肌纤维中有19个特征在RNA和蛋白水平同时显著改变。", "evidence": [{"section_id": "abstract", "quote": "Nineteen features were significantly (FDR < 0.05) altered at both RNA and protein levels from the same myofibre.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "该肌纤维状态显示肌球蛋白超松弛构象ATP周转时间延长，提示肌球蛋白能量学异常可能参与肌肉功能障碍。", "evidence": [{"section_id": "abstract", "quote": "Further integration with the functional dataset revealed fibres in this state displayed selectively disrupted myosin dynamics, evidenced by prolonged ATP turnover time of myosin heads in their super-relaxed conformation, suggesting altered myosin energetics as a contributor to muscle dysfunction.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "摘要未报告患者、供体和肌纤维数量。", "basis": "inferred"}, {"text": "供体层面异质性明显，常规差异表达未获得显著特征。", "basis": "reported"}, {"text": "观察性比较不能确认炎症程序导致肌球蛋白能量学改变。", "basis": "inferred"}],
+        "rd_implications": [{"text": "同一肌纤维的功能—转录—蛋白整合可作为复杂肌肉疾病的新评价方法。", "evidence_boundary": "当前为概念验证研究，摘要未提供规模和外部验证。"}, {"text": "炎症状态和肌球蛋白ATP周转可作为后续肌肉功能研究的候选联合指标。", "evidence_boundary": "现有结果为患者样本中的关联，尚未证明干预可逆性。"}],
+        "confidence": 0.94,
+        "warnings": ["摘要未报告样本量。", "不得将相关状态表述为已确认的致病机制。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "musculoskeletal_health", "score": 0.99, "reason": "直接研究骨骼肌纤维功能、多组学状态和肌球蛋白能量学。"}], "unclassified": false, "confidence": 0.99, "warnings": [], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "单肌纤维多组学连接炎症状态与肌球蛋白能量学",
+        "research_background": "ICU获得性肌无力涉及复杂的骨骼肌变化，传统临床和分子指标难以直接连接到收缩功能。",
+        "research_objective": "在同一根人骨骼肌纤维上整合功能、转录组和蛋白组，寻找疾病相关状态与肌球蛋白功能的联系。",
+        "study_design": "人体观察性比较研究，对ICU获得性肌无力患者和对照的单根肌纤维依次开展功能、转录组和蛋白组分析；摘要未报告样本量。",
+        "core_results": ["常规差异表达分析显示明显供体异质性，未发现FDR小于0.05的特征。", "同一肌纤维中有19个特征在RNA和蛋白水平同时显著改变。", "特定肌纤维状态伴随肌球蛋白超松弛构象ATP周转时间延长。"],
+        "limitations": ["摘要未报告患者、供体和肌纤维数量。", "供体异质性明显，常规差异表达结果为阴性。", "观察性联系不能确认因果。"],
+        "rd_implications": ["单肌纤维功能—转录—蛋白整合可作为肌肉疾病机制研究的新评价框架。", "炎症状态与肌球蛋白ATP周转可作为候选联合指标，但需扩大样本和外部验证。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42896625/", "https://doi.org/10.1002/jcsm.70407"],
+        "confidence": 0.94,
+        "warnings": ["摘要未报告样本量，结果不能外推至一般肌少症人群。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.97, "issues": [], "confidence": 0.98, "warnings": ["已保留阴性差异表达结果和观察性边界。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 13,
+      "paper_task_id": "a81f6dff-23f4-47bb-a315-d31421f41d2c",
+      "pmid": "42830273",
+      "input_sha256": "d2310f46af7220449dad5bbb35d454bfecc6172b65646ae272e5d027ebcbaba8",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "animal",
+        "evidence_level": "animal",
+        "background": "高脂饮食相关MASLD常伴随骨骼肌质量下降，但间歇性禁食对肌肉质量及肠—肌相关通路的影响仍不清楚。",
+        "objective": "评价5:2间歇性禁食对高脂饮食诱导MASLD小鼠的骨骼肌功能、炎症、肠屏障、菌群、胆汁酸通路和脂肪酸水平的影响。",
+        "methods": {"design": "雄性C57BL/6J小鼠随机接受普通饲料或45%高脂饮食14周；MASLD模型随后接受12个周期的5:2间歇性禁食，并开展握力、组织学、宏基因组、qRT-PCR和脂肪酸检测。", "intervention": "每周禁食2天、其余5天自由摄入高脂饮食，共12个周期。", "comparator": "持续高脂饮食组；另设普通饲料组用于建模比较。", "duration": "高脂饮食14周，随后进行12个5:2禁食周期。"},
+        "sample": {"size": null, "population": "8周龄雄性C57BL/6J小鼠。", "species": "小鼠。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "与持续高脂饮食组相比，5:2组累计能量摄入无显著差异，但体重降低且肝脂肪变性和炎症减轻。", "evidence": [{"section_id": "abstract", "quote": "Compared with the continuous HFD group, the IF5:2 group showed no significant difference in cumulative energy intake but exhibited significantly reduced body weight, as well as alleviated hepatic steatosis and inflammation.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "5:2禁食提高握力和骨骼肌横截面积，并下调肌肉炎症相关基因表达。", "evidence": [{"section_id": "abstract", "quote": "IF5:2 significantly increased grip strength and skeletal muscle cross-sectional area and markedly downregulated mRNA expression of inflammation-related genes in muscle tissue.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "5:2组肠道紧密连接相关基因表达更高、结肠壁更厚且血清LPS更低。", "evidence": [{"section_id": "abstract", "quote": "Regarding intestinal barrier function, the IF5:2 group displayed significantly higher mRNA expression of intestinal tight junction-related genes, a thicker colonic wall and lower serum LPS levels compared with the HFD group.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_4", "claim": "宏基因组分析提示5:2禁食重塑高脂饮食相关菌群失调，并富集L. reuteri和F. rodentium及次级胆汁酸合成通路。", "evidence": [{"section_id": "abstract", "quote": "Metagenomic analysis suggested that IF5:2 effectively remodelled HFD-induced gut microbiota dysbiosis and significantly enriched beneficial bacteria including Limosilactobacillus reuteri and Faecalibaculum rodentium, accompanied by significant upregulation of microbial secondary bile acid biosynthesis pathways.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "研究仅使用雄性小鼠，不能外推至人体或女性。", "basis": "inferred"}, {"text": "摘要未报告每组动物数量。", "basis": "inferred"}, {"text": "菌群、胆汁酸受体和肌肉表型之间的关联不能单独确认介导因果。", "basis": "inferred"}],
+        "rd_implications": [{"text": "间歇性禁食可作为肠—肌轴营养研究的候选干预模型，并联合评价握力、肌纤维、肠屏障和菌群通路。", "evidence_boundary": "仅为雄性小鼠MASLD模型证据，不代表人体产品或饮食方案功效。"}, {"text": "L. reuteri、F. rodentium和次级胆汁酸通路可作为后续机制拆分候选。", "evidence_boundary": "当前为干预后伴随变化，尚未证明这些因素介导肌肉改善。"}],
+        "confidence": 0.97,
+        "warnings": ["全部干预结果来自雄性小鼠。", "摘要未报告动物数量。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "musculoskeletal_health", "score": 0.99, "reason": "直接评价握力、肌纤维面积和肌肉炎症。"}, {"domain_code": "gut_health", "score": 0.91, "reason": "同时评价肠屏障、血清LPS、肠道菌群和微生物胆汁酸通路。"}], "unclassified": false, "confidence": 0.98, "warnings": ["证据层级为动物研究。"], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "5:2间歇性禁食改善小鼠肠—肌相关指标",
+        "research_background": "高脂饮食相关脂肪肝常伴随骨骼肌质量下降，肠屏障和菌群可能参与这一过程。",
+        "research_objective": "评价5:2间歇性禁食对MASLD小鼠骨骼肌功能、肠屏障、菌群和胆汁酸相关通路的影响。",
+        "study_design": "雄性C57BL/6J小鼠先接受普通饲料或45%高脂饮食14周，随后MASLD模型进行12个5:2禁食周期；摘要未报告每组动物数量。",
+        "core_results": ["5:2组累计能量摄入与持续高脂组无显著差异，但体重下降且肝脂肪变性和炎症减轻。", "5:2禁食提高握力和肌纤维横截面积，并降低肌肉炎症相关基因表达。", "5:2组肠屏障相关指标改善，血清LPS降低。", "菌群和次级胆汁酸合成通路出现伴随变化，但不能据此确认介导机制。"],
+        "limitations": ["研究仅使用雄性小鼠，不能外推为人体功效。", "摘要未报告动物数量。", "菌群和胆汁酸通路变化尚不能确认是肌肉改善的原因。"],
+        "rd_implications": ["可将该模型用于营养干预的肠—肌轴机制研究，并联合设置肌肉、屏障和菌群终点。", "候选菌和次级胆汁酸通路需要通过移植、阻断或补充实验进一步验证。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42830273/", "https://doi.org/10.1002/jcsm.70398"],
+        "confidence": 0.97,
+        "warnings": ["动物研究，不代表人体禁食方案或产品功效。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.98, "issues": [], "confidence": 0.99, "warnings": ["已明确动物证据及菌群介导关系未被确认。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 14,
+      "paper_task_id": "dcf4c0f3-392d-449a-8b08-ef23566a398d",
+      "pmid": "42853963",
+      "input_sha256": "2047a08667c03499d7e14824567a3c2b2aa7cd98e3cf9895cd81900a3340187b",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "Peyer斑协调对肠腔微生物和膳食抗原的抗体反应，但滤泡相关上皮中除M细胞外的免疫调节细胞群和机制仍不完整。",
+        "objective": "鉴定滤泡相关上皮tuft cell，并解析其发育来源及通过IL-25—ILC2—IL-13轴调节IgA和抗原特异性黏膜免疫的机制。",
+        "methods": {"design": "结合Gfi1b-eGFP报告小鼠、人Peyer斑活检、小鼠模型和肠类器官的机制研究。", "intervention": "通过RANKL、IL-13及tuft cell/ILC2相关通路进行发育和功能分析。", "comparator": "M细胞与tuft cell谱系及相应调控条件比较。", "duration": null},
+        "sample": {"size": null, "population": "报告小鼠、人Peyer斑活检和肠类器官；摘要未报告样本数量。", "species": "小鼠和人类组织。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "研究在人Peyer斑活检和报告小鼠中识别出tuft cell这一保守的滤泡相关上皮细胞群。", "evidence": [{"section_id": "abstract", "quote": "By analyzing Gfi1b-eGFP reporter mice and human PP biopsies, we identified tuft cells as an additional, evolutionarily conserved FAE population that regulates mucosal immunity.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "M细胞和tuft cell源自Pou2f3+祖细胞的不同谱系，并分别受到RANKL和IL-13调节。", "evidence": [{"section_id": "abstract", "quote": "Using mouse models and intestinal organoids, we demonstrate that M cells and tuft cells are distinct lineages arising from Pou2f3+ progenitors, whose differentiation is reciprocally regulated by RANKL and interleukin-13 (IL-13), respectively.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "tuft cell来源IL-25激活Peyer斑ILC2，而ILC2产生的IL-13增强IgA类别转换和抗原特异性免疫。", "evidence": [{"section_id": "abstract", "quote": "Tuft cell-derived IL-25 activates type 2 innate lymphoid cells (ILC2s) in PPs. Furthermore, IL-13 production by ILC2 enhances immunoglobulin A class switching and antigen-specific immunity.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "功能机制主要来自小鼠和类器官，不能直接解释为人体免疫干预效果。", "basis": "inferred"}, {"text": "摘要未报告小鼠、活检和类器官样本数量。", "basis": "inferred"}, {"text": "摘要未提供干预持续时间或定量效应大小。", "basis": "inferred"}],
+        "rd_implications": [{"text": "tuft cell—IL-25—ILC2—IL-13—IgA轴可作为黏膜免疫和膳食抗原应答研究的新机制框架。", "evidence_boundary": "人体活检支持细胞群存在，功能链条主要来自小鼠和类器官。"}, {"text": "Peyer斑tuft cell和IgA类别转换可作为未来肠道黏膜免疫评价的候选指标。", "evidence_boundary": "尚缺人体干预、剂量反应和临床结局验证。"}],
+        "confidence": 0.97,
+        "warnings": ["功能机制主要来自小鼠和类器官。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "immune_health", "score": 0.99, "reason": "直接解析黏膜免疫、ILC2、IgA类别转换和抗原特异性免疫。"}, {"domain_code": "gut_health", "score": 0.92, "reason": "研究场景为肠道Peyer斑和滤泡相关上皮，涉及肠腔微生物及膳食抗原应答。"}], "unclassified": false, "confidence": 0.99, "warnings": [], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "Peyer斑tuft cell调节ILC2与IgA应答",
+        "research_background": "Peyer斑负责感知肠腔微生物和膳食抗原，但滤泡相关上皮中的细胞协作机制仍未完全解析。",
+        "research_objective": "鉴定滤泡相关上皮tuft cell，并解析其发育和调节IgA黏膜免疫的通路。",
+        "study_design": "机制研究，结合报告小鼠、人Peyer斑活检、小鼠模型和肠类器官；摘要未报告各类样本数量和实验周期。",
+        "core_results": ["研究在人活检和小鼠中识别出保守的滤泡相关上皮tuft cell群。", "M细胞与tuft cell源自Pou2f3+祖细胞的不同谱系，并受到不同细胞因子调节。", "小鼠和类器官证据支持tuft cell—IL-25—ILC2—IL-13通路增强IgA类别转换和抗原特异性免疫。"],
+        "limitations": ["功能机制主要来自小鼠和类器官，不能表述为人体免疫功效。", "摘要未报告各类样本数量。", "缺少人体干预和临床结局。"],
+        "rd_implications": ["该细胞轴为黏膜免疫和膳食抗原应答研究提供新的机制框架。", "tuft cell和IgA应答可作为候选评价指标，但需人体干预验证。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42853963/", "https://doi.org/10.1126/sciimmunol.aee1358"],
+        "confidence": 0.97,
+        "warnings": ["人组织支持细胞群存在，功能机制主要来自临床前模型。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.98, "issues": [], "confidence": 0.99, "warnings": ["报告未将临床前机制改写成人体功效。"], "needs_human_review": false}
+    },
+    {
+      "paper_id": 15,
+      "paper_task_id": "e7dd84e2-e191-4029-aabd-cf5f0e7713f0",
+      "pmid": "42871766",
+      "input_sha256": "1442b2155302fd87cb89f5ef0f4feb7bdebef9b487cfcf8125eec1896fc4f8ba",
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "systematic_review",
+        "evidence_level": "mixed",
+        "background": "慢性低度炎症和免疫衰老伴随衰老及慢病，但运动对相关循环标志物的综述证据分散。",
+        "objective": "整合老年人和慢病成人中运动或身体活动对炎症衰老、免疫衰老相关循环标志物影响的综述层证据。",
+        "methods": {"design": "umbrella review；检索6个数据库至2026年3月1日，使用AMSTAR-2评价方法质量、CCA评价研究重叠、GRADE评价确定性，并进行结构化叙述综合。", "intervention": "运动或身体活动。", "comparator": "各纳入综述中的对照条件。", "duration": null},
+        "sample": {"size": null, "population": "21篇综述，其中14篇完全符合PICOS并进入主要综合，7篇仅用于证据图谱；涉及老年人和慢病成人。", "species": "人类。"},
+        "key_findings": [
+          {"finding_id": "finding_1", "claim": "纳入21篇综述，其中14篇进入主要综合，7篇仅用于证据图谱。", "evidence": [{"section_id": "abstract", "quote": "Twenty-one reviews were included: 14 core-eligible (full Population, Intervention, Comparator, Outcomes, and Study design [PICOS] match, contributing to the primary synthesis and conclusions) and seven evidence-map-only (partial PICOS match, used only for mapping and background).", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_2", "claim": "运动与TNF-α和CRP的小幅降低相关，而IL-6结果不一致。", "evidence": [{"section_id": "abstract", "quote": "Among core-eligible reviews reporting standardised mean differences, exercise was associated with small reductions in tumour necrosis factor-alpha (TNF-alpha; point estimates - 1.42 to - 0.05, two of five confidence intervals excluding the null) and C-reactive protein (CRP; - 0.65 to - 0.47, two of three excluding the null), whereas interleukin-6 (IL-6) estimates were inconsistent (- 0.81 to + 0.09, two of five excluding the null).", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_3", "claim": "21篇综述中11篇AMSTAR-2为极低、9篇为低、1篇为中等，所有标志物构念的GRADE确定性均很低。", "evidence": [{"section_id": "abstract", "quote": "AMSTAR-2 confidence was critically low in 11 reviews, low in nine, and moderate in one; GRADE certainty was very low for every biomarker construct.", "support_level": "direct"}], "certainty": "reported"},
+          {"finding_id": "finding_4", "claim": "免疫衰老和细胞衰老标志物的运动效应仍是证据缺口，现有标志物证据不足以支持为降低炎症标志物而特异性开具运动处方。", "evidence": [{"section_id": "abstract", "quote": "Effects on immunosenescence and cellular-senescence markers remain an evidence gap. This biomarker evidence alone is insufficient to justify prescribing exercise specifically to lower inflammatory biomarkers and does not alter broader physical-activity recommendations based on clinical and functional outcomes.", "support_level": "direct"}], "certainty": "reported"}
+        ],
+        "limitations": [{"text": "所有标志物构念的GRADE确定性均很低。", "basis": "reported"}, {"text": "纳入综述方法学质量主要为低或极低，且部分疾病集群存在很高研究重叠。", "basis": "reported"}, {"text": "本研究未进行新的meta分析或meta回归。", "basis": "reported"}],
+        "rd_implications": [{"text": "未来免疫健康研究应优先补足免疫衰老和细胞衰老标志物，并预设TNF-α、CRP和IL-6的证据等级。", "evidence_boundary": "现有综述层证据确定性很低，不能据此建立产品或运动功效声称。"}, {"text": "研发评价不应只依赖循环炎症标志物，还需结合临床和功能结局。", "evidence_boundary": "摘要明确指出标志物证据不足以支持特异性处方。"}],
+        "confidence": 0.97,
+        "warnings": ["所有标志物构念证据确定性均很低。"],
+        "needs_human_review": false
+      },
+      "classification": {"schema_version": "1.0", "classifications": [{"domain_code": "immune_health", "score": 0.98, "reason": "直接评价炎症衰老、免疫衰老及相关循环免疫标志物。"}, {"domain_code": "healthy_aging", "score": 0.92, "reason": "研究聚焦老年人、炎症衰老和细胞衰老标志物。"}], "unclassified": false, "confidence": 0.98, "warnings": ["证据确定性很低。"], "needs_human_review": false},
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "运动对炎症衰老标志物的证据仍不确定",
+        "research_background": "慢性低度炎症和免疫衰老常见于衰老和慢病，但运动对相关循环标志物的综述结论并不一致。",
+        "research_objective": "整合老年人和慢病成人中运动对炎症衰老及免疫衰老相关标志物的综述层证据。",
+        "study_design": "umbrella review，纳入二十一篇综述，其中十四篇进入主要综合；使用AMSTAR-2、CCA和GRADE评价方法质量、重叠和确定性，未进行新的meta分析。",
+        "core_results": ["运动与TNF-α和CRP的小幅降低相关，但IL-6结果不一致。", "纳入综述的方法学可信度几乎全部为低或极低，仅一篇为中等。", "所有标志物构念的GRADE确定性均很低。", "免疫衰老和细胞衰老标志物仍存在明显证据缺口。"],
+        "limitations": ["所有标志物构念的证据确定性均很低。", "纳入综述方法学质量普遍不足，部分领域存在高研究重叠。", "研究未进行新的定量合并或meta回归。"],
+        "rd_implications": ["免疫健康研究应补充免疫衰老和细胞衰老标志物，并同时保留功能或临床结局。", "现有证据不支持仅为降低循环炎症标志物而提出特异性运动或产品声称。"],
+        "source_links": ["https://pubmed.ncbi.nlm.nih.gov/42871766/", "https://doi.org/10.3389/fimmu.2026.1931607"],
+        "confidence": 0.97,
+        "warnings": ["综述层证据确定性很低，不能据此提出特异性功效或处方。"],
+        "needs_human_review": false
+      },
+      "quality_gate": {"schema_version": "1.0", "decision": "pass", "quality_score": 0.99, "issues": [], "confidence": 0.99, "warnings": ["报告突出低确定性和不支持特异性处方的结论。"], "needs_human_review": false}
+    }
+  ]
+}

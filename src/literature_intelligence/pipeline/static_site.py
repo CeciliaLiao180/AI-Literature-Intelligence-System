@@ -92,6 +92,19 @@ def _normalized_journal_name(value: str | None) -> str:
     return " ".join((value or "").casefold().split())
 
 
+def _display_publication_date(
+    value: str | None,
+    precision: str | None,
+) -> str:
+    if not value:
+        return "未报告"
+    if precision == "year":
+        return value[:4]
+    if precision == "month":
+        return value[:7]
+    return value
+
+
 def _journal_metric_index(config: dict[str, Any]) -> dict[str, dict[str, Any]]:
     index: dict[str, dict[str, Any]] = {}
     for journal in config.get("journals", []):
@@ -726,7 +739,10 @@ def _paper_list(papers: list[dict[str, Any]], domains: dict[str, dict[str, Any]]
         else:
             metric_title = f'Journal Impact Factor · {metric_year} · 来源：{metric.get("source_name") or "未标注"}'
             impact_factor = f'<a class="impact-factor" href="{_e(metric.get("source_url"))}" target="_blank" rel="noopener noreferrer" title="{_e(metric_title)}">IF：{_e(metric["impact_factor"])}</a>'
-        rows.append(f'''<li class="paper-row"><div><div class="paper-row-head"><span class="journal-name">{_e(paper["journal"])}</span>{impact_factor}</div><h3><a href="{root}papers/{paper["paper_id"]}.html">{_e(paper["ai_title"])}</a></h3><p class="original">{_e(paper["title"])}</p><div class="paper-meta"><span>{_e(paper["publication_date"])}</span><span>PMID {_e(paper["identifiers"].get("pmid"))}</span></div><p class="paper-conclusion">{_e(conclusion)}</p><div class="tag-row">{tags}</div></div></li>''')
+        publication_date = _display_publication_date(
+            paper["publication_date"], paper["publication_date_precision"]
+        )
+        rows.append(f'''<li class="paper-row"><div><div class="paper-row-head"><span class="journal-name">{_e(paper["journal"])}</span>{impact_factor}</div><h3><a href="{root}papers/{paper["paper_id"]}.html">{_e(paper["ai_title"])}</a></h3><p class="original">{_e(paper["title"])}</p><div class="paper-meta"><span>{_e(publication_date)}</span><span>PMID {_e(paper["identifiers"].get("pmid"))}</span></div><p class="paper-conclusion">{_e(conclusion)}</p><div class="tag-row">{tags}</div></div></li>''')
     return '<ol class="paper-list">' + "".join(rows) + '</ol>'
 
 
@@ -888,7 +904,10 @@ def _render_paper(data: dict[str, Any], paper: dict[str, Any]) -> str:
         if data["publication_status"] == "published"
         else "当前内容仅用于内部预览，正式发布前仍需人工确认。"
     )
-    body = f'''<main class="shell"><div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../domains/{_e(primary_domain["slug"])}.html">{_e(primary_domain["name"])}</a><span>/</span>文献详情</div><div class="detail-layout"><article class="detail-main"><span class="kicker">Paper Detail · PMID {_e(paper["identifiers"].get("pmid"))}</span><h1 class="detail-title">{_e(paper["ai_title"])}</h1><p class="detail-original">{_e(paper["title"])}</p><dl class="detail-meta"><dt>作者</dt><dd>{_e(authors)}</dd><dt>期刊</dt><dd>{_e(paper["journal"])}</dd><dt>发布时间</dt><dd>{_e(paper["publication_date"])}（精度：{_e(paper["publication_date_precision"]) }）</dd><dt>PMID</dt><dd>{_e(paper["identifiers"].get("pmid"))}</dd><dt>DOI</dt><dd>{_e(paper["identifiers"].get("doi"))}</dd><dt>研究类型</dt><dd>{_e(STUDY_TYPE_ZH.get(analysis["study_type"], analysis["study_type"]))} / {_e(analysis["evidence_level"])}</dd></dl>{warning_html}<h2 id="background">研究背景</h2><p>{_e(analysis["background"])}</p><h2 id="objective">研究目的</h2><p>{_e(analysis["objective"])}</p><h2 id="design">实验设计与主要方法</h2><h3>设计</h3><p>{_e(methods["design"])}</p><h3>样本量 / 研究对象</h3><p>样本量：{_e(sample["size"])}；研究对象：{_e(sample["population"])}；物种：{_e(sample["species"])}</p><h3>干预与对照</h3><p>干预：{_e(methods["intervention"])}<br>对照：{_e(methods["comparator"])}</p><h3>周期</h3><p>{_e(methods["duration"])}</p><h2 id="results">核心研究结果</h2>{_ul(report["core_results"])}<h2 id="limitations">研究局限</h2>{_ul(report["limitations"])}<h2 id="implications">对研发的启示</h2>{_ul(report["rd_implications"])}<h2 id="evidence">证据 / 原文支持</h2>{evidence_html}<div class="quality-box"><strong>Quality Gate：{_e(paper["quality_gate"]["decision"]) } · {_e(paper["quality_gate"]["quality_score"])}</strong><br>{quality_notice}</div><div class="source-actions">{links}</div></article><aside class="detail-sidebar"><h2>页面目录</h2><a href="#background">研究背景</a><a href="#objective">研究目的</a><a href="#design">实验设计</a><a href="#results">核心结果</a><a href="#limitations">研究局限</a><a href="#implications">研发启示</a><a href="#evidence">原文证据</a><hr>{sidebar_links}<a href="../index.html">← 返回首页</a></aside></div></main>'''
+    publication_date = _display_publication_date(
+        paper["publication_date"], paper["publication_date_precision"]
+    )
+    body = f'''<main class="shell"><div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../domains/{_e(primary_domain["slug"])}.html">{_e(primary_domain["name"])}</a><span>/</span>文献详情</div><div class="detail-layout"><article class="detail-main"><span class="kicker">Paper Detail · PMID {_e(paper["identifiers"].get("pmid"))}</span><h1 class="detail-title">{_e(paper["ai_title"])}</h1><p class="detail-original">{_e(paper["title"])}</p><dl class="detail-meta"><dt>作者</dt><dd>{_e(authors)}</dd><dt>期刊</dt><dd>{_e(paper["journal"])}</dd><dt>发布时间</dt><dd>{_e(publication_date)}（精度：{_e(paper["publication_date_precision"]) }）</dd><dt>PMID</dt><dd>{_e(paper["identifiers"].get("pmid"))}</dd><dt>DOI</dt><dd>{_e(paper["identifiers"].get("doi"))}</dd><dt>研究类型</dt><dd>{_e(STUDY_TYPE_ZH.get(analysis["study_type"], analysis["study_type"]))} / {_e(analysis["evidence_level"])}</dd></dl>{warning_html}<h2 id="background">研究背景</h2><p>{_e(analysis["background"])}</p><h2 id="objective">研究目的</h2><p>{_e(analysis["objective"])}</p><h2 id="design">实验设计与主要方法</h2><h3>设计</h3><p>{_e(methods["design"])}</p><h3>样本量 / 研究对象</h3><p>样本量：{_e(sample["size"])}；研究对象：{_e(sample["population"])}；物种：{_e(sample["species"])}</p><h3>干预与对照</h3><p>干预：{_e(methods["intervention"])}<br>对照：{_e(methods["comparator"])}</p><h3>周期</h3><p>{_e(methods["duration"])}</p><h2 id="results">核心研究结果</h2>{_ul(report["core_results"])}<h2 id="limitations">研究局限</h2>{_ul(report["limitations"])}<h2 id="implications">对研发的启示</h2>{_ul(report["rd_implications"])}<h2 id="evidence">证据 / 原文支持</h2>{evidence_html}<div class="quality-box"><strong>Quality Gate：{_e(paper["quality_gate"]["decision"]) } · {_e(paper["quality_gate"]["quality_score"])}</strong><br>{quality_notice}</div><div class="source-actions">{links}</div></article><aside class="detail-sidebar"><h2>页面目录</h2><a href="#background">研究背景</a><a href="#objective">研究目的</a><a href="#design">实验设计</a><a href="#results">核心结果</a><a href="#limitations">研究局限</a><a href="#implications">研发启示</a><a href="#evidence">原文证据</a><hr>{sidebar_links}<a href="../index.html">← 返回首页</a></aside></div></main>'''
     return _page(
         paper["ai_title"],
         body,

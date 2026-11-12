@@ -1,10 +1,10 @@
 {
   "schema_version": "2.0",
-  "generated_at": "2026-09-08T01:50:45.458484Z",
+  "generated_at": "2026-11-12T09:10:01.899283Z",
   "publication_status": "published",
   "data_mode": "cumulative_database",
-  "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
-  "latest_edition_date": "2026-09-07",
+  "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+  "latest_edition_date": "2026-11-12",
   "site": {
     "title": "科研文献速递",
     "subtitle": "面向保健食品、生物科技与生命科学研发人员的文献情报预览",
@@ -17,11 +17,11 @@
     }
   },
   "summary": {
-    "retrieved": 7,
-    "included": 4,
+    "retrieved": 15,
+    "included": 12,
     "excluded": 2,
     "manual_review": 1,
-    "quality_pass": 4,
+    "quality_pass": 12,
     "quality_review": 0,
     "quality_reject": 0
   },
@@ -36,24 +36,31 @@
       "status": "active",
       "paper_ids": [
         4,
+        9,
+        14,
+        13,
+        8,
         5,
         6,
         7
       ],
-      "paper_count": 4
+      "paper_count": 8
     },
     {
-      "code": "immune_modulation",
+      "code": "immune_health",
       "slug": "immune",
       "aliases": [
         "immune-modulation"
       ],
       "name": "免疫调节",
       "short_name": "免疫调节",
-      "description": "预留免疫功能、免疫应答及免疫相关研发文献分类。",
-      "status": "reserved",
-      "paper_ids": [],
-      "paper_count": 0
+      "description": "关注健康免疫功能、免疫稳态、炎症调节、免疫衰老、黏膜免疫、免疫代谢以及营养或天然成分与免疫。",
+      "status": "active",
+      "paper_ids": [
+        14,
+        15
+      ],
+      "paper_count": 2
     },
     {
       "code": "healthy_aging",
@@ -63,10 +70,14 @@
       ],
       "name": "延缓衰老/抗衰老",
       "short_name": "健康衰老",
-      "description": "预留健康寿命、衰老机制及相关干预研究文献分类。",
-      "status": "reserved",
-      "paper_ids": [],
-      "paper_count": 0
+      "description": "关注健康寿命、衰老机制、生物年龄与衰老标志物、细胞衰老及相关干预。",
+      "status": "active",
+      "paper_ids": [
+        11,
+        10,
+        15
+      ],
+      "paper_count": 3
     },
     {
       "code": "musculoskeletal_health",
@@ -76,10 +87,13 @@
       ],
       "name": "肌骨/筋骨关节健康",
       "short_name": "肌骨健康",
-      "description": "预留肌肉、骨骼、关节及运动功能相关研究文献分类。",
-      "status": "reserved",
-      "paper_ids": [],
-      "paper_count": 0
+      "description": "关注肌肉、骨骼、关节和软骨功能，以及营养或天然成分干预研究。",
+      "status": "active",
+      "paper_ids": [
+        13,
+        12
+      ],
+      "paper_count": 2
     }
   ],
   "papers": [
@@ -403,6 +417,2250 @@
       "latest_edition_date": "2026-09-07"
     },
     {
+      "paper_id": 9,
+      "paper_task_id": "dfcb5004-9782-4fea-8c9c-06cfc847f502",
+      "title": "Microbial inositol phosphates orchestrate host diurnal metabolism and energy homeostasis via HDAC3.",
+      "ai_title": "微生物肌醇磷酸连接进食节律与宿主代谢",
+      "authors": [
+        {
+          "name": "Jianglin Zhang",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Sarah O Oladejo",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Xianda Ma",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Junjie Ma",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Dingjiacheng Jia",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Wenchao Yu",
+          "orcid": null,
+          "affiliation": "Department of Pharmaceutical Sciences, University of Pittsburgh, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Samskrathi Sharma",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Cassie L Behrendt",
+          "orcid": null,
+          "affiliation": "Department of Immunology, The University of Texas Southwestern Medical Center, Dallas, TX 75390, USA; The Howard Hughes Medical Institute, The University of Texas Southwestern Medical Center, Dallas, TX 75390, USA."
+        },
+        {
+          "name": "Regis Stentz",
+          "orcid": null,
+          "affiliation": "Food, Microbiome and Health Research Programme, Quadram Institute Bioscience, Norwich NR4 7UQ, UK."
+        },
+        {
+          "name": "Simon R Carding",
+          "orcid": null,
+          "affiliation": "Food, Microbiome and Health Research Programme, Quadram Institute Bioscience, Norwich NR4 7UQ, UK; Norwich Medical School, University of East Anglia, Norwich NR4 7TJ, UK."
+        },
+        {
+          "name": "Qihao Wu",
+          "orcid": null,
+          "affiliation": "Department of Pharmaceutical Sciences, University of Pittsburgh, Pittsburgh, PA 15213, USA."
+        },
+        {
+          "name": "Zheng Kuang",
+          "orcid": null,
+          "affiliation": "Department of Biological Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA. Electronic address: zhengkua@andrew.cmu.edu."
+        }
+      ],
+      "journal": "Cell host & microbe",
+      "journal_metric": {
+        "canonical_name": "Cell host & microbe",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-11-11",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-11-11",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Nov",
+          "day": 11,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "10",
+            "day": "22"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "1",
+            "day": "14",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "7",
+            "day": "15",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "9",
+            "day": "30",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "23",
+            "hour": "23",
+            "minute": "31"
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "11",
+            "day": "11",
+            "hour": "23",
+            "minute": "27"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "23",
+            "hour": "17",
+            "minute": "57"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "10",
+            "day": "26",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42913643",
+        "doi": "10.1016/j.chom.2026.09.021",
+        "pmcid": "PMC13700225"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+        "https://doi.org/10.1016/j.chom.2026.09.021"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "animal",
+        "evidence_level": "animal",
+        "background": "肠道菌群可调节哺乳动物昼夜代谢，但微生物如何把进食节律转化为宿主代谢程序仍不清楚。",
+        "objective": "解析Bacteroides thetaiotaomicron产生的肌醇磷酸是否通过肠上皮HDAC3连接进食节律、染色质调控、营养转运与能量稳态。",
+        "methods": {
+          "design": "小鼠定植和微生物突变体比较结合肠上皮染色质、组蛋白乙酰化及代谢基因分析。",
+          "intervention": "野生型或肌醇磷酸酶突变的Bacteroides thetaiotaomicron定植，并结合进食时间和不同营养状态。",
+          "comparator": "野生型菌与肌醇磷酸酶突变株比较。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "过度营养和营养不足状态的小鼠模型；摘要未报告数量和品系。",
+          "species": "小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "B. thetaiotaomicron以受进食节律调控的方式产生InsP3并增强HDAC3活性。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Bt produces inositol triphosphate (InsP3) in a feeding-entrained diurnal manner that enhances HDAC3 activity.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "野生型菌而非肌醇磷酸酶突变株增强了上皮组蛋白乙酰化和代谢基因表达的全基因组节律。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Colonization with wild-type Bt, but not an inositol phosphatase mutant, enhanced genome-wide rhythms in epithelial histone acetylation and metabolic gene expression.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "该轴在过度营养小鼠中加重饮食诱导肥胖，但在营养不足幼鼠中改善生长。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "This Bt-InsPs-HDAC3 axis worsens diet-induced obesity in overnourished mice while improving growth in undernourished juvenile mice.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "结果来自小鼠和机制实验，不能外推为人体代谢效果。",
+            "basis": "inferred"
+          },
+          {
+            "text": "同一机制在过度营养和营养不足状态下呈现方向不同的表型，转化应用需考虑营养背景。",
+            "basis": "reported"
+          },
+          {
+            "text": "摘要未报告动物数量、品系、剂量和实验周期。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "微生物肌醇磷酸—HDAC3轴可作为宿主—菌群节律代谢研究的新机制靶点。",
+            "evidence_boundary": "仅有小鼠机制证据，尚不能形成面向人体的产品功效结论。"
+          },
+          {
+            "text": "菌株或代谢物评价应同时考虑进食时间和宿主营养状态，避免把作用方向视为固定。",
+            "evidence_boundary": "摘要报告在两种营养状态下表型方向不同。"
+          }
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "动物证据，不代表人体功效。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "微生物肌醇磷酸连接进食节律与宿主代谢",
+        "research_background": "菌群能够影响宿主昼夜代谢，但连接进食节律、微生物代谢和肠上皮基因调控的分子路径尚不清楚。",
+        "research_objective": "研究B. thetaiotaomicron产生的肌醇磷酸如何通过HDAC3调节肠上皮代谢程序和能量稳态。",
+        "study_design": "小鼠与机制研究，比较野生型菌和肌醇磷酸酶突变株定植，并分析肠上皮染色质及代谢表达；摘要未报告动物数量、剂量和周期。",
+        "core_results": [
+          "B. thetaiotaomicron随进食节律产生InsP3并增强HDAC3活性。",
+          "野生型菌而非突变株增强上皮组蛋白乙酰化和代谢基因表达节律。",
+          "该轴在过度营养小鼠中加重饮食诱导肥胖，但在营养不足幼鼠中改善生长。"
+        ],
+        "limitations": [
+          "全部表型和机制证据来自小鼠。",
+          "不同营养状态下作用方向不同。",
+          "摘要未报告动物数量、剂量和周期。"
+        ],
+        "rd_implications": [
+          "该微生物—表观遗传—昼夜轴可作为菌群代谢物研发的新机制线索。",
+          "后续评价需同时控制进食时点和宿主营养状态。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42913643/",
+          "https://doi.org/10.1016/j.chom.2026.09.021"
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "动物机制研究，不代表人体代谢功效。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "已明确动物证据及营养状态依赖性。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 11,
+      "paper_task_id": "58e5ccab-4e50-497e-a524-b4ac0510d35d",
+      "title": "Uncovering the transcriptional hallmarks of endothelial cell aging via integrated single-cell analysis.",
+      "ai_title": "人类内皮衰老单细胞图谱揭示跨组织变化",
+      "authors": [
+        {
+          "name": "Sarah Dobner",
+          "orcid": "0009-0000-4186-9958",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Lisa Kleissl",
+          "orcid": "0000-0001-8011-796X",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Fanni Tóth",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Robert L Paxton",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Irena Yordanova",
+          "orcid": "0009-0009-9986-4581",
+          "affiliation": "Medical University of Vienna, Institute of Medical Chemistry, Center for Pathobiochemistry and Genetics, Vienna, Austria."
+        },
+        {
+          "name": "Kveta Brazdilova",
+          "orcid": "0009-0009-1198-4993",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Cedric Vanluyten",
+          "orcid": null,
+          "affiliation": "Department of Thoracic Surgery, University Hospitals Leuven, Leuven, Belgium."
+        },
+        {
+          "name": "Aleksandra Aizenshtadt",
+          "orcid": null,
+          "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+        },
+        {
+          "name": "Hanna Tóth",
+          "orcid": "0009-0001-4696-2171",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Jake Burton",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Aglaja Kopf",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Vera Belyaeva",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Katharina Ferencevic",
+          "orcid": null,
+          "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+        },
+        {
+          "name": "Dunja A Al-Nuaimi",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Mauriz A Lichtenstein",
+          "orcid": "0000-0002-2124-8262",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Georg E Winter",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "André F Rendeiro",
+          "orcid": "0000-0001-9362-5373",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Christoph Bock",
+          "orcid": "0000-0001-6091-3088",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Joanna Kalucka",
+          "orcid": "0000-0003-4887-7672",
+          "affiliation": "Department of Biomedicine, Aarhus University, Aarhus, Denmark."
+        },
+        {
+          "name": "Stefan Krauss",
+          "orcid": null,
+          "affiliation": "Hybrid Technology Hub - Centre of Excellence, Institute of Basic Medical Sciences, University of Oslo, Oslo, Norway."
+        },
+        {
+          "name": "Selma Osmanagic-Myers",
+          "orcid": "0000-0002-3834-1332",
+          "affiliation": "Medical University of Vienna, Institute of Medical Chemistry, Center for Pathobiochemistry and Genetics, Vienna, Austria."
+        },
+        {
+          "name": "Laurens J Ceulemans",
+          "orcid": null,
+          "affiliation": "Department of Thoracic Surgery, University Hospitals Leuven, Leuven, Belgium."
+        },
+        {
+          "name": "Georg Stary",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Abdel Rahman Abdel Fattah",
+          "orcid": null,
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria."
+        },
+        {
+          "name": "Laura P M H de Rooij",
+          "orcid": "0000-0002-1810-4620",
+          "affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences, Vienna, Austria. lderooij@cemm.at."
+        }
+      ],
+      "journal": "Nature aging",
+      "journal_metric": {
+        "canonical_name": "Nature aging",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-23",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-23",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": 23,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "Publisher",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "10",
+            "day": "23"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2025",
+            "month": "9",
+            "day": "23",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "9",
+            "day": "11",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "24",
+            "hour": "5",
+            "minute": "35"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "24",
+            "hour": "5",
+            "minute": "35"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "23",
+            "hour": "23",
+            "minute": "17"
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42919924",
+        "doi": "10.1038/s43587-026-01247-3"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+        "https://doi.org/10.1038/s43587-026-01247-3"
+      ],
+      "domain_codes": [
+        "healthy_aging"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "内皮细胞在衰老过程中出现功能异常，但覆盖成人生命周期、多组织的人类内皮细胞转录图谱此前仍不完整。",
+        "objective": "建立人类衰老内皮细胞图谱并识别跨组织、随年龄变化的转录特征及与细胞衰老相关的程序。",
+        "methods": {
+          "design": "整合人类多组织单细胞转录组，并使用体外和体内模型连接p21相关转录程序与细胞衰老。",
+          "intervention": null,
+          "comparator": "不同成人年龄阶段和组织的内皮细胞。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "覆盖成人期的12种人类组织、超过375,000个内皮细胞；摘要未报告供体数量。",
+          "species": "人类，并包含体外和体内验证模型。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "研究构建了覆盖12种人类组织和成人期超过375,000个内皮细胞的整合单细胞图谱。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Here, we present the Human Aging Endothelial Cell Atlas (HAECA), a harmonized single-cell transcriptomic compendium of over 375,000 ECs from 12 human tissues throughout adulthood.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "年龄相关变化包括静脉内皮血管生成基因表达下降，以及细胞外基质和机械转导特征的广泛改变。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "We identified age-associated transcriptional shifts, including a decline in angiogenic gene expression in venous ECs and widespread alterations in extracellular matrix and mechanotransduction-associated signatures.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "研究识别出p21相关内皮转录程序，并在体外和体内模型中将其与细胞衰老联系起来。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Furthermore, we uncovered a p21-linked transcriptional program in ECs, which we linked to cellular senescence in both in vitro and in vivo models.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "摘要报告细胞数量但未报告供体数量、年龄分布和各组织样本构成。",
+            "basis": "inferred"
+          },
+          {
+            "text": "整合图谱主要描述转录关联，不能单独确认年龄变化的因果机制。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未提供模型验证的具体数量、对照和效应大小。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "HAECA可作为血管衰老靶点、标志物和组织差异研究的参考资源。",
+            "evidence_boundary": "图谱为研究资源，不能直接解释为干预靶点已经验证。"
+          },
+          {
+            "text": "p21相关内皮程序和机械转导特征可进入后续功能验证与标志物开发。",
+            "evidence_boundary": "摘要提供关联与模型连接，尚缺人体干预或纵向验证。"
+          }
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "375,000指细胞数量，不是人体样本量。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "人类内皮衰老单细胞图谱揭示跨组织变化",
+        "research_background": "血管内皮功能会随年龄下降，但缺少覆盖成人生命周期和多组织的统一人类内皮细胞图谱。",
+        "research_objective": "构建人类衰老内皮细胞图谱，识别年龄相关转录变化和细胞衰老相关程序。",
+        "study_design": "整合单细胞转录组研究，覆盖12种人类组织和超过375,000个内皮细胞，并结合体外和体内模型验证；摘要未报告供体数量。",
+        "core_results": [
+          "研究建立了覆盖成人期的高分辨率人类内皮细胞转录参考图谱。",
+          "年龄相关变化包括静脉内皮血管生成基因表达下降，以及细胞外基质和机械转导特征改变。",
+          "研究识别出p21相关转录程序，并在模型中将其与细胞衰老联系起来。"
+        ],
+        "limitations": [
+          "摘要未报告供体数量、年龄分布和组织样本构成。",
+          "图谱中的年龄相关变化主要是转录关联。",
+          "摘要未提供模型验证的效应大小和完整对照。"
+        ],
+        "rd_implications": [
+          "该图谱可支持血管衰老标志物、靶点和组织差异的后续研究。",
+          "p21相关程序和机械转导信号需进一步功能与纵向验证后再考虑转化。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42919924/",
+          "https://doi.org/10.1038/s43587-026-01247-3"
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "超过375,000为细胞数，不代表人体样本量。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "已区分细胞数量与人体样本量。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 14,
+      "paper_task_id": "dcf4c0f3-392d-449a-8b08-ef23566a398d",
+      "title": "Follicle-associated epithelial tuft cells amplify type 2 mucosal immunity and IgA production.",
+      "ai_title": "Peyer斑tuft cell调节ILC2与IgA应答",
+      "authors": [
+        {
+          "name": "Gabriel M Barrón",
+          "orcid": "0000-0002-1442-5072",
+          "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Radeesha D Jayewickreme",
+          "orcid": "0000-0002-7011-0112",
+          "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Heather H Tran",
+          "orcid": null,
+          "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Thornton W Thompson",
+          "orcid": "0000-0002-6352-8238",
+          "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+        },
+        {
+          "name": "Ramya Narasimhan",
+          "orcid": "0000-0002-2581-2342",
+          "affiliation": "Department of Microbiology and Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Ying Zhu",
+          "orcid": "0009-0001-1500-9281",
+          "affiliation": "Division of Pediatric Gastroenterology, Department of Pediatrics, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Leila B DeSchepper",
+          "orcid": "0000-0003-1330-5586",
+          "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Dahlya Habashi",
+          "orcid": null,
+          "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Katherine F Nico",
+          "orcid": "0000-0002-0003-1558",
+          "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Miles D Tyner",
+          "orcid": "0000-0001-8424-9273",
+          "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Flora M Tierney",
+          "orcid": "0000-0001-8289-0358",
+          "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Tyler E Billipp",
+          "orcid": "0009-0008-1460-3458",
+          "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+        },
+        {
+          "name": "Michael J Rosen",
+          "orcid": "0000-0002-5149-718X",
+          "affiliation": "Division of Pediatric Gastroenterology, Department of Pediatrics, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Denise M Monack",
+          "orcid": "0000-0003-3804-2209",
+          "affiliation": "Department of Pathology, Stanford University School of Medicine, Stanford, CA, USA."
+        },
+        {
+          "name": "Jakob von Moltke",
+          "orcid": "0000-0003-2894-3353",
+          "affiliation": "Department of Immunology, University of Washington School of Medicine, Seattle, WA, USA."
+        },
+        {
+          "name": "Michael R Howitt",
+          "orcid": "0000-0002-3643-2468",
+          "affiliation": "Program in Immunology, Stanford University School of Medicine, Stanford, CA, USA."
+        }
+      ],
+      "journal": "Science immunology",
+      "journal_metric": {
+        "canonical_name": "Science immunology",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-09",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-09",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": 9,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "10",
+            "day": "09"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "9",
+            "hour": "17",
+            "minute": "35"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "9",
+            "hour": "17",
+            "minute": "34"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "9",
+            "hour": "14",
+            "minute": "5"
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42853963",
+        "doi": "10.1126/sciimmunol.aee1358"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+        "https://doi.org/10.1126/sciimmunol.aee1358"
+      ],
+      "domain_codes": [
+        "immune_health",
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "Peyer斑协调对肠腔微生物和膳食抗原的抗体反应，但滤泡相关上皮中除M细胞外的免疫调节细胞群和机制仍不完整。",
+        "objective": "鉴定滤泡相关上皮tuft cell，并解析其发育来源及通过IL-25—ILC2—IL-13轴调节IgA和抗原特异性黏膜免疫的机制。",
+        "methods": {
+          "design": "结合Gfi1b-eGFP报告小鼠、人Peyer斑活检、小鼠模型和肠类器官的机制研究。",
+          "intervention": "通过RANKL、IL-13及tuft cell/ILC2相关通路进行发育和功能分析。",
+          "comparator": "M细胞与tuft cell谱系及相应调控条件比较。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "报告小鼠、人Peyer斑活检和肠类器官；摘要未报告样本数量。",
+          "species": "小鼠和人类组织。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "研究在人Peyer斑活检和报告小鼠中识别出tuft cell这一保守的滤泡相关上皮细胞群。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "By analyzing Gfi1b-eGFP reporter mice and human PP biopsies, we identified tuft cells as an additional, evolutionarily conserved FAE population that regulates mucosal immunity.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "M细胞和tuft cell源自Pou2f3+祖细胞的不同谱系，并分别受到RANKL和IL-13调节。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Using mouse models and intestinal organoids, we demonstrate that M cells and tuft cells are distinct lineages arising from Pou2f3+ progenitors, whose differentiation is reciprocally regulated by RANKL and interleukin-13 (IL-13), respectively.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "tuft cell来源IL-25激活Peyer斑ILC2，而ILC2产生的IL-13增强IgA类别转换和抗原特异性免疫。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Tuft cell-derived IL-25 activates type 2 innate lymphoid cells (ILC2s) in PPs. Furthermore, IL-13 production by ILC2 enhances immunoglobulin A class switching and antigen-specific immunity.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "功能机制主要来自小鼠和类器官，不能直接解释为人体免疫干预效果。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未报告小鼠、活检和类器官样本数量。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未提供干预持续时间或定量效应大小。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "tuft cell—IL-25—ILC2—IL-13—IgA轴可作为黏膜免疫和膳食抗原应答研究的新机制框架。",
+            "evidence_boundary": "人体活检支持细胞群存在，功能链条主要来自小鼠和类器官。"
+          },
+          {
+            "text": "Peyer斑tuft cell和IgA类别转换可作为未来肠道黏膜免疫评价的候选指标。",
+            "evidence_boundary": "尚缺人体干预、剂量反应和临床结局验证。"
+          }
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "功能机制主要来自小鼠和类器官。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "Peyer斑tuft cell调节ILC2与IgA应答",
+        "research_background": "Peyer斑负责感知肠腔微生物和膳食抗原，但滤泡相关上皮中的细胞协作机制仍未完全解析。",
+        "research_objective": "鉴定滤泡相关上皮tuft cell，并解析其发育和调节IgA黏膜免疫的通路。",
+        "study_design": "机制研究，结合报告小鼠、人Peyer斑活检、小鼠模型和肠类器官；摘要未报告各类样本数量和实验周期。",
+        "core_results": [
+          "研究在人活检和小鼠中识别出保守的滤泡相关上皮tuft cell群。",
+          "M细胞与tuft cell源自Pou2f3+祖细胞的不同谱系，并受到不同细胞因子调节。",
+          "小鼠和类器官证据支持tuft cell—IL-25—ILC2—IL-13通路增强IgA类别转换和抗原特异性免疫。"
+        ],
+        "limitations": [
+          "功能机制主要来自小鼠和类器官，不能表述为人体免疫功效。",
+          "摘要未报告各类样本数量。",
+          "缺少人体干预和临床结局。"
+        ],
+        "rd_implications": [
+          "该细胞轴为黏膜免疫和膳食抗原应答研究提供新的机制框架。",
+          "tuft cell和IgA应答可作为候选评价指标，但需人体干预验证。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42853963/",
+          "https://doi.org/10.1126/sciimmunol.aee1358"
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "人组织支持细胞群存在，功能机制主要来自临床前模型。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.99,
+        "warnings": [
+          "报告未将临床前机制改写成人体功效。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 10,
+      "paper_task_id": "cd18fa05-d001-4b2b-80f0-4034a0a59303",
+      "title": "Dietary preference, biological aging, and incident dementia: a prospective cohort study.",
+      "ai_title": "嗜甜偏好与生物年龄加速及痴呆风险相关",
+      "authors": [
+        {
+          "name": "Mengtong Sun",
+          "orcid": null,
+          "affiliation": "Department of Infectious Diseases and Public Health, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China."
+        },
+        {
+          "name": "Feng Huang",
+          "orcid": null,
+          "affiliation": "State Key Laboratory of Cognitive Science and Mental Health, Institute of Psychology, Chinese Academy of Sciences, Beijing, China."
+        },
+        {
+          "name": "Na Sun",
+          "orcid": null,
+          "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+        },
+        {
+          "name": "Huimin Ding",
+          "orcid": null,
+          "affiliation": "Department of Psychology, University of Notre Dame, Notre Dame, IN, USA."
+        },
+        {
+          "name": "Fuyan Shi",
+          "orcid": null,
+          "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+        },
+        {
+          "name": "Suzhen Wang",
+          "orcid": null,
+          "affiliation": "Department of Biostatistics, School of Public Health, Shandong Second Medical University, Weifang, China."
+        },
+        {
+          "name": "Jiazhen Yao",
+          "orcid": "0000-0003-0889-016X",
+          "affiliation": "School of Public Health, Southeast University, 87 Dingjiaqiao, Nanjing, China. 230249305@seu.edu.cn."
+        },
+        {
+          "name": "Qida He",
+          "orcid": "0000-0003-0796-7620",
+          "affiliation": "Department of Infectious Diseases and Public Health, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China. qida.he@my.cityu.edu.hk."
+        }
+      ],
+      "journal": "GeroScience",
+      "journal_metric": {
+        "canonical_name": "GeroScience",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-07",
+      "publication_date_precision": "day",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-07",
+        "precision": "day",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": 7,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "Publisher",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "10",
+            "day": "07"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2025",
+            "month": "12",
+            "day": "10",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "9",
+            "day": "24",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "7",
+            "hour": "17",
+            "minute": "33"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "7",
+            "hour": "17",
+            "minute": "33"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "7",
+            "hour": "12",
+            "minute": "22"
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42842075",
+        "doi": "10.1007/s11357-026-02567-3"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+        "https://doi.org/10.1007/s11357-026-02567-3"
+      ],
+      "domain_codes": [
+        "healthy_aging"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "observational",
+        "evidence_level": "human_observational",
+        "background": "饮食模式是可改变的痴呆风险相关因素，但个体饮食偏好、生物衰老和痴呆风险之间的关系仍不清楚。",
+        "objective": "研究饮食偏好类型与生物年龄加速、端粒长度和新发痴呆的关联，并评估遗传易感性和探索性中介关系。",
+        "methods": {
+          "design": "前瞻性队列研究；潜在类别分析识别饮食偏好，Cox模型评估痴呆风险，线性回归评估衰老指标，并开展探索性中介分析。",
+          "intervention": null,
+          "comparator": "以health-aligned饮食偏好组作为主要参照。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "接受食物偏好问卷、生物衰老指标和痴呆随访的人群；摘要未报告样本量和年龄范围。",
+          "species": "人类。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "识别出健康一致、广泛偏好和嗜甜三种饮食偏好类型。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Three dietary preference profiles were identified: health-aligned, broad-preference, and sweet-tooth.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "与健康一致组相比，嗜甜组全因痴呆、阿尔茨海默病和血管性痴呆风险分别高79%、62%和202%。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "The sweet-tooth group showed a 79% higher risk of all-cause dementia, 62% higher risk of Alzheimer's disease, and 202% higher risk of vascular dementia compared to the health-aligned group.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "嗜甜偏好与KDM-BA及PhenoAge加速和更短白细胞端粒长度相关。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "The sweet-tooth profile was associated with accelerated KDM-BA, PhenoAge, and shorter LTL.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "探索性分析显示生物衰老标志物在观察关联中的统计解释比例为2.28%至4.82%。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Exploratory mediation analyses suggested that biological aging markers statistically accounted for 2.28-4.82% of the observed association.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "观察性研究不能确认嗜甜偏好导致生物衰老或痴呆。",
+            "basis": "inferred"
+          },
+          {
+            "text": "中介分析为探索性统计分析，解释比例较小，不能确认生物机制。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未报告样本量、随访期和人群年龄构成。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "饮食偏好画像可作为营养与认知衰老研究的分层工具，并与多种生物年龄指标联合观察。",
+            "evidence_boundary": "当前仅为人群关联，不能据此承诺饮食干预可预防痴呆。"
+          },
+          {
+            "text": "高遗传风险人群可能值得在后续前瞻干预中单独分层。",
+            "evidence_boundary": "摘要报告的是加性交互关联，并非干预获益证据。"
+          }
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "摘要未报告样本量和随访期。",
+          "不得将观察关联改写为因果。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "嗜甜偏好与生物年龄加速及痴呆风险相关",
+        "research_background": "饮食可能与认知衰老有关，但饮食偏好类型、生物衰老指标和痴呆风险之间的关系仍需厘清。",
+        "research_objective": "评估饮食偏好类型与生物年龄加速、新发痴呆的关联，以及遗传易感性的影响。",
+        "study_design": "前瞻性人群队列，通过潜在类别分析识别饮食偏好，并使用Cox模型、线性回归和探索性中介分析；摘要未报告样本量和随访期。",
+        "core_results": [
+          "研究识别出健康一致、广泛偏好和嗜甜三种饮食偏好类型。",
+          "嗜甜组相对健康一致组的全因痴呆、阿尔茨海默病和血管性痴呆风险分别高79%、62%和202%。",
+          "嗜甜偏好与KDM-BA、PhenoAge加速及更短白细胞端粒长度相关。",
+          "探索性分析显示生物衰老指标仅统计解释观察关联的一小部分。"
+        ],
+        "limitations": [
+          "观察性关联不能确认因果。",
+          "探索性中介分析不能建立生物机制。",
+          "摘要未报告样本量、随访期和年龄构成。"
+        ],
+        "rd_implications": [
+          "可在营养与认知衰老研究中联合使用饮食偏好画像和多维生物年龄指标。",
+          "遗传风险可作为后续干预研究的预设分层因素，但目前没有干预获益证据。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42842075/",
+          "https://doi.org/10.1007/s11357-026-02567-3"
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "结果为人群关联，不代表嗜甜偏好导致痴呆。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.97,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "已保留观察性和探索性中介分析边界。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 13,
+      "paper_task_id": "a81f6dff-23f4-47bb-a315-d31421f41d2c",
+      "title": "A 5:2 Intermittent Fasting Regimen Ameliorates High-Fat Diet-Induced MASLD-Associated Skeletal Muscle Impairment in Mice.",
+      "ai_title": "5:2间歇性禁食改善小鼠肠—肌相关指标",
+      "authors": [
+        {
+          "name": "Ruohua Wang",
+          "orcid": "0000-0002-7863-3866",
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "Rui Yang",
+          "orcid": null,
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "Dan Hu",
+          "orcid": null,
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "Tonghe Xin",
+          "orcid": null,
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "ZiXin Yang",
+          "orcid": null,
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "Yue Guan",
+          "orcid": null,
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        },
+        {
+          "name": "Yucun Niu",
+          "orcid": "0000-0002-4879-6664",
+          "affiliation": "Department of Nutrition and Food Hygiene, Public Health College, Harbin Medical University, Harbin, China."
+        }
+      ],
+      "journal": "Journal of cachexia, sarcopenia and muscle",
+      "journal_metric": {
+        "canonical_name": "Journal of cachexia, sarcopenia and muscle",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-01",
+      "publication_date_precision": "month",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-01",
+        "precision": "month",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": null,
+          "medline_date": null
+        },
+        "publication_model": "Print",
+        "citation_status": "MEDLINE",
+        "article_dates": [],
+        "history_dates": [
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "9",
+            "day": "9",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "4",
+            "day": "8",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "9",
+            "day": "22",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "4",
+            "hour": "23",
+            "minute": "30"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "4",
+            "hour": "23",
+            "minute": "29"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "4",
+            "hour": "22",
+            "minute": "32"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "10",
+            "day": "4",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42830273",
+        "doi": "10.1002/jcsm.70398",
+        "pmcid": "PMC13634929"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+        "https://doi.org/10.1002/jcsm.70398"
+      ],
+      "domain_codes": [
+        "musculoskeletal_health",
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "animal",
+        "evidence_level": "animal",
+        "background": "高脂饮食相关MASLD常伴随骨骼肌质量下降，但间歇性禁食对肌肉质量及肠—肌相关通路的影响仍不清楚。",
+        "objective": "评价5:2间歇性禁食对高脂饮食诱导MASLD小鼠的骨骼肌功能、炎症、肠屏障、菌群、胆汁酸通路和脂肪酸水平的影响。",
+        "methods": {
+          "design": "雄性C57BL/6J小鼠随机接受普通饲料或45%高脂饮食14周；MASLD模型随后接受12个周期的5:2间歇性禁食，并开展握力、组织学、宏基因组、qRT-PCR和脂肪酸检测。",
+          "intervention": "每周禁食2天、其余5天自由摄入高脂饮食，共12个周期。",
+          "comparator": "持续高脂饮食组；另设普通饲料组用于建模比较。",
+          "duration": "高脂饮食14周，随后进行12个5:2禁食周期。"
+        },
+        "sample": {
+          "size": null,
+          "population": "8周龄雄性C57BL/6J小鼠。",
+          "species": "小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "与持续高脂饮食组相比，5:2组累计能量摄入无显著差异，但体重降低且肝脂肪变性和炎症减轻。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Compared with the continuous HFD group, the IF5:2 group showed no significant difference in cumulative energy intake but exhibited significantly reduced body weight, as well as alleviated hepatic steatosis and inflammation.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "5:2禁食提高握力和骨骼肌横截面积，并下调肌肉炎症相关基因表达。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "IF5:2 significantly increased grip strength and skeletal muscle cross-sectional area and markedly downregulated mRNA expression of inflammation-related genes in muscle tissue.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "5:2组肠道紧密连接相关基因表达更高、结肠壁更厚且血清LPS更低。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Regarding intestinal barrier function, the IF5:2 group displayed significantly higher mRNA expression of intestinal tight junction-related genes, a thicker colonic wall and lower serum LPS levels compared with the HFD group.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "宏基因组分析提示5:2禁食重塑高脂饮食相关菌群失调，并富集L. reuteri和F. rodentium及次级胆汁酸合成通路。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Metagenomic analysis suggested that IF5:2 effectively remodelled HFD-induced gut microbiota dysbiosis and significantly enriched beneficial bacteria including Limosilactobacillus reuteri and Faecalibaculum rodentium, accompanied by significant upregulation of microbial secondary bile acid biosynthesis pathways.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "研究仅使用雄性小鼠，不能外推至人体或女性。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要未报告每组动物数量。",
+            "basis": "inferred"
+          },
+          {
+            "text": "菌群、胆汁酸受体和肌肉表型之间的关联不能单独确认介导因果。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "间歇性禁食可作为肠—肌轴营养研究的候选干预模型，并联合评价握力、肌纤维、肠屏障和菌群通路。",
+            "evidence_boundary": "仅为雄性小鼠MASLD模型证据，不代表人体产品或饮食方案功效。"
+          },
+          {
+            "text": "L. reuteri、F. rodentium和次级胆汁酸通路可作为后续机制拆分候选。",
+            "evidence_boundary": "当前为干预后伴随变化，尚未证明这些因素介导肌肉改善。"
+          }
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "全部干预结果来自雄性小鼠。",
+          "摘要未报告动物数量。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "5:2间歇性禁食改善小鼠肠—肌相关指标",
+        "research_background": "高脂饮食相关脂肪肝常伴随骨骼肌质量下降，肠屏障和菌群可能参与这一过程。",
+        "research_objective": "评价5:2间歇性禁食对MASLD小鼠骨骼肌功能、肠屏障、菌群和胆汁酸相关通路的影响。",
+        "study_design": "雄性C57BL/6J小鼠先接受普通饲料或45%高脂饮食14周，随后MASLD模型进行12个5:2禁食周期；摘要未报告每组动物数量。",
+        "core_results": [
+          "5:2组累计能量摄入与持续高脂组无显著差异，但体重下降且肝脂肪变性和炎症减轻。",
+          "5:2禁食提高握力和肌纤维横截面积，并降低肌肉炎症相关基因表达。",
+          "5:2组肠屏障相关指标改善，血清LPS降低。",
+          "菌群和次级胆汁酸合成通路出现伴随变化，但不能据此确认介导机制。"
+        ],
+        "limitations": [
+          "研究仅使用雄性小鼠，不能外推为人体功效。",
+          "摘要未报告动物数量。",
+          "菌群和胆汁酸通路变化尚不能确认是肌肉改善的原因。"
+        ],
+        "rd_implications": [
+          "可将该模型用于营养干预的肠—肌轴机制研究，并联合设置肌肉、屏障和菌群终点。",
+          "候选菌和次级胆汁酸通路需要通过移植、阻断或补充实验进一步验证。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42830273/",
+          "https://doi.org/10.1002/jcsm.70398"
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "动物研究，不代表人体禁食方案或产品功效。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.99,
+        "warnings": [
+          "已明确动物证据及菌群介导关系未被确认。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 12,
+      "paper_task_id": "6199cd05-098b-4756-b0f6-fb88374b0d47",
+      "title": "Integrated Single-Myofibre Multi-Omics Correlates Inflammatory State to Myosin Energetics in ICU-Acquired Weakness.",
+      "ai_title": "单肌纤维多组学连接炎症状态与肌球蛋白能量学",
+      "authors": [
+        {
+          "name": "Alexandra M Winant",
+          "orcid": "0009-0009-8934-1103",
+          "affiliation": "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+        },
+        {
+          "name": "Roger Moreno-Justicia",
+          "orcid": null,
+          "affiliation": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+        },
+        {
+          "name": "Lucia Paolini",
+          "orcid": "0000-0002-4410-5272",
+          "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+        },
+        {
+          "name": "Wout J Claassen",
+          "orcid": "0000-0001-5154-7311",
+          "affiliation": "Amsterdam UMC, Location VUmc, Department of Physiology, Amsterdam, the Netherlands."
+        },
+        {
+          "name": "Coen A C Ottenheijm",
+          "orcid": "0000-0002-8808-4813",
+          "affiliation": "Amsterdam UMC, Location VUmc, Department of Physiology, Amsterdam, the Netherlands."
+        },
+        {
+          "name": "Atul S Deshmukh",
+          "orcid": "0000-0002-2278-1843",
+          "affiliation": "Novo Nordisk Foundation Center for Basic Metabolic Research, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+        },
+        {
+          "name": "Stefano Cattaneo",
+          "orcid": "0000-0001-7562-1053",
+          "affiliation": "ASST Spedali Civili di Brescia, ASST Spedali Civili, Dept. of Bone and Joint Surgery, Brescia, Italy."
+        },
+        {
+          "name": "Simone Piva",
+          "orcid": "0000-0002-5483-8007",
+          "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+        },
+        {
+          "name": "Nicola Latronico",
+          "orcid": "0000-0002-2521-5871",
+          "affiliation": "Department of Medical and Surgical Specialties, Radiological Sciences and Public Health, Università di Brescia, Brescia, Italy."
+        },
+        {
+          "name": "Robert A E Seaborne",
+          "orcid": "0000-0003-2491-3747",
+          "affiliation": "Centre of Human and Applied Physiological Sciences, School of Basic and Medical Biosciences, Faculty of Life Sciences & Medicine, King's College London, London, UK."
+        },
+        {
+          "name": "Julien Ochala",
+          "orcid": "0000-0002-6358-2920",
+          "affiliation": "Department of Biomedical Sciences, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark."
+        }
+      ],
+      "journal": "Journal of cachexia, sarcopenia and muscle",
+      "journal_metric": {
+        "canonical_name": "Journal of cachexia, sarcopenia and muscle",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-01",
+      "publication_date_precision": "month",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-01",
+        "precision": "month",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": null,
+          "medline_date": null
+        },
+        "publication_model": "Print",
+        "citation_status": "MEDLINE",
+        "article_dates": [],
+        "history_dates": [
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "9",
+            "day": "10",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "3",
+            "day": "17",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "10",
+            "day": "8",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "19",
+            "hour": "23",
+            "minute": "31"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "19",
+            "hour": "23",
+            "minute": "30"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "19",
+            "hour": "19",
+            "minute": "25"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "10",
+            "day": "19",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42896625",
+        "doi": "10.1002/jcsm.70407",
+        "pmcid": "PMC13680048"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+        "https://doi.org/10.1002/jcsm.70407"
+      ],
+      "domain_codes": [
+        "musculoskeletal_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "observational",
+        "evidence_level": "human_observational",
+        "background": "危重症相关骨骼肌萎缩会影响生存和恢复，但现有临床或分子指标难以解释其复杂机制。",
+        "objective": "在同一根人骨骼肌纤维中整合功能、转录组和蛋白组数据，连接ICU获得性肌无力相关分子状态与肌球蛋白功能。",
+        "methods": {
+          "design": "比较ICU获得性肌无力患者和对照的单根人骨骼肌纤维，依次进行功能、转录组和蛋白组分析。",
+          "intervention": null,
+          "comparator": "ICU获得性肌无力患者与对照。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "ICU获得性肌无力的危重患者和对照；摘要未报告患者和肌纤维数量。",
+          "species": "人类。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "病例与对照肌纤维存在明显供体异质性，常规差异表达分析未发现FDR小于0.05的特征。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Differential expression analyses between control and ICU-AW myofibres show marked donor-level heterogeneity, with no differentially expressed features (FDR < 0.05).",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "同一肌纤维中有19个特征在RNA和蛋白水平同时显著改变。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Nineteen features were significantly (FDR < 0.05) altered at both RNA and protein levels from the same myofibre.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "该肌纤维状态显示肌球蛋白超松弛构象ATP周转时间延长，提示肌球蛋白能量学异常可能参与肌肉功能障碍。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Further integration with the functional dataset revealed fibres in this state displayed selectively disrupted myosin dynamics, evidenced by prolonged ATP turnover time of myosin heads in their super-relaxed conformation, suggesting altered myosin energetics as a contributor to muscle dysfunction.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "摘要未报告患者、供体和肌纤维数量。",
+            "basis": "inferred"
+          },
+          {
+            "text": "供体层面异质性明显，常规差异表达未获得显著特征。",
+            "basis": "reported"
+          },
+          {
+            "text": "观察性比较不能确认炎症程序导致肌球蛋白能量学改变。",
+            "basis": "inferred"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "同一肌纤维的功能—转录—蛋白整合可作为复杂肌肉疾病的新评价方法。",
+            "evidence_boundary": "当前为概念验证研究，摘要未提供规模和外部验证。"
+          },
+          {
+            "text": "炎症状态和肌球蛋白ATP周转可作为后续肌肉功能研究的候选联合指标。",
+            "evidence_boundary": "现有结果为患者样本中的关联，尚未证明干预可逆性。"
+          }
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "摘要未报告样本量。",
+          "不得将相关状态表述为已确认的致病机制。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "单肌纤维多组学连接炎症状态与肌球蛋白能量学",
+        "research_background": "ICU获得性肌无力涉及复杂的骨骼肌变化，传统临床和分子指标难以直接连接到收缩功能。",
+        "research_objective": "在同一根人骨骼肌纤维上整合功能、转录组和蛋白组，寻找疾病相关状态与肌球蛋白功能的联系。",
+        "study_design": "人体观察性比较研究，对ICU获得性肌无力患者和对照的单根肌纤维依次开展功能、转录组和蛋白组分析；摘要未报告样本量。",
+        "core_results": [
+          "常规差异表达分析显示明显供体异质性，未发现FDR小于0.05的特征。",
+          "同一肌纤维中有19个特征在RNA和蛋白水平同时显著改变。",
+          "特定肌纤维状态伴随肌球蛋白超松弛构象ATP周转时间延长。"
+        ],
+        "limitations": [
+          "摘要未报告患者、供体和肌纤维数量。",
+          "供体异质性明显，常规差异表达结果为阴性。",
+          "观察性联系不能确认因果。"
+        ],
+        "rd_implications": [
+          "单肌纤维功能—转录—蛋白整合可作为肌肉疾病机制研究的新评价框架。",
+          "炎症状态与肌球蛋白ATP周转可作为候选联合指标，但需扩大样本和外部验证。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42896625/",
+          "https://doi.org/10.1002/jcsm.70407"
+        ],
+        "confidence": 0.94,
+        "warnings": [
+          "摘要未报告样本量，结果不能外推至一般肌少症人群。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.97,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "已保留阴性差异表达结果和观察性边界。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
+      "paper_id": 8,
+      "paper_task_id": "7692087c-ed9d-429d-b7da-0567d8fbdcd1",
+      "title": "Sugar-rich foods exacerbate antibiotic-induced microbiome disruption.",
+      "ai_title": "高糖饮食与抗生素期间菌群扰动加重相关",
+      "authors": [
+        {
+          "name": "Anqi Dai",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Annamaria Ballweg",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "William Jogia",
+          "orcid": "0009-0000-5513-2375",
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+        },
+        {
+          "name": "Madhumitha Rangesa",
+          "orcid": "0000-0002-5825-2775",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Peter A Adintori",
+          "orcid": "0000-0001-7099-1143",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Mirae Baichoo",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Tyler Funnell",
+          "orcid": "0000-0003-1612-5644",
+          "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+        },
+        {
+          "name": "Teng Fei",
+          "orcid": "0000-0001-7888-1715",
+          "affiliation": "Department of Epidemiology and Biostatistics, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Nicholas R Waters",
+          "orcid": "0000-0002-9035-2143",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Abrielle Swartz",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Sukanya Sahu",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Brianna Gipson",
+          "orcid": "0009-0005-5837-8676",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Sandeep S Raj",
+          "orcid": "0000-0003-4629-0528",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Eiko Hayase",
+          "orcid": "0000-0002-4824-8844",
+          "affiliation": "Departments of Genomic Medicine and Stem Cell Transplantation Cellular Therapy, Division of Cancer Medicine, University of Texas MD Anderson Cancer Center, Houston, TX, USA."
+        },
+        {
+          "name": "Zoe Pierce",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Kenton Wu",
+          "orcid": "0000-0003-1676-9837",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Natalie Smith",
+          "orcid": null,
+          "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+        },
+        {
+          "name": "Justin Neuberger",
+          "orcid": "0009-0009-2930-3754",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Adam Warren",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Marina Burgos da Silva",
+          "orcid": null,
+          "affiliation": "Human Oncology & Pathogenesis Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Oriana Miltiadous",
+          "orcid": "0000-0002-1571-3893",
+          "affiliation": "Department of Pediatrics, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Corrado Zuanelli Brambilla",
+          "orcid": "0000-0002-6396-2990",
+          "affiliation": "Haematology Unit, Department of Cellular Therapy, Hematology and Laboratory Medicine, Azienda Ospedaliero-Universitaria Senese, Siena, Italy."
+        },
+        {
+          "name": "Marissa Lubin Buchan",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Tatanisha K Peets",
+          "orcid": null,
+          "affiliation": "Food and Nutrition Services, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Ana Gradissimo",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Luigi A Amoretti",
+          "orcid": "0000-0002-4625-5119",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Caichen Duan",
+          "orcid": null,
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+        },
+        {
+          "name": "Chenzhen Zhang",
+          "orcid": null,
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+        },
+        {
+          "name": "Fanny Matheis",
+          "orcid": null,
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+        },
+        {
+          "name": "Alexis P Sullivan",
+          "orcid": "0000-0001-9296-8112",
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA."
+        },
+        {
+          "name": "John B Slingerland",
+          "orcid": null,
+          "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+        },
+        {
+          "name": "Annelie G Clurman",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Daniel G Brereton",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Paul A Giardina",
+          "orcid": null,
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Antonio L C Gomes",
+          "orcid": "0000-0003-3790-3724",
+          "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+        },
+        {
+          "name": "Abigail J Johnson",
+          "orcid": "0000-0002-5998-4724",
+          "affiliation": "Division of Epidemiology and Community Health, School of Public Health, University of Minnesota, Minneapolis, MN, USA."
+        },
+        {
+          "name": "Dan Knights",
+          "orcid": null,
+          "affiliation": "Department of Computer Science and Engineering, University of Minnesota, Minneapolis, MN, USA."
+        },
+        {
+          "name": "Robert R Jenq",
+          "orcid": null,
+          "affiliation": "Department of Hematology and Hematopoietic Cell Transplantation, City of Hope National Medical Center, Los Angeles, CA, USA."
+        },
+        {
+          "name": "Kate A Markey",
+          "orcid": null,
+          "affiliation": "Translational Science and Therapeutics Division, Fred Hutchinson Cancer Center, Seattle, WA, USA."
+        },
+        {
+          "name": "Miguel-Angel Perales",
+          "orcid": "0000-0002-5910-4571",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Sergio A Giralt",
+          "orcid": "0000-0003-1944-5053",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA."
+        },
+        {
+          "name": "Marcel R M van den Brink",
+          "orcid": "0000-0003-0696-4401",
+          "affiliation": "City of Hope, Duarte, CA, USA. mvandenbrink@coh.org."
+        },
+        {
+          "name": "Jonas Schluter",
+          "orcid": "0000-0002-6214-9367",
+          "affiliation": "Institute for Systems Genetics, NYU Langone Health Grossman School of Medicine, New York, NY, USA. jonas.schluter@nyulangone.org."
+        },
+        {
+          "name": "Jonathan U Peled",
+          "orcid": "0000-0002-4029-7625",
+          "affiliation": "Adult Bone Marrow Transplantation Service, Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY, USA. peledj@mskcc.org."
+        }
+      ],
+      "journal": "Nature",
+      "journal_metric": {
+        "canonical_name": "Nature",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-10-01",
+      "publication_date_precision": "month",
+      "publication_date_metadata": {
+        "normalized_date": "2026-10-01",
+        "precision": "month",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": "Oct",
+          "day": null,
+          "medline_date": null
+        },
+        "publication_model": "Print-Electronic",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "09",
+            "day": "30"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2025",
+            "month": "3",
+            "day": "4",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "8",
+            "day": "25",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "15",
+            "hour": "7",
+            "minute": "17"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "1",
+            "hour": "5",
+            "minute": "31"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "9",
+            "day": "30",
+            "hour": "23",
+            "minute": "27"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "9",
+            "day": "30",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42816625",
+        "doi": "10.1038/s41586-026-11077-3",
+        "pmcid": "PMC13668661"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+        "https://doi.org/10.1038/s41586-026-11077-3"
+      ],
+      "domain_codes": [
+        "gut_health"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "other",
+        "evidence_level": "mixed",
+        "background": "饮食会影响肠道菌群，但在抗生素等强扰动条件下，不同食物类别与菌群动态之间的关系仍不清楚。",
+        "objective": "评价造血干细胞移植住院患者饮食与抗生素期间肠道菌群变化的关系，并在小鼠中考察蔗糖补充对抗生素诱导Enterococcus扩增的影响。",
+        "methods": {
+          "design": "人体纵向观察结合小鼠实验；记录患者膳食并分析配对纵向菌群样本，随后用小鼠实验考察蔗糖补充。",
+          "intervention": "人体部分观察甜食和糖摄入；小鼠部分补充蔗糖。",
+          "comparator": null,
+          "duration": null
+        },
+        "sample": {
+          "size": 173,
+          "population": "住院接受造血干细胞移植的患者；其中158名患者具有配对纵向菌群样本。",
+          "species": "人类和小鼠。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "研究记录了173名患者的9,419餐饮食，并分析其后的肠道菌群变化。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Here we evaluated the relationship between diet and intestinal microbiome dynamics by precisely tracking 9,419 meals consumed by 173 patients who were hospitalized for haematopoietic cell transplantation and analysing subsequent microbiome changes.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "在抗生素暴露期间，甜食和糖摄入可预测更严重的菌群失调，包括α多样性降低和Enterococcus扩增。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Bayesian inference applied to data from 158 patients with paired longitudinal microbiome samples revealed that the intake of sweets and sugars during antibiotic exposure predicted exacerbated microbial dysbiosis, manifesting as lowered α-diversity and greater expansion of the pathobiont Enterococcus.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "小鼠实验中，蔗糖补充增加并延长了抗生素诱导的Enterococcus扩增。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Experiments in mice also showed that sucrose supplementation increased and prolonged antibiotic-induced Enterococcus expansion.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "人体结果为纵向观察关系，不能确认糖摄入导致菌群变化。",
+            "basis": "inferred"
+          },
+          {
+            "text": "研究对象为造血干细胞移植住院患者，结果未必适用于一般人群。",
+            "basis": "inferred"
+          },
+          {
+            "text": "摘要指出仍需独立队列验证其可推广性及菌群保护干预。",
+            "basis": "reported"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "抗生素相关菌群扰动研究可将简单糖摄入作为重要膳食协变量，并考虑饮食管理型菌群保护策略。",
+            "evidence_boundary": "人体部分仅显示预测关系；饮食规避策略仍需独立干预研究验证。"
+          },
+          {
+            "text": "Enterococcus扩增和α多样性可作为后续营养—抗生素互作研究的候选评价指标。",
+            "evidence_boundary": "候选指标来自特殊住院人群和小鼠实验，不代表已建立产品功效终点。"
+          }
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "人体观察与小鼠干预证据已分开表述。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "高糖饮食与抗生素期间菌群扰动加重相关",
+        "research_background": "抗生素会对肠道菌群形成强扰动，但具体食物类别是否影响扰动程度仍缺少精细的人体纵向数据。",
+        "research_objective": "评估造血干细胞移植住院患者饮食与肠道菌群动态的关系，并用小鼠实验考察蔗糖对抗生素诱导菌群变化的影响。",
+        "study_design": "人体纵向观察结合小鼠实验。研究记录173名患者的9,419餐饮食，其中158名具有配对纵向菌群样本；摘要未报告随访周期和小鼠数量。",
+        "core_results": [
+          "抗生素暴露期间，甜食和糖摄入可预测更低的α多样性及更明显的Enterococcus扩增。",
+          "小鼠中补充蔗糖增加并延长了抗生素诱导的Enterococcus扩增。",
+          "作者提出避免富含简单糖的饮食可能有助于减轻菌群扰动，但仍需独立队列和干预研究验证。"
+        ],
+        "limitations": [
+          "人体部分属于观察性关联，不能确认因果。",
+          "研究对象为造血干细胞移植住院患者，外推性有限。",
+          "摘要未报告随访周期、小鼠数量和完整对照设置。"
+        ],
+        "rd_implications": [
+          "开展抗生素相关菌群保护研究时，可将简单糖摄入纳入膳食控制和分层因素。",
+          "Enterococcus扩增与α多样性可作为候选研究指标，但尚不是已验证的产品功效终点。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42816625/",
+          "https://doi.org/10.1038/s41586-026-11077-3"
+        ],
+        "confidence": 0.96,
+        "warnings": [
+          "人体结果为观察性；小鼠结果不代表人体功效。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.98,
+        "issues": [],
+        "confidence": 0.98,
+        "warnings": [
+          "已区分人体关联和小鼠干预证据。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
+    },
+    {
       "paper_id": 5,
       "paper_task_id": "57ffb1ba-8850-48ea-a5cd-b1a98d84434c",
       "title": "Anti-inflammatory and barrier-protective effects of metabolites from Lactobacillus co-fermentation with linoleic acid and human fecal microbiota.",
@@ -527,13 +2785,8 @@
             "minute": "56"
           }
         ],
-        "is_future_date": true,
-        "warnings": [
-          {
-            "code": "FUTURE_PUBLICATION_DATE",
-            "message": "归一化日期晚于站点生成日期；该值来自 PubMed JournalIssue/PubDate，已原样保留。应结合 PubModel、ArticleDate 和 History 判断是否为在线优先或未来期次元数据。"
-          }
-        ]
+        "is_future_date": false,
+        "warnings": []
       },
       "identifiers": {
         "pmid": "42409547",
@@ -1305,15 +3558,303 @@
         "b031d6db-5d87-4506-96c6-5364ad63606a"
       ],
       "latest_edition_date": "2026-09-07"
+    },
+    {
+      "paper_id": 15,
+      "paper_task_id": "e7dd84e2-e191-4029-aabd-cf5f0e7713f0",
+      "title": "Effects of exercise and physical activity on circulating inflammaging- and immunosenescence-related biomarkers in older adults and adults with chronic diseases: an umbrella review.",
+      "ai_title": "运动对炎症衰老标志物的证据仍不确定",
+      "authors": [
+        {
+          "name": "Guangwei Chai",
+          "orcid": null,
+          "affiliation": "Department of Sports Human Science, Hebei Sport University, Shijiazhuang, China."
+        },
+        {
+          "name": "Jinhong Xue",
+          "orcid": null,
+          "affiliation": "Department of Wushu, Hebei Sport University, Shijiazhuang, China."
+        },
+        {
+          "name": "Bin Xie",
+          "orcid": null,
+          "affiliation": "Department of Physical Education, Hebei Chemical & Pharmaceutical College, Shijiazhuang, Hebei, China."
+        }
+      ],
+      "journal": "Frontiers in immunology",
+      "journal_metric": {
+        "canonical_name": "Frontiers in immunology",
+        "impact_factor": null,
+        "metric_year": null,
+        "source_name": null,
+        "source_url": null
+      },
+      "publication_date": "2026-01-01",
+      "publication_date_precision": "year",
+      "publication_date_metadata": {
+        "normalized_date": "2026-01-01",
+        "precision": "year",
+        "source_path": "Article/Journal/JournalIssue/PubDate",
+        "raw_issue_date": {
+          "year": 2026,
+          "month": null,
+          "day": null,
+          "medline_date": null
+        },
+        "publication_model": "Electronic-eCollection",
+        "citation_status": "MEDLINE",
+        "article_dates": [
+          {
+            "date_type": "Electronic",
+            "year": "2026",
+            "month": "09",
+            "day": "29"
+          }
+        ],
+        "history_dates": [
+          {
+            "pub_status": "received",
+            "year": "2026",
+            "month": "7",
+            "day": "8",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "revised",
+            "year": "2026",
+            "month": "8",
+            "day": "22",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "accepted",
+            "year": "2026",
+            "month": "8",
+            "day": "30",
+            "hour": null,
+            "minute": null
+          },
+          {
+            "pub_status": "medline",
+            "year": "2026",
+            "month": "10",
+            "day": "14",
+            "hour": "18",
+            "minute": "15"
+          },
+          {
+            "pub_status": "pubmed",
+            "year": "2026",
+            "month": "10",
+            "day": "14",
+            "hour": "18",
+            "minute": "14"
+          },
+          {
+            "pub_status": "entrez",
+            "year": "2026",
+            "month": "10",
+            "day": "14",
+            "hour": "11",
+            "minute": "31"
+          },
+          {
+            "pub_status": "pmc-release",
+            "year": "2026",
+            "month": "9",
+            "day": "29",
+            "hour": null,
+            "minute": null
+          }
+        ],
+        "is_future_date": false,
+        "warnings": []
+      },
+      "identifiers": {
+        "pmid": "42871766",
+        "doi": "10.3389/fimmu.2026.1931607",
+        "pmcid": "PMC13659453"
+      },
+      "verified_source_links": [
+        "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+        "https://doi.org/10.3389/fimmu.2026.1931607"
+      ],
+      "domain_codes": [
+        "immune_health",
+        "healthy_aging"
+      ],
+      "analysis": {
+        "schema_version": "1.0",
+        "study_type": "systematic_review",
+        "evidence_level": "mixed",
+        "background": "慢性低度炎症和免疫衰老伴随衰老及慢病，但运动对相关循环标志物的综述证据分散。",
+        "objective": "整合老年人和慢病成人中运动或身体活动对炎症衰老、免疫衰老相关循环标志物影响的综述层证据。",
+        "methods": {
+          "design": "umbrella review；检索6个数据库至2026年3月1日，使用AMSTAR-2评价方法质量、CCA评价研究重叠、GRADE评价确定性，并进行结构化叙述综合。",
+          "intervention": "运动或身体活动。",
+          "comparator": "各纳入综述中的对照条件。",
+          "duration": null
+        },
+        "sample": {
+          "size": null,
+          "population": "21篇综述，其中14篇完全符合PICOS并进入主要综合，7篇仅用于证据图谱；涉及老年人和慢病成人。",
+          "species": "人类。"
+        },
+        "key_findings": [
+          {
+            "finding_id": "finding_1",
+            "claim": "纳入21篇综述，其中14篇进入主要综合，7篇仅用于证据图谱。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Twenty-one reviews were included: 14 core-eligible (full Population, Intervention, Comparator, Outcomes, and Study design [PICOS] match, contributing to the primary synthesis and conclusions) and seven evidence-map-only (partial PICOS match, used only for mapping and background).",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_2",
+            "claim": "运动与TNF-α和CRP的小幅降低相关，而IL-6结果不一致。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Among core-eligible reviews reporting standardised mean differences, exercise was associated with small reductions in tumour necrosis factor-alpha (TNF-alpha; point estimates - 1.42 to - 0.05, two of five confidence intervals excluding the null) and C-reactive protein (CRP; - 0.65 to - 0.47, two of three excluding the null), whereas interleukin-6 (IL-6) estimates were inconsistent (- 0.81 to + 0.09, two of five excluding the null).",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_3",
+            "claim": "21篇综述中11篇AMSTAR-2为极低、9篇为低、1篇为中等，所有标志物构念的GRADE确定性均很低。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "AMSTAR-2 confidence was critically low in 11 reviews, low in nine, and moderate in one; GRADE certainty was very low for every biomarker construct.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          },
+          {
+            "finding_id": "finding_4",
+            "claim": "免疫衰老和细胞衰老标志物的运动效应仍是证据缺口，现有标志物证据不足以支持为降低炎症标志物而特异性开具运动处方。",
+            "evidence": [
+              {
+                "section_id": "abstract",
+                "quote": "Effects on immunosenescence and cellular-senescence markers remain an evidence gap. This biomarker evidence alone is insufficient to justify prescribing exercise specifically to lower inflammatory biomarkers and does not alter broader physical-activity recommendations based on clinical and functional outcomes.",
+                "support_level": "direct"
+              }
+            ],
+            "certainty": "reported"
+          }
+        ],
+        "limitations": [
+          {
+            "text": "所有标志物构念的GRADE确定性均很低。",
+            "basis": "reported"
+          },
+          {
+            "text": "纳入综述方法学质量主要为低或极低，且部分疾病集群存在很高研究重叠。",
+            "basis": "reported"
+          },
+          {
+            "text": "本研究未进行新的meta分析或meta回归。",
+            "basis": "reported"
+          }
+        ],
+        "rd_implications": [
+          {
+            "text": "未来免疫健康研究应优先补足免疫衰老和细胞衰老标志物，并预设TNF-α、CRP和IL-6的证据等级。",
+            "evidence_boundary": "现有综述层证据确定性很低，不能据此建立产品或运动功效声称。"
+          },
+          {
+            "text": "研发评价不应只依赖循环炎症标志物，还需结合临床和功能结局。",
+            "evidence_boundary": "摘要明确指出标志物证据不足以支持特异性处方。"
+          }
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "所有标志物构念证据确定性均很低。"
+        ],
+        "needs_human_review": false
+      },
+      "report": {
+        "schema_version": "1.0",
+        "ai_title": "运动对炎症衰老标志物的证据仍不确定",
+        "research_background": "慢性低度炎症和免疫衰老常见于衰老和慢病，但运动对相关循环标志物的综述结论并不一致。",
+        "research_objective": "整合老年人和慢病成人中运动对炎症衰老及免疫衰老相关标志物的综述层证据。",
+        "study_design": "umbrella review，纳入二十一篇综述，其中十四篇进入主要综合；使用AMSTAR-2、CCA和GRADE评价方法质量、重叠和确定性，未进行新的meta分析。",
+        "core_results": [
+          "运动与TNF-α和CRP的小幅降低相关，但IL-6结果不一致。",
+          "纳入综述的方法学可信度几乎全部为低或极低，仅一篇为中等。",
+          "所有标志物构念的GRADE确定性均很低。",
+          "免疫衰老和细胞衰老标志物仍存在明显证据缺口。"
+        ],
+        "limitations": [
+          "所有标志物构念的证据确定性均很低。",
+          "纳入综述方法学质量普遍不足，部分领域存在高研究重叠。",
+          "研究未进行新的定量合并或meta回归。"
+        ],
+        "rd_implications": [
+          "免疫健康研究应补充免疫衰老和细胞衰老标志物，并同时保留功能或临床结局。",
+          "现有证据不支持仅为降低循环炎症标志物而提出特异性运动或产品声称。"
+        ],
+        "source_links": [
+          "https://pubmed.ncbi.nlm.nih.gov/42871766/",
+          "https://doi.org/10.3389/fimmu.2026.1931607"
+        ],
+        "confidence": 0.97,
+        "warnings": [
+          "综述层证据确定性很低，不能据此提出特异性功效或处方。"
+        ],
+        "needs_human_review": false
+      },
+      "quality_gate": {
+        "schema_version": "1.0",
+        "decision": "pass",
+        "quality_score": 0.99,
+        "issues": [],
+        "confidence": 0.99,
+        "warnings": [
+          "报告突出低确定性和不支持特异性处方的结论。"
+        ],
+        "needs_human_review": false
+      },
+      "publication_batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "latest_edition_date": "2026-11-12"
     }
   ],
   "batches": [
+    {
+      "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+      "edition_date": "2026-11-12",
+      "edition_type": "weekly",
+      "title": "科研文献速递 2026-11-12",
+      "status": "approved",
+      "paper_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "paper_count": 8
+    },
     {
       "batch_id": "b031d6db-5d87-4506-96c6-5364ad63606a",
       "edition_date": "2026-09-07",
       "edition_type": "weekly",
       "title": "科研文献速递 2026-09-07",
-      "status": "approved",
+      "status": "published",
       "paper_ids": [
         4,
         5,
@@ -1325,6 +3866,34 @@
   ],
   "archives": [
     {
+      "edition_date": "2026-11-12",
+      "slug": "2026-11-12",
+      "title": "科研文献速递 2026-11-12",
+      "batch_ids": [
+        "b9d2568e-3d17-4f65-b006-8b691907f453"
+      ],
+      "batch_statuses": [
+        "approved"
+      ],
+      "paper_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "paper_count": 8,
+      "domain_counts": {
+        "gut_health": 4,
+        "immune_health": 2,
+        "healthy_aging": 3,
+        "musculoskeletal_health": 2
+      }
+    },
+    {
       "edition_date": "2026-09-07",
       "slug": "2026-09-07",
       "title": "科研文献速递 2026-09-07",
@@ -1332,7 +3901,7 @@
         "b031d6db-5d87-4506-96c6-5364ad63606a"
       ],
       "batch_statuses": [
-        "approved"
+        "published"
       ],
       "paper_ids": [
         4,
@@ -1343,7 +3912,7 @@
       "paper_count": 4,
       "domain_counts": {
         "gut_health": 4,
-        "immune_modulation": 0,
+        "immune_health": 0,
         "healthy_aging": 0,
         "musculoskeletal_health": 0
       }
@@ -1381,7 +3950,7 @@
   },
   "sources": {
     "database_mode": "cumulative",
-    "publication_batch_count": 1,
+    "publication_batch_count": 2,
     "journal_metrics": {
       "version": "1.0",
       "metric_name": "Journal Impact Factor",

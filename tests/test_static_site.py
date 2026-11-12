@@ -81,36 +81,36 @@ class StaticSiteTests(unittest.TestCase):
     def test_generates_expected_information_architecture(self) -> None:
         self.assertEqual(self.result["domain_pages"], 4)
         self.assertEqual(self.result["domain_alias_pages"], 3)
-        self.assertEqual(self.result["paper_pages"], 4)
-        self.assertEqual(
-            set(self.result["generated_files"]),
-            {
-                ".nojekyll",
-                "index.html",
-                "assets/site.css",
-                "assets/site.js",
-                "assets/favicon.svg",
-                "data/site-data.json",
-                "data/site-manifest.json",
-                "archive/index.html",
-                "archive/2026-09-07/index.html",
-                "domains/gut-health.html",
-                "domains/immune.html",
-                "domains/anti-aging.html",
-                "domains/musculoskeletal.html",
-                "domains/immune-modulation.html",
-                "domains/healthy-aging.html",
-                "domains/musculoskeletal-health.html",
-                "papers/4.html",
-                "papers/5.html",
-                "papers/6.html",
-                "papers/7.html",
-            },
+        self.assertEqual(self.result["paper_pages"], len(self.data["papers"]))
+        generated_files = set(self.result["generated_files"])
+        required_files = {
+            ".nojekyll",
+            "index.html",
+            "assets/site.css",
+            "assets/site.js",
+            "assets/favicon.svg",
+            "data/site-data.json",
+            "data/site-manifest.json",
+            "archive/index.html",
+            "domains/gut-health.html",
+            "domains/immune.html",
+            "domains/anti-aging.html",
+            "domains/musculoskeletal.html",
+            "domains/immune-modulation.html",
+            "domains/healthy-aging.html",
+            "domains/musculoskeletal-health.html",
+        }
+        required_files.update(
+            f"papers/{paper['paper_id']}.html" for paper in self.data["papers"]
         )
+        required_files.update(
+            f"archive/{archive['edition_date']}/index.html"
+            for archive in self.data["archives"]
+        )
+        self.assertEqual(generated_files, required_files)
         self.assertEqual(self.data["data_mode"], "cumulative_database")
-        self.assertEqual(len(self.data["batches"]), 1)
-        self.assertEqual(len(self.data["archives"]), 1)
-        self.assertEqual(self.result["archive_pages"], 1)
+        self.assertEqual(len(self.data["batches"]), len(self.data["archives"]))
+        self.assertEqual(self.result["archive_pages"], len(self.data["archives"]))
 
     def test_single_batch_file_mode_remains_compatible(self) -> None:
         self.assertEqual(self.legacy_data["schema_version"], "1.0")
@@ -127,14 +127,26 @@ class StaticSiteTests(unittest.TestCase):
             )
         )
         self.assertEqual(manifest["data_mode"], "cumulative_database")
-        self.assertEqual(manifest["latest_batch_id"], BATCH_ID)
+        self.assertEqual(manifest["latest_batch_id"], self.data["batch_id"])
         self.assertEqual(
             manifest["counts"],
-            {"domains": 4, "papers": 4, "batches": 1, "archives": 1},
+            {
+                "domains": len(self.data["domains"]),
+                "papers": len(self.data["papers"]),
+                "batches": len(self.data["batches"]),
+                "archives": len(self.data["archives"]),
+            },
         )
-        self.assertEqual(set(manifest["paper_ids"]), {4, 5, 6, 7})
         self.assertEqual(
-            manifest["archive_pages"], ["archive/2026-09-07/index.html"]
+            set(manifest["paper_ids"]),
+            {paper["paper_id"] for paper in self.data["papers"]},
+        )
+        self.assertEqual(
+            manifest["archive_pages"],
+            [
+                f"archive/{archive['edition_date']}/index.html"
+                for archive in self.data["archives"]
+            ],
         )
         self.assertNotIn("data/site-manifest.json", manifest["files"])
         for relative_path, expected_hash in manifest["files"].items():
@@ -155,32 +167,50 @@ class StaticSiteTests(unittest.TestCase):
         self.assertIn("免疫调节", home)
         self.assertIn("延缓衰老/抗衰老", home)
         self.assertIn("肌骨/筋骨关节健康", home)
-        self.assertIn("凝结芽孢杆菌干预功能性肠病的多组学观察", home)
-        self.assertIn("本期更新 · 2026-09-07", home)
-        self.assertIn('href="archive/2026-09-07/"', home)
+        self.assertIn(self.data["papers"][0]["ai_title"], home)
+        self.assertIn(f"本期更新 · {self.data['latest_edition_date']}", home)
+        self.assertIn(
+            f'href="archive/{self.data["latest_edition_date"]}/"', home
+        )
         self.assertIn('href="archive/index.html"', home)
         self.assertIn('<span class="journal-name">Gut microbes</span>', home)
         self.assertIn('title="Journal Impact Factor · 2025 JIF · 来源：Taylor &amp; Francis">IF：15.3</a>', home)
-        self.assertEqual(home.count('class="paper-row-head"'), 3)
+        expected_home_rows = sum(
+            min(domain["paper_count"], 3) for domain in self.data["domains"]
+        )
+        self.assertEqual(home.count('class="paper-row-head"'), expected_home_rows)
 
+        gut_domain = next(
+            domain for domain in self.data["domains"] if domain["code"] == "gut_health"
+        )
         gut = (self.output / "domains" / "gut-health.html").read_text(encoding="utf-8")
-        self.assertIn("本领域共 4 篇", gut)
-        self.assertEqual(gut.count('class="paper-row"'), 4)
+        self.assertIn(f"本领域共 {gut_domain['paper_count']} 篇", gut)
+        self.assertEqual(gut.count('class="paper-row"'), gut_domain["paper_count"])
         for value in ("15.3", "8.8", "5.8", "3.7"):
             self.assertIn(f"IF：{value}", gut)
-        self.assertEqual(gut.count('class="journal-name"'), 4)
-        for slug in ("immune", "anti-aging", "musculoskeletal"):
-            empty = (self.output / "domains" / f"{slug}.html").read_text(encoding="utf-8")
-            self.assertIn("本领域共 0 篇", empty)
-            self.assertIn("暂无文献", empty)
+        self.assertEqual(
+            gut.count('class="journal-name"'), gut_domain["paper_count"]
+        )
+        for domain in self.data["domains"]:
+            page = (
+                self.output / "domains" / f"{domain['slug']}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(f"本领域共 {domain['paper_count']} 篇", page)
+            if domain["paper_count"]:
+                self.assertEqual(
+                    page.count('class="paper-row"'), domain["paper_count"]
+                )
+            else:
+                self.assertIn("暂无文献", page)
 
     def test_archive_index_and_edition_show_the_persisted_batch(self) -> None:
         archive_index = (self.output / "archive" / "index.html").read_text(
             encoding="utf-8"
         )
         self.assertIn("历史速递", archive_index)
-        self.assertIn("共 1 期", archive_index)
-        self.assertIn('href="2026-09-07/"', archive_index)
+        self.assertIn(f"共 {len(self.data['archives'])} 期", archive_index)
+        for archive in self.data["archives"]:
+            self.assertIn(f'href="{archive["edition_date"]}/"', archive_index)
         edition = (
             self.output / "archive" / "2026-09-07" / "index.html"
         ).read_text(encoding="utf-8")
@@ -227,6 +257,26 @@ class StaticSiteTests(unittest.TestCase):
         self.assertIn("https://pubmed.ncbi.nlm.nih.gov/42226670/", detail)
         self.assertIn("https://doi.org/10.1002/biot.70250", detail)
 
+    def test_publication_dates_respect_source_precision(self) -> None:
+        year_precision_papers = [
+            paper
+            for paper in self.data["papers"]
+            if paper["publication_date_precision"] == "year"
+        ]
+        for paper in year_precision_papers:
+            expected_year = paper["publication_date"][:4]
+            detail = (
+                self.output / "papers" / f"{paper['paper_id']}.html"
+            ).read_text(encoding="utf-8")
+            self.assertIn(
+                f"{expected_year}（精度：year）",
+                detail,
+            )
+            self.assertNotIn(
+                f"{paper['publication_date']}（精度：year）",
+                detail,
+            )
+
     def test_all_generated_internal_links_resolve(self) -> None:
         missing: list[str] = []
         for page in self.output.rglob("*.html"):
@@ -241,6 +291,11 @@ class StaticSiteTests(unittest.TestCase):
         self.assertEqual(missing, [])
 
     def test_second_batch_adds_new_paper_without_losing_old_pages(self) -> None:
+        base_gut_count = next(
+            domain["paper_count"]
+            for domain in self.data["domains"]
+            if domain["code"] == "gut_health"
+        )
         with tempfile.TemporaryDirectory() as temp_dir:
             database_path = Path(temp_dir) / "two_batches.db"
             shutil.copy2(self.database_path, database_path)
@@ -401,11 +456,12 @@ class StaticSiteTests(unittest.TestCase):
                             output_json=quality_output,
                         )
                     )
+                    next_edition_date = date(2026, 11, 19)
                     batch = PublicationBatch(
                         pipeline_run_id=pipeline_run.id,
-                        edition_date=date(2026, 9, 14),
+                        edition_date=next_edition_date,
                         edition_type="weekly",
-                        title="科研文献速递 2026-09-14",
+                        title="科研文献速递 2026-11-19",
                         status="draft",
                     )
                     session.add(batch)
@@ -449,23 +505,30 @@ class StaticSiteTests(unittest.TestCase):
 
             output = Path(temp_dir) / "site"
             generate_site(cumulative_data, output)
-            self.assertEqual(cumulative_data["summary"]["included"], 5)
-            self.assertEqual(len(cumulative_data["batches"]), 2)
-            self.assertEqual(len(cumulative_data["archives"]), 2)
-            self.assertEqual(cumulative_data["latest_edition_date"], "2026-09-14")
+            self.assertEqual(
+                cumulative_data["summary"]["included"],
+                self.data["summary"]["included"] + 1,
+            )
+            self.assertEqual(
+                len(cumulative_data["batches"]), len(self.data["batches"]) + 1
+            )
+            self.assertEqual(
+                len(cumulative_data["archives"]), len(self.data["archives"]) + 1
+            )
+            self.assertEqual(cumulative_data["latest_edition_date"], "2026-11-19")
             self.assertTrue((output / "papers" / "4.html").exists())
             self.assertTrue((output / "papers" / f"{new_paper_id}.html").exists())
             self.assertTrue(
                 (output / "archive" / "2026-09-07" / "index.html").exists()
             )
             self.assertTrue(
-                (output / "archive" / "2026-09-14" / "index.html").exists()
+                (output / "archive" / "2026-11-19" / "index.html").exists()
             )
             first_edition = (
                 output / "archive" / "2026-09-07" / "index.html"
             ).read_text(encoding="utf-8")
             second_edition = (
-                output / "archive" / "2026-09-14" / "index.html"
+                output / "archive" / "2026-11-19" / "index.html"
             ).read_text(encoding="utf-8")
             self.assertEqual(first_edition.count('class="paper-row"'), 4)
             self.assertEqual(second_edition.count('class="paper-row"'), 1)
@@ -474,7 +537,9 @@ class StaticSiteTests(unittest.TestCase):
             gut_page = (output / "domains" / "gut-health.html").read_text(
                 encoding="utf-8"
             )
-            self.assertIn("本领域共 5 篇", gut_page)
+            self.assertIn(
+                f"本领域共 {base_gut_count + 1} 篇", gut_page
+            )
             self.assertIn("第二期累计建站测试文献", gut_page)
 
 

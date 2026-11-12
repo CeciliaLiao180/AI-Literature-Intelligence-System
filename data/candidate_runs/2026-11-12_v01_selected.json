@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1",
+  "batch_id": "b9d2568e-3d17-4f65-b006-8b691907f453",
+  "edition_date": "2026-11-12",
+  "source_metadata_package": "data/candidate_runs/2026-11-12_v01_metadata_shortlist.json",
+  "selection_policy": "每个领域选择两篇摘要信息完整、具有近期性和研发价值的真实 PubMed 论文；保留人体、动物和机制研究的证据层级。",
+  "selected": [
+    {
+      "pmid": "42816625",
+      "primary_domain": "gut_health",
+      "selection_reason": "Nature 人体纵向饮食记录与微生物组研究，并含小鼠验证，直接涉及糖摄入、抗生素和菌群扰动。"
+    },
+    {
+      "pmid": "42913643",
+      "primary_domain": "gut_health",
+      "selection_reason": "Cell Host & Microbe 新机制研究，提出微生物肌醇磷酸—HDAC3—昼夜代谢轴。"
+    },
+    {
+      "pmid": "42842075",
+      "primary_domain": "healthy_aging",
+      "selection_reason": "前瞻性人群队列连接饮食偏好、生物年龄指标和痴呆风险，营养与衰老转化价值较高。"
+    },
+    {
+      "pmid": "42919924",
+      "primary_domain": "healthy_aging",
+      "selection_reason": "Nature Aging 人类内皮细胞衰老单细胞图谱，覆盖12种组织和超过37.5万个细胞。"
+    },
+    {
+      "pmid": "42896625",
+      "primary_domain": "musculoskeletal_health",
+      "selection_reason": "人单肌纤维功能、转录组和蛋白组整合研究，提供肌无力机制及新评价框架。"
+    },
+    {
+      "pmid": "42830273",
+      "primary_domain": "musculoskeletal_health",
+      "selection_reason": "5:2间歇性禁食小鼠研究，连接肠屏障、菌群、胆汁酸和骨骼肌质量，具营养研发价值。"
+    },
+    {
+      "pmid": "42853963",
+      "primary_domain": "immune_health",
+      "selection_reason": "Science Immunology 研究黏膜 tuft cell—ILC2—IgA 轴，包含小鼠、类器官和人组织证据。"
+    },
+    {
+      "pmid": "42871766",
+      "primary_domain": "immune_health",
+      "selection_reason": "老年及慢病成人运动与炎症衰老/免疫衰老标志物 umbrella review，清晰呈现证据不确定性。"
+    }
+  ]
+}
